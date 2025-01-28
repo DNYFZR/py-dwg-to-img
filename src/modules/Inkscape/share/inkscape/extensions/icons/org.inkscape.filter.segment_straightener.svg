@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70"
+   height="60"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="org.inkscape.filter.segment-straightener.svg"
+   inkscape:version="1.4-dev (f25ce46d5c, 2023-06-29)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.422616"
+     inkscape:cx="1.4058607"
+     inkscape:cy="37.95824"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="org.inkscape.filter.segment-straightener"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-miterlimit:3.3;stroke-dasharray:none"
+       d="m 2.3428549,17.008044 c 1.8613275,1.602548 3.1582851,7.489464 5.1594763,7.776399 1.719979,-0.0017 2.9621528,-4.398825 4.4207098,-6.648765 1.012948,-1.81856 2.285743,-1.743562 3.287231,0.119582 1.418726,2.275401 2.634348,6.536485 4.315295,6.636704 1.828932,-0.14552 3.093106,-5.074389 4.702647,-7.144542 1.108319,-1.66269 2.396714,-0.684589 3.380397,1.387739 1.28686,2.40653 2.528405,6.225462 4.12779,5.8275 2.124149,-0.718319 3.484458,-7.620317 5.642767,-7.962763 1.720547,-0.04426 2.962702,4.362511 4.40893,6.663575 1.004352,1.85436 2.277268,1.886989 3.287577,0.05944 1.454424,-2.262607 2.700249,-6.654061 4.420547,-6.617635 2.191754,0.337904 3.554355,7.483892 5.722639,8.083335 1.641936,0.279156 2.886965,-3.729032 4.232338,-6.084295 0.973316,-1.938813 2.233556,-2.591158 3.288367,-0.915424 1.563392,2.136807 2.805473,6.917054 4.596521,7.124324"
+       title="sin(x)"
+       id="path1"
+       sodipodi:nodetypes="cccccccccccccccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0b5cd5;stroke-miterlimit:3.3;stroke-width:1.5;stroke-dasharray:none"
+       d="m 2.3428549,36.008044 5.1594763,7.776399 5.9073898,-7.964206 6.115846,8.071727 5.988492,-7.983452 6.222342,8.054149 5.642767,-7.962763 5.994698,8.071415 6.122356,-7.966035 5.722639,8.083335 6.308848,-7.954689 5.808378,8.079294"
+       id="path3" />
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+SPDX-FileCopyrightText: 2024 Software Freedom Conservancy <info@sfconservancy.org>
+
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Afdesign Input</name>
+  <id>org.inkscape.input.afdesign_input</id>
+  <input>
+    <extension>.afdesign</extension>
+    <mimetype>application/x-extension-afdesign</mimetype>
+    <filetypename>Affinity Designer file (*.afdesign)</filetypename>
+    <filetypetooltip>Import an Affinity Designer file</filetypetooltip>
+  </input>
+  <script>
+    <command location="inx" interpreter="python">inkaf</command>
+  </script>
+</inkscape-extension>

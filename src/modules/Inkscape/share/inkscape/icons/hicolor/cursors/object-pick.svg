@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:hotspot_x="7"
+   inkscape:hotspot_y="5"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style1">@import './cursors.css';</style>
+  <defs
+     id="defs1" />
+  <g id="cursor" class="drop-shadow" style="fill:#ffffff">
+     id="layer1">
+    <g
+       id="g32"
+       transform="matrix(0.8604093,0,0,0.86070405,-403.78032,-316.49045)"
+       style="stroke-width:1.16203853;stroke-dasharray:none">
+      <path
+         id="rect25"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1.16204;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.8;stroke-dasharray:none"
+         d="m 478,372.91903 c -0.831,0 -1.5,0.669 -1.5,1.5 v 11.24503 l -1.60938,-2.78711 c -0.48474,-0.83961 -1.55101,-1.12537 -2.39062,-0.64062 -0.83961,0.48475 -1.12537,1.55101 -0.64062,2.39062 1.99529,3.18692 3.60569,5.63465 4.63476,7.25391 0.36033,0.54859 1.17771,1.75987 1.50586,3.11914 h 8 c 1.08585,-2.09431 2.37876,-4.72358 2.5,-7 v -6 c 0,-0.831 -0.669,-1.5 -1.5,-1.5 -0.831,0 -1.5,0.669 -1.5,1.5 v -1 c 0,-0.831 -0.669,-1.5 -1.5,-1.5 -0.831,0 -1.5,0.669 -1.5,1.5 v -1 c 0,-0.831 -0.669,-1.5 -1.5,-1.5 -0.831,0 -1.5,0.669 -1.5,1.5 v -5.58097 c 0,-0.831 -0.669,-1.5 -1.5,-1.5 z" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:1.16203853;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.8;stroke-dasharray:none"
+         d="m 479.5,380 v 4"
+         id="path29" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:1.16203853;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.8;stroke-dasharray:none"
+         d="m 482.5,381 v 3.5"
+         id="path31" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:1.16203853;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.8;stroke-dasharray:none"
+         d="M 485.5,381.4 V 385"
+         id="path32" />
+    </g>
+  </g>
+</svg>

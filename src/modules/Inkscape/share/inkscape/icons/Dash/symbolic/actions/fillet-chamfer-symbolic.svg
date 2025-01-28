@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="fillet-chamfer">
+<path class="warning" fill-rule="evenodd" clip-rule="evenodd" d="M7.07187 1H14C14.5523 1 15 1.44772 15 2V8.92925C14.6737 8.97588 14.3402 9 14.001 9C10.135 9 7.00098 5.86599 7.00098 2C7.00098 1.66048 7.02515 1.3266 7.07187 1Z" fill="#9E9E9E"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M14 9C10.1345 8.99947 7.00098 5.86567 7.00098 2H2V14H14V9ZM14.001 8C14.5262 8 15 8.39562 15 8.92081V14C15 14.5523 14.5523 15 14 15H2C1.44772 15 1 14.5523 1 14V2C1 1.44772 1.44772 1 2 1H7.07934C7.60502 1 8.00098 1.47433 8.00098 2C8.00098 5.31371 10.6873 8 14.001 8Z" fill="black"/>
+</g>
+</svg>

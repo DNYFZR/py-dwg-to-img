@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="distribute-horizontal-center">
+<rect id="rectangle" opacity="0.3" x="14" y="3" width="10" height="5" rx="0.5" transform="rotate(90 14 3)" fill="black"/>
+<rect id="neutral" x="5" width="4" height="1" rx="0.5" transform="rotate(90 5 0)" fill="black"/>
+<rect id="neutral_2" x="5" y="12" width="4" height="1" rx="0.5" transform="rotate(90 5 12)" fill="black"/>
+<rect id="neutral_3" x="12" width="4" height="1" rx="0.5" transform="rotate(90 12 0)" fill="black"/>
+<rect id="neutral_4" x="12" y="12" width="4" height="1" rx="0.5" transform="rotate(90 12 12)" fill="black"/>
+<path id="neutral_5" fill-rule="evenodd" clip-rule="evenodd" d="M10 4L13 4L13 12L10 12L10 4ZM13.5 3C13.7761 3 14 3.22386 14 3.5L14 12.5C14 12.7761 13.7761 13 13.5 13L9.5 13C9.22386 13 9 12.7761 9 12.5L9 3.5C9 3.22386 9.22386 3 9.5 3L13.5 3ZM3 4L6 4L6 12L3 12L3 4ZM6.5 3C6.77614 3 7 3.22386 7 3.5L7 12.5C7 12.7761 6.77614 13 6.5 13L2.5 13C2.22386 13 2 12.7761 2 12.5L2 3.5C2 3.22386 2.22386 3 2.5 3L6.5 3Z" fill="black"/>
+</g>
+</svg>

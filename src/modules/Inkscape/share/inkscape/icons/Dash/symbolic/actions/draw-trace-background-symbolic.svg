@@ -1,0 +1,9 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="draw-trace-background">
+<rect id="rectangle" opacity="0.05" x="2.00098" y="2" width="3" height="12" fill="black"/>
+<rect id="rectangle_2" opacity="0.15" x="5.00098" y="2" width="3" height="12" fill="black"/>
+<rect id="neutral" opacity="0.3" x="8.00098" y="2" width="3" height="12" fill="black"/>
+<rect id="rectangle_3" opacity="0.45" x="11.001" y="2" width="3" height="12" fill="black"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M2.25098 1.75C1.97483 1.75 1.75098 1.97386 1.75098 2.25V13.9825C1.50419 13.994 1.25417 14 1.00098 14V14.4999V15H14.0009C14.5532 15 15.0009 14.5523 15.0009 14V8.294C15.0009 7.89523 14.6088 7.61173 14.251 7.69893V2.25C14.251 1.97386 14.0271 1.75 13.751 1.75H2.25098ZM13.751 8.11195V2.25L2.25098 2.25V13.9512C8.47819 13.4631 12.5567 9.44859 13.751 8.11195Z" fill="black"/>
+</g>
+</svg>

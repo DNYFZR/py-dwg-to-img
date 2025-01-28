@@ -1,0 +1,7 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="object-rotate-right">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M8 2.5C7.72386 2.5 7.5 2.72386 7.5 3C7.5 3.27614 7.72386 3.5 8 3.5H11C11.2761 3.5 11.5 3.72386 11.5 4V5.5H10.3737C10.214 5.5 10.1187 5.67803 10.2073 5.81094L11.8336 8.25038C11.9128 8.36913 12.0872 8.36913 12.1664 8.25039L13.7927 5.81094C13.8813 5.67803 13.786 5.5 13.6263 5.5H12.5V4C12.5 3.17157 11.8284 2.5 11 2.5H8Z" fill="black"/>
+<rect id="neutral" opacity="0.3" x="1" y="1" width="5" height="10" rx="0.5" fill="black"/>
+<path id="Union_2" fill-rule="evenodd" clip-rule="evenodd" d="M2 10V2H5V10H2ZM1 10.5V1.5C1 1.22386 1.22386 1 1.5 1H5.5C5.77614 1 6 1.22386 6 1.5V10H14.5C14.7761 10 15 10.2239 15 10.5V14.5C15 14.7761 14.7761 15 14.5 15H1.5C1.22386 15 1 14.7761 1 14.5V10.5ZM5.5 11H2V14H14V11H5.5Z" fill="black"/>
+</g>
+</svg>

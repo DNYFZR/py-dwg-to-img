@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="32"
+   inkscape:hotspot_x="4"
+   inkscape:hotspot_y="4"
+   style="fill:gray;stroke:black"
+   version="1.1"
+   id="svg61"
+   sodipodi:docname="pen (2).svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview63"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:zoom="14.18633"
+     inkscape:cx="6.8728135"
+     inkscape:cy="18.257012"
+     inkscape:window-width="1856"
+     inkscape:window-height="1177"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg61"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <style
+     id="style2">@import './cursors.css';</style>
+  <defs
+     id="defs9" />
+  <!-- Cross (centered on hotspot) -->
+  <use
+     xlink:href="-common.svg#def-cross"
+     id="use48"
+     style="display:inline"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%" />
+  <!-- Pen  -->
+  <g
+     id="cursor"
+     class="drop-shadow"
+     style="display:inline">
+    <g
+       id="g42468"
+       inkscape:label="Otline">
+      <path
+         d="M 0,0"
+         id="Outline-pen-cursor"
+         style="display:inline;stroke:#ffffff;stroke-width:2.52127;stroke-linejoin:miter;stroke-miterlimit:2.6;stroke-dasharray:none"
+         transform="matrix(0.84415737,-0.84415737,0.8385911,0.8385911,-8.6524495,11.210941)" />
+    </g>
+    <!-- Outline -->
+    <!-- Nib -->
+    <g
+       id="g42464"
+       inkscape:label="pen">
+      <path
+         sodipodi:nodetypes="csccsccc"
+         inkscape:connector-curvature="0"
+         d="m 12.996439,19.515277 c -0.522063,0.0014 -0.952001,-0.438463 -0.950629,-0.971902 0.002,-0.797539 0.933006,-1.067371 0.933006,-3.972655 V 9.3174741 c 0,1.9570119 -4.7547527,5.6105049 -4.7547527,9.1934729 0,2.511929 1.6664752,4.162202 2.6967447,4.999293 l -0.0043,3.497731 2.079931,-0.01194 m 0,-7.480754 c 0.522063,0.0014 0.952001,-0.438463 0.950629,-0.971902 -0.002,-0.797539 -0.933006,-1.067371 -0.933006,-3.972655 V 9.3174741 c 0,1.9570119 4.754753,5.6105049 4.754753,9.1934729 0,2.511929 -1.666476,4.162202 -2.696745,4.999293 l 0.0043,3.497731 -2.079931,-0.01194"
+         id="pen-cursor-base"
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.840424;stroke-linejoin:miter;stroke-miterlimit:1.5;stroke-dasharray:none"
+         transform="matrix(0.84415737,-0.84415737,0.8385911,0.8385911,-8.6524495,11.210941)" />
+      <path
+         id="middle-pen-curosr"
+         style="fill:#000000;stroke:none;stroke-width:3;stroke-miterlimit:1.5"
+         d="m 18.936523,14.714533 c 0.591857,0.591857 0.591857,1.551445 0,2.143302 -0.591857,0.591855 -1.551445,0.591856 -2.143301,0 -0.591857,-0.591857 -0.591856,-1.551446 -1e-6,-2.143303 0.591857,-0.591856 1.551445,-0.591856 2.143302,10e-7 z"
+         sodipodi:nodetypes="sssss" />
+    </g>
+  </g>
+</svg>

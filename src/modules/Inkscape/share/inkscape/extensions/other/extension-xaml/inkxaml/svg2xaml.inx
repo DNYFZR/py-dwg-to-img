@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>XAML Output</name>
+    <id>org.inkscape.output.xaml_output</id>
+    <param name="target" type="optiongroup" appearance="combo" gui-text="Export framework:">
+        <option translatable="no" value="wpf">WPF</option>
+        <option translatable="no" value="avaloniaui">Avalonia (>0.10.x)</option>
+    </param>
+    <label>Export mode:</label>
+    <param name="mode" type="notebook" gui-description="DrawingGroup supports less complex SVG features, but generally has better performance,
+making it suitable for icon dictionaries. Primitives cannot be animated.
+Canvas is more suitable for complex drawings where individual elements should be animated, or
+user controls be added into.">
+        <page name="lowlevel" translatable="no" gui-text="DrawingGroup">
+            <param name="referencing-type" type="optiongroup" appearance="radio" gui-text="Referencing type:" gui-description="An element of this type will be added for each top-level drawing 
+(i.e. each layer if 'Layers as Resources' is enabled, the entire drawing otherwise)
+to facilitate using the drawing as Image source or Brush.">
+                <option translatable="no" value="DrawingImage">DrawingImage</option>
+                <option translatable="no" value="DrawingBrush">DrawingBrush</option>
+            </param>
+        </page>
+        <page name="canvas" translatable="no" gui-text="Canvas">
+            <param name="text-to-path" type="bool" gui-text="Convert text to paths" gui-description="For most texts, there is support for exporting as (editable) TextBlock / Span
+elements for WPF Canvas mode. Texts are always converted to path in DrawingGroup mode 
+or when targeting Avalonia.">false</param>
+        </page>
+    </param>
+    <param name="layers-as-resources" type="bool" gui-text="Export layers as separate top-level resources" gui-description="This option can be used to export ready-to-use icon libraries. 
+Each layer (independent of visibility) will be a separate DrawingGroup (DrawingImage) / Canvas (wrapped in a ViewBox).
+The layer name will be used as x:Key.">true</param>
+    <param name="swatch-treatment" type="optiongroup" appearance="radio" gui-text="Treat solid swatches as">
+        <option translatable="no" value="DynamicResource">DynamicResource</option>
+        <option translatable="no" value="StaticResource">StaticResource</option>
+        <option value="color">Color</option>
+    </param>
+    <param name="indent" type="int" gui-text="Number of spaces per indentation level:">4</param>
+    <output>
+        <extension>.xaml</extension>
+        <mimetype>text/xml+xaml</mimetype>
+        <filetypename>Microsoft XAML (*.xaml)</filetypename>
+        <filetypetooltip>Microsoft's GUI definition format</filetypetooltip>
+        <dataloss>true</dataloss>
+    </output>
+    <script>
+        <command location="inx" interpreter="python">svg2xaml.py</command>
+    </script>
+</inkscape-extension>

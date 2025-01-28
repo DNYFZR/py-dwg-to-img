@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="32" height="32"
+     inkscape:hotspot_x="4"
+     inkscape:hotspot_y="4"
+     style="fill:gray;stroke:black">
+
+<style>@import './cursors.css';</style>
+
+<!-- Pointer. Paste svg code here -->
+<g id="cross" style="">
+  <path d="M4.5 9V0" stroke="white" stroke-width="3"/>
+  <path d="M9 4.5H0" stroke="white" stroke-width="3"/>
+  <path d="M0 4.5H9" stroke="black"/>
+  <path d="M4.5 0V9" stroke="black"/>
+</g>
+
+<g id="cursor" class="drop-shadow" style="">
+    <path d="M12.5 11C12.5 10.7239 12.7239 10.5 13 10.5H18.7929L23.5 15.2071V25C23.5 25.2761 23.2761 25.5 23 25.5H13C12.7239 25.5 12.5 25.2761 12.5 25V11Z" fill="white" stroke="black"/>
+    <path d="M19 15H23.5L19 10.5V15Z" fill="black" fill-opacity="0.3" stroke="black" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<keys name="Zoner Draw" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- inherit -->
+<xi:include href="inkscape.xml" />
+
+<!--  
+This file contains a profile of keyboard shortcuts for Inkscape 
+in the style of Zoner Draw 5.   
+
+See default.xml for more information.  
+-->
+
+<!-- Tools -->
+
+<!-- Shape tool - does what our Selector does -->
+
+  <bind gaction="win.tool-switch('Select')"             keys="2" />
+
+<!-- Nodes tool - not in Zoner?
+
+  <bind gaction="win.tool-switch('Node')"               keys="A, a" /> -->
+
+<!-- Pen
+
+  <bind gaction="win.tool-switch('Pen')"                keys="F12" /> -->
+
+<!-- Text tool is most closer to our text tool -->
+
+  <bind gaction="win.tool-switch('Text')"               keys="&lt;ctrl&gt;t, &lt;ctrl&gt;T" />
+
+<!-- Freehand - not in Zoner?
+
+  <bind gaction="win.tool-switch('Pencil')"             keys="F5" /> -->
+
+<!-- Zoom -->
+
+  <bind gaction="win.tool-switch('Zoom')"               keys="&lt;ctrl&gt;space" />
+
+
+<!-- File actions -->
+
+  <bind gaction="win.document-new"                      keys="&lt;ctrl&gt;n, &lt;ctrl&gt;N" />
+  
+<!--  New from Template... (Shift l+Ctrl+N) does not exist in Inkscape -->
+
+  <bind gaction="win.document-open"                     keys="&lt;ctrl&gt;o, &lt;ctrl&gt;O" />
+  <bind gaction="win.document-save"                     keys="&lt;ctrl&gt;s, &lt;ctrl&gt;S" />
+
+<!--
+  <bind gaction="win.document-save-as"                  keys="&lt;ctrl&gt;&lt;shift&gt;s, &lt;ctrl&gt;&lt;shift&gt;t,S" /> -->
+
+  <bind gaction="win.document-import"                   keys="&lt;ctrl&gt;&lt;shift&gt;t,i, &lt;ctrl&gt;&lt;shift&gt;t,I" />
+
+<!--  <bindgaction="win.dialog-open('Export')"          keys="&lt;ctrl&gtr,e, &lt;ctrl&gt;E" /> -->
+
+  <bind gaction="win.document-print"                    keys="&lt;ctrl&gt;p, &lt;ctrl&gt;P" />
+  
+<!-- Export to PDF (CTRL+SHIFT+P) - doesn't not exist in Inkscape directly -->
+
+<!-- Options dialog - make sure it's correct one -->
+
+  <bind gaction="app.preferences"                       keys="&lt;ctrl&gt;m, &lt;ctrl&gt;M" />
+
+<!-- Options dialog - make sure it's correct one 
+
+  <bind gaction="win.dialog-open('DocumentProperties')" keys="&lt;alt&gt;Return" /> -->
+
+<!-- Edit actions -->
+
+  <bind gaction="doc.undo"                              keys="&lt;ctrl&gt;z, &lt;ctrl&gt;Z, &lt;alt&gt;BackSpace" />
+  <bind gaction="doc.redo"                              keys="&lt;ctrl&gt;y, &lt;ctrl&gt;Y" />
+  <bind gaction="app.cut"                               keys="&lt;ctrl&gt;x, &lt;ctrl&gt;X" />
+<!--  <bind gaction="app.cut"                            keys="&lt;shift&gt;Delete"/> -->
+  <bind gaction="app.copy"                              keys="&lt;ctrl&gt;c, &lt;ctrl&gt;C, &lt;ctrl&gt;Insert" />
+  <bind gaction="win.paste"                             keys="&lt;ctrl&gt;v, &lt;ctrl&gt;V, &lt;shift&gt;t,Insert" />
+<!--  <bind gaction="app.delete"                         keys="Delete"/> -->
+  <bind gaction="app.duplicate"                         keys="&lt;ctrl&gt;d, &lt;ctrl&gt;D" />
+  <bind gaction="win.select-all"                        keys="&lt;ctrl&gt;a, &lt;ctrl&gt;A" />
+
+<!-- View actions -->
+
+<!-- Zoom in or 1:1 ? !!!!!!!!!!!!
+F2	Zoom One-Shot
+Zoom1:0: Zoom to 1:1
+ZoomIn: Zoom in 
+
+  <bind gaction="win.canvas-zoom-in"                   keys="plus, &lt;Shift&gt;plus, equal, &lt;Shift&gt;equal, KP_Add" />
+  <bind gaction=win.canvas-zoom-1-1"                   keys="1"/>
+
+-->
+
+<!--  <bindgaction="win.canvas-zoom-out"keys="F3"/> -->
+
+<!-- Zoom to Object - in Zoner's terminology -->
+  <bind gaction="win.canvas-zoom-drawing"              keys="a" />
+  <bind gaction="win.canvas-zoom-page"                 keys="e"/>
+  <bind gaction="win.canvas-zoom-selection"            keys="s"/>
+
+<!-- Implemented in Zoner Draw, but does it have hotkeys?
+
+win.canvas-zoom-next: Next zoom (from the history of zooms)
+win.canvas-zoom-prev: Previous zoom (from the history of zooms)
+win.canvas-zoom-page-width: Zoom to fit page width in window
+
+-->
+
+  <bind gaction="doc.show-all-guides"                   keys="l, L" />
+  <bind gaction="doc.show-grids"                        keys="g, G" />
+  
+<!-- Not implemented in Zoner Draw? !!!!!!!!!!!!
+
+  <bind gaction="win.canvas-rulers"                     keys="&lt;ctrl&gt;r, &lt;ctrl&gt;R" />
+  <bind gaction="win.canvas-scroll-bars"                keys="&lt;ctrl&gt;b,B" />
+  
+-->
+  
+  <bind gaction="win.view-fullscreen"                   keys="F9" />
+
+<!-- Path actions -->
+
+  <bind gaction="app.path-combine"               keys="&lt;ctrl&gt;k, &lt;ctrl&gt;K" />
+  <bind gaction="app.path-break-apart"           keys="&lt;ctrl&gt;&lt;shift&gt;t,k, &lt;ctrl&gt;&lt;shift&gt;t,K" />
+
+<!-- Object actions -->
+
+  <bind gaction="app.selection-group"               keys="&lt;ctrl&gt;g, &lt;ctrl&gt;G" />
+  <bind gaction="app.selection-ungroup"             keys="&lt;ctrl&gt;u, &lt;ctrl&gt;U" />
+
+<!-- Blend is our Interpolate extension's advanced equivalent, so using it -->
+
+  <bind gaction="org.ekips.filter.interp.noprefs" keys="&lt;ctrl&gt;&lt;shift&gt;b"/>
+  <bind gaction="org.ekips.filter.interp.noprefs" keys="&lt;ctrl&gt;&lt;shift&gt;B"/>
+
+<!-- 'Tools -> Rasterize...' is our Create Bitmap's advanced equivalent, so using it --> 
+
+  <bind gaction="app.selection-make-bitmap-copy"        keys="&lt;ctrl&gt;&lt;shift&gt;t,r, &lt;ctrl&gt;&lt;shift&gt;t,R" />
+  <bind gaction="app.selection-top"                     keys="&lt;ctrl&gt;Page_Up, &lt;ctrl&gt;KP_Page_Up" />
+  <bind gaction="app.selection-bottom"                  keys="&lt;ctrl&gt;Page_Down, &lt;ctrl&gt;KP_Page_Down" />
+  <bind gaction="app.selection-raise"                   keys="Page_Up, KP_Page_Up" />
+  <bind gaction="app.selection-lower"                   keys="Page_Down, KP_Page_Down" />
+
+<!-- Transformations gallery -->
+
+  <bind gaction="win.dialog-open('Transform')"          keys="&lt;ctrl&gt;6" />
+
+<!-- Align Objects gallery. Distribute Objects gallery is a separate tab of same dialog there :)  -->
+
+  <bind gaction="win.dialog-open('AlignDistribute')"    keys="&lt;ctrl&gt;7, &lt;ctrl&gt;8" />
+
+<!-- Unify Objects gallery - Scale tab?! -->
+
+  <bind gaction="win.dialog-open('Transform')"          keys="&lt;ctrl&gt;9" />
+
+<!-- Colors gallery is way closer to Swatches than to Fill'n'Stroke-->
+
+  <bind gaction="win.dialog-open('Swatches')"           keys="&lt;ctrl&gt;5" />
+
+<!-- Pen gallery - 'Stroke style' tab analog -->
+
+  <bind gaction="win.dialog-open('FillStroke')"         keys="&lt;ctrl&gt;2" />
+
+<!-- Fill Style gallery -->
+
+  <bind gaction="win.dialog-open('FillStroke')"         keys="&lt;ctrl&gt;1" />
+
+<!-- Transparency gallery -->
+
+  <bind gaction="win.dialog-open('FillStroke')"         keys="&lt;ctrl&gt;3" />
+
+<!-- Styles gallery (Shift+Ctrl+6) does not have an analog in Inkscape -->
+
+<!-- Clip Art gallery (Shift+Ctrl+7) does not have an analog in Inkscape -->
+
+</keys>

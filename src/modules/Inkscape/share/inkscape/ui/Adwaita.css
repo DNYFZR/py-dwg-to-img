@@ -1,0 +1,78 @@
+/* ADWAITA SPECIFIC STYLE */
+
+
+/*
+ * Keep as small as possible
+ */
+
+.inkswitch slider {
+    min-width: 18px;
+    min-height: 18px;
+}
+
+.inkswitch image {
+    color: transparent;
+    background-color: transparent;
+    background-image: image(transparent);
+    -gtk-icon-style:symbolic;
+}
+
+.inkswitch {
+    margin: 2px;
+    padding: 0;
+    font-size: 8px;
+}
+
+/* Reduce width of +/- buttons. */
+.up,
+.down {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+notebook notebook header label {
+    margin:0;
+}
+
+notebook notebook header tab {
+    min-height:23px;
+    padding:3px 7px;
+}
+
+notebook notebook header {
+    padding:0;
+}
+
+notebook notebook header image {
+    -gtk-icon-transform:scale(0.8);
+    margin:-3px 0 -3px 0;
+}
+
+#PaintSelector .toggle,
+#PaintSelector .radio,
+#StrokeSelector .toggle,
+#StrokeSelector .radio{
+    padding:5px;
+    min-height:12px;
+}
+#StrokeSelector{
+    padding:0px;
+    margin:0px;
+}
+
+#AlignDistribute .toggle,
+#AlignDistribute .radio,
+#AlignDistribute button{
+    padding:4px;
+}
+
+#AlignDistribute #align {
+    margin-top:-15px;
+}
+
+/* checked buttons */
+button.radio:checked,
+button.toggle:checked {
+    background-color: transparent;
+    background-image: image(linear-gradient(alpha(@theme_selected_bg_color,0.75), alpha(@theme_selected_bg_color,0.4)));
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>CGM Input</name>
+  <id>org.inkscape.input.cgm_input</id>
+  <dependency type="file" location="inx">cgm_parse.py</dependency>
+  <dependency type="file" location="inx">cgm_enums.py</dependency>
+  <dependency type="file" location="inx">cgm_input.py</dependency>
+  <input>
+    <extension>.cgm</extension>
+    <mimetype>image/cgm</mimetype>
+    <filetypename>Computer Graphics Metafile (*.cgm)</filetypename>
+    <filetypetooltip>Import a Computer Graphics Metafile (CGM)</filetypetooltip>
+  </input>
+  <script>
+    <command location="inx" interpreter="python">cgm_input.py</command>
+  </script>
+</inkscape-extension>

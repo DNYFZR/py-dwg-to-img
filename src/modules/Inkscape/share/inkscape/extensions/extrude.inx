@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Extrude Between Two Paths</name>
+    <id>effect.extrude</id>
+    <param name="tab" type="notebook">
+        <page name="Options" gui-text="Options">
+            <param name="mode" type="optiongroup" appearance="combo" gui-text="Mode:">
+                <option value="lines">Lines</option>
+                <option value="polygons">Polygons</option>
+                <option value="snug">Follow curves</option>
+            </param>
+            <param name="subpaths" type="bool" gui-text="Combine lines to single path" gui-description="If true, connecting lines will be inserted as subpaths of a single path.
+                 If false, they will be inserted in newly created group. 
+                 Only applies to mode=lines.">true</param>
+        </page>
+        <page name="Help" gui-text="Help">
+            <label xml:space="preserve">
+This effect draws lines between each nth node of each selected
+path. It therefore works best if all selected paths have the
+same number of nodes.
+
+There are 3 main options:
+- lines: segments are created between the corresponding nodes.
+  It is possible to select the option "Combine lines to single
+  path" so that the segments that are created are subpaths of a
+  single path; otherwise, the segments that are created are
+  separate paths grouped together.
+- polygons: Polygons with straight lines are created between
+  corresponding pairs of nodes of each path. The polygons are
+  grouped together.
+- follow curves: the same as polygons, but the 'segments' of the
+  path that lie on top of the original paths will follow the
+  same curves as on the original path.
+
+The lines will be inserted above the bottom of the two elements.
+            </label>
+        </page>
+    </param>
+    <effect>
+        <object-type>path</object-type>
+        <effects-menu>
+            <submenu name="Generate from Path" />
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">extrude.py</command>
+    </script>
+</inkscape-extension>

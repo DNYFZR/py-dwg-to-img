@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Formula (pdflatex)</name>
+    <id>org.inkscape.generate.pdf_latex</id>
+    <dependency type="executable" location="path">pdflatex</dependency>
+    <param name="page" type="notebook">
+      
+      <page name="basic" gui-text="Basic settings">
+        <param name="formule" type="string" gui-text="LaTeX input:">\(\displaystyle\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\)</param>
+        <param name="font_size" type="int" gui-text="Font size (pt)" max="100" min="3">10</param>
+      </page>
+      <page name="advanced" gui-text="Advanced settings">
+        <param name="standalone" type="bool" gui-text="Use standalone document class"
+        gui-description="Without the standalone document class, font sizes other than 10pt are achieved by
+scaling the resulting PDF output (internally, the document class 'minimal' is used). 
+More correct spacing for all font sizes can be achieved by using 'standalone'.
+However, the required packages might not be available on all systems.">true</param>
+        <param name="preamble" type="string" gui-text="Custom preamble code"
+        >\usepackage{amsmath}\usepackage{amssymb}\usepackage{amsfonts}</param>
+        <!-- TODO: Convert this to multiline after https://gitlab.com/inkscape/inbox/-/issues/6573 is fixed -->
+      </page>
+    
+  </param>
+    <effect needs-live-preview="false">
+    <object-type>all</object-type>
+      <effects-menu>
+       <submenu name="Text"/>
+      </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">pdflatex.py</command>
+    </script>
+</inkscape-extension>

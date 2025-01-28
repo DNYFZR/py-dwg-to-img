@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<keys name="Right Handed Illustration" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- inherit -->
+<xi:include href="inkscape.xml" />
+
+<!--  
+
+The Right Handed Illustration keyboard layout takes the approach that
+the ideal keyboard setup for a (right-handed) artist using a drawing
+tablet involves two things:
+
+* Never putting down the stylus
+* Never moving the hand from the keyboard
+
+This first version of the layout places most of the tools
+that one would need under the left hand.  If your goal is
+illustration work or drawing in general, and your primary tool
+is the Calligraphy or Pencil tool, this may be an optimal set
+of bindings to use.
+
+The left side of the keyboard is configured as follows:
+
+1       - Selection Tool
+2       - Bezier Tool
+Shift-2 - Calligraphy Tool
+Ctrl-2  - Pencil Tool
+3       - Eyedropper
+4       - Node Tool
+K       - Paint Bucket Tool
+
+Q       - Union
+W       - Difference
+E       - Simplify
+R       - Toggle Dialogs
+Shift-Ctrl-Alt-Q - Set Clipping Path
+
+A       - Move Selection Up
+Shift-A - Bring to Front
+S       - Move Selection Down
+Shift-S - Send to Back
+D       - Undo
+F       - Redo
+
+Z       - Zoom Out
+X       - Zoom In
+C       - Flip Horizontal
+V       - Flip Vertical
+
+Future improvements:
+
+* Have a "Delete Node" verb so that one doesn't have to reach
+  for the "Delete" key to delete nodes
+
+-->
+
+
+<!-- File -->
+
+  <bind gaction="win.document-new"                          keys="&lt;ctrl&gt;n, &lt;ctrl&gt;N" />
+  <bind gaction="win.document-open"                         keys="&lt;ctrl&gt;o, &lt;ctrl&gt;O" />
+  <bind gaction="win.document-save"                         keys="&lt;ctrl&gt;s, &lt;ctrl&gt;S" />
+  <bind gaction="win.document-save-as"                      keys="&lt;ctrl&gt;&lt;shift&gt;s, &lt;ctrl&gt;&lt;shift&gt;S" />
+  <bind gaction="win.document-print"                        keys="&lt;ctrl&gt;p, &lt;ctrl&gt;P" />
+  <bind gaction="win.document-import"                       keys="&lt;ctrl&gt;i, &lt;ctrl&gt;I" />
+  <bind gaction="win.dialog-open('Export')"                 keys="&lt;ctrl&gt;&lt;shift&gt;e, &lt;ctrl&gt;&lt;shift&gt;E" />
+  <bind gaction="win.document-close"                        keys="&lt;ctrl&gt;w, &lt;ctrl&gt;W" />
+  <bind gaction="app.quit"                                  keys="&lt;ctrl&gt;q, &lt;ctrl&gt;Q" />
+  <bind gaction="win.document-revert" />
+  <bind gaction="win.document-cleanup" />
+
+<!-- Tools -->
+
+  <bind gaction="win.tool-switch('Select')"                 keys="F1, 1" />
+  <bind gaction="win.tool-switch('Node')"                   keys="F2, 4" />
+  <bind gaction="win.tool-switch('Zoom')"                   keys="F3, z, Z, 5" />
+  <bind gaction="win.tool-switch('Rect')"                   keys="F4" />
+  <bind gaction="win.tool-switch('3DBox')"                  keys="&lt;shift&gt;F4" />
+  <bind gaction="win.tool-switch('Arc')"                    keys="F5" />
+  <bind gaction="win.tool-switch('Star')"                   keys="&lt;shift&gt;F9, &lt;shift&gt;asterisk, asterisk, KP_Multiply" />
+  <bind gaction="win.tool-switch('Spiral')"                 keys="F9, i, I" />
+  <bind gaction="win.tool-switch('PaintBucket')"            keys="K, k" />
+  <bind gaction="win.tool-switch('Pencil')"                 keys="F6, &lt;ctrl&gt;2" />
+  <bind gaction="win.tool-switch('Pen')"                    keys="&lt;shift&gt;F6, b, B, 2" />
+  <bind gaction="win.tool-switch('Calligraphic')"           keys="&lt;ctrl&gt;F6" />
+  <bind gaction="win.tool-switch('Calligraphic')"           keys="&lt;shift&gt;at, at" />
+  <bind gaction="win.tool-switch('Text')"                   keys="F8, t, T" />
+  <bind gaction="win.tool-switch('Gradient')"               keys="&lt;ctrl&gt;F1" />
+  <bind gaction="win.tool-switch('Connector')"              keys="&lt;ctrl&gt;F2, o, O" />
+  <bind gaction="win.tool-switch('Dropper')"                keys="F7, 3, g, G" />
+
+<!-- Zoom -->
+
+  <bind gaction="win.canvas-zoom-in"                        keys="plus, &lt;shift&gt;plus, equal, KP_Add, x" />
+  <bind gaction="win.canvas-zoom-out"                       keys="minus, KP_Subtract, z" />
+  <bind gaction="win.canvas-zoom-1-1"                       keys="KP_1"/>
+  <bind gaction="win.canvas-zoom-1-2"                       keys="KP_2"/>
+  <bind gaction="win.canvas-zoom-selection"                 keys="KP_3"/>
+  <bind gaction="win.canvas-zoom-drawing"                   keys="KP_4"/>
+  <bind gaction="win.canvas-zoom-page"                      keys="KP_5, 5"/>
+  <bind gaction="win.canvas-zoom-page-width"                keys="KP_6"/>
+  <bind gaction="win.canvas-zoom-next"                      keys="&lt;shift&gt;asciitilde, &lt;shift&gt;grave"/> <!-- ~ -->
+  <bind gaction="win.canvas-zoom-prev"                      keys="grave"/> <!-- ` -->
+
+  <!-- View -->
+
+  <bind gaction="win.view-fullscreen"                       keys="F11" />
+  <bind gaction="win.window-next"                           keys="&lt;ctrl&gt;Tab, &lt;ctrl&gt;&lt;shift&gt;ISO_Left_Tab" />
+  <bind gaction="win.window-previous"                       keys="&lt;ctrl&gt;&lt;shift&gt;Tab, &lt;ctrl&gt;ISO_Left_Tab" />
+  <bind gaction="win.canvas-rulers"                         keys="&lt;ctrl&gt;r, &lt;ctrl&gt;R" />
+  <bind gaction="win.canvas-scroll-bars"                    keys="&lt;ctrl&gt;b, &lt;ctrl&gt;B" />
+  <bind gaction="doc.show-all-guides"                       keys="&lt;shift&gt;bar, bar" /> <!-- | -->
+  <bind gaction="doc.show-grids"                            keys="&lt;shift&gt;numbersign, numbersign" /> <!-- # -->
+  <bind gaction="win.canvas-display-mode-cycle"             keys="&lt;primary&gt;KP_5, &lt;primary&gt;KP_Begin"/>
+  <bind gaction="win.window-new"/>
+  <bind gaction="win.dialog-open('IconPreview')"/>
+  <bind gaction="win.dialog-toggle"                         keys="F12, r"/>
+  
+  <!-- Edit -->
+
+  <bind gaction="doc.undo"                                  keys="&lt;ctrl&gt;z, &lt;ctrl&gt;Z, &lt;ctrl&gt;&lt;shift&gt;y, &lt;ctrl&gt;&lt;shift&gt;Y" />
+  <bind gaction="doc.undo"                                  keys="d, D" />
+  <bind gaction="doc.redo"                                  keys="&lt;ctrl&gt;&lt;shift&gt;z, &lt;ctrl&gt;&lt;shift&gt;Z, &lt;ctrl&gt;y, &lt;ctrl&gt;Y" />
+  <bind gaction="doc.redo"                                  keys="f, F" />
+  <bind gaction="app.cut"                                   keys="&lt;ctrl&gt;x, &lt;ctrl&gt;X" />
+  <bind gaction="app.copy"                                  keys="&lt;ctrl&gt;c, &lt;ctrl&gt;C" />
+  <bind gaction="win.paste"                                 keys="&lt;ctrl&gt;v, &lt;ctrl&gt;V" />
+  <bind gaction="app.paste-style"                           keys="&lt;ctrl&gt;&lt;shift&gt;v, &lt;ctrl&gt;&lt;shift&gt;V" />
+  <bind gaction="win.paste-in-place"                        keys="&lt;ctrl&gt;&lt;alt&gt;v, &lt;ctrl&gt;&lt;alt&gt;V" />
+  <bind gaction="app.delete"                                keys="Delete, KP_Delete, BackSpace" />
+  <bind gaction="app.duplicate"                             keys="&lt;ctrl&gt;d, &lt;ctrl&gt;D" />
+  <bind gaction="app.clone"                                 keys="&lt;alt&gt;d, &lt;alt&gt;D" />
+  <bind gaction="app.clone-unlink"                          keys="&lt;alt&gt;&lt;shift&gt;d, &lt;alt&gt;&lt;shift&gt;D" />
+  <bind gaction="app.select-original"                       keys="&lt;shift&gt;d, &lt;shift&gt;D" />
+  <bind gaction="win.select-all"                            keys="&lt;ctrl&gt;a, &lt;ctrl&gt;A" />
+  <bind gaction="win.select-all-layers"                     keys="&lt;ctrl&gt;&lt;alt&gt;a, &lt;ctrl&gt;&lt;alt&gt;A" />
+  <bind gaction="win.select-invert"                         keys="exclam, &lt;shift&gt;exclam" />
+  <bind gaction="win.select-none" />
+  <bind gaction="app.paste-size" />
+  <bind gaction="app.paste-width" />
+  <bind gaction="app.paste-height" />
+  <bind gaction="app.paste-size-separately" />
+  <bind gaction="app.paste-width-separately" />
+  <bind gaction="app.paste-height-separately" />
+
+
+<!-- Objects/selection -->
+
+  <bind gaction="app.object-flip-horizontal"                keys="c, C" />
+  <bind gaction="app.object-flip-vertical"                  keys="v, V" />
+  <bind gaction="app.selection-top"                         keys="Home, KP_Home" />
+  <bind gaction="app.selection-bottom"                      keys="End, KP_End" />
+  <bind gaction="app.selection-raise"                       keys="Page_Up, KP_Page_Up" />
+  <bind gaction="app.selection-lower"                       keys="Page_Down, KP_Page_Down" />
+  <bind gaction="app.selection-top"                         keys="&lt;shift&gt;a, &lt;shift&gt;A" />
+  <bind gaction="app.selection-bottom"                      keys="&lt;shift&gt;s, &lt;shift&gt;S" />
+  <bind gaction="app.selection-raise"                       keys="a" />
+  <bind gaction="app.selection-lower"                       keys="s" />
+  <bind gaction="app.selection-group"                   keys="&lt;ctrl&gt;g, &lt;ctrl&gt;G, &lt;ctrl&gt;&lt;shift&gt;u, &lt;ctrl&gt;&lt;shift&gt;U" />
+  <bind gaction="app.selection-ungroup"                 keys="&lt;ctrl&gt;&lt;shift&gt;g, &lt;ctrl&gt;&lt;shift&gt;G, &lt;ctrl&gt;u, &lt;ctrl&gt;U" />
+  <bind gaction="app.selection-make-bitmap-copy"            keys="&lt;alt&gt;b, &lt;alt&gt;B" />
+  <bind gaction="win.dialog-open('Trace')"                  keys="&lt;alt&gt;&lt;shift&gt;b, &lt;alt&gt;&lt;shift&gt;B" />
+  <bind gaction="app.object-to-pattern"                     keys="&lt;alt&gt;i, &lt;alt&gt;I" />
+  <bind gaction="app.pattern-to-object"                     keys="&lt;alt&gt;&lt;shift&gt;i, &lt;alt&gt;&lt;shift&gt;I" />
+  <bind gaction="app.object-set-clip"                            keys="&lt;ctrl&gt;&lt;alt&gt;&lt;shift&gt;Q, &lt;ctrl&gt;&lt;alt&gt;&lt;shift&gt;q" />
+  <bind gaction="app.object-release-clip" />
+  <!-- FIXME: currently these bypass the verbs, so the verbs are not bound to ctrl+[] as they should be -->
+  <bind gaction="app.object-rotate-90-cw" />
+  <bind gaction="app.object-rotate-90-ccw" />
+
+
+<!-- Path -->
+
+  <bind gaction="app.object-to-path"                        keys="&lt;ctrl&gt;&lt;shift&gt;c, &lt;ctrl&gt;&lt;shift&gt;C" />
+  <bind gaction="app.object-stroke-to-path"                 keys="&lt;ctrl&gt;&lt;alt&gt;c, &lt;ctrl&gt;&lt;alt&gt;C" />
+  <bind gaction="app.path-combine"                   keys="&lt;ctrl&gt;k, &lt;ctrl&gt;K" />
+  <bind gaction="app.path-break-apart"               keys="&lt;ctrl&gt;&lt;shift&gt;k, &lt;ctrl&gt;&lt;shift&gt;K" />
+  <bind gaction="app.path-union"                     keys="&lt;ctrl&gt;plus, &lt;ctrl&gt;KP_Add, &lt;ctrl&gt;&lt;shift&gt;plus" />
+  <bind gaction="app.path-union"                     keys="q, Q" />
+  <bind gaction="app.path-intersection"              keys="&lt;ctrl&gt;asterisk, &lt;ctrl&gt;KP_Multiply, &lt;ctrl&gt;&lt;shift&gt;asterisk" />
+  <bind gaction="app.path-difference"                keys="&lt;ctrl&gt;minus, &lt;ctrl&gt;underscore, &lt;ctrl&gt;&lt;shift&gt;underscore, &lt;ctrl&gt;KP_Subtract, &lt;ctrl&gt;&lt;shift&gt;minus" />
+  <bind gaction="app.path-difference"                keys="w, W" />
+  <bind gaction="app.path-exclusion"                 keys="&lt;ctrl&gt;asciicircum, &lt;ctrl&gt;&lt;shift&gt;asciicircum" /> <!-- ^ -->
+  <bind gaction="app.path-cut"                       keys="&lt;ctrl&gt;&lt;alt&gt;slash, &lt;ctrl&gt;&lt;alt&gt;&lt;shift&gt;slash" />
+  <bind gaction="app.path-division"                  keys="&lt;ctrl&gt;slash, &lt;ctrl&gt;&lt;shift&gt;slash" />
+  <bind gaction="win.path-offset"                    keys="&lt;ctrl&gt;parenright, &lt;ctrl&gt;&lt;shift&gt;parenright, &lt;ctrl&gt;&lt;shift&gt;0" />
+  <bind gaction="win.path-inset"                     keys="&lt;ctrl&gt;parenleft, &lt;ctrl&gt;&lt;shift&gt;parenleft, &lt;ctrl&gt;&lt;shift&gt;9" />
+  <bind gaction="win.path-offset-dynamic"            keys="&lt;ctrl&gt;j, &lt;ctrl&gt;J" />
+  <bind gaction="win.path-offset-linked"             keys="&lt;ctrl&gt;&lt;alt&gt;j, &lt;ctrl&gt;&lt;alt&gt;J" />
+  <bind gaction="app.path-simplify"                  keys="&lt;ctrl&gt;l, &lt;ctrl&gt;L, e, E" />
+  <bind gaction="win.path-reverse" />
+
+<!-- Text -->
+
+  <bind gaction="app.text-flow-into-frame"                  keys="&lt;alt&gt;w, &lt;alt&gt;W" />
+  <bind gaction="app.text-unflow"                           keys="&lt;alt&gt;&lt;shift&gt;w, &lt;alt&gt;&lt;shift&gt;W" />
+  <bind gaction="app.text-put-on-path" />
+  <bind gaction="app.text-remove-from-path" />
+  <bind gaction="app.text-convert-to-regular" />
+  <bind gaction="app.text-unkern" />
+
+<!-- Layers -->
+
+  <bind gaction="win.layer-raise"                           keys="&lt;ctrl&gt;&lt;shift&gt;Page_Up, &lt;ctrl&gt;&lt;shift&gt;KP_Page_Up" />
+  <bind gaction="win.layer-lower"                           keys="&lt;ctrl&gt;&lt;shift&gt;Page_Down, &lt;ctrl&gt;&lt;shift&gt;KP_Page_Down" />
+  <bind gaction="win.layer-top"                             keys="&lt;ctrl&gt;&lt;shift&gt;Home, &lt;ctrl&gt;&lt;shift&gt;KP_Home" />
+  <bind gaction="win.layer-bottom"                          keys="&lt;ctrl&gt;&lt;shift&gt;End, &lt;ctrl&gt;&lt;shift&gt;KP_End" />
+  <bind gaction="win.selection-move-to-layer-above"         keys="&lt;shift&gt;Page_Up, &lt;shift&gt;KP_Page_Up" />
+  <bind gaction="win.selection-move-to-layer-below"         keys="&lt;shift&gt;Page_Down, &lt;shift&gt;KP_Page_Down" />
+  <bind gaction="win.dialog-open('Objects')"                keys="&lt;ctrl&gt;&lt;shift&gt;L" />
+  <bind gaction="win.layer-new" />
+  <bind gaction="win.layer-rename" />
+  <bind gaction="win.layer-previous" />
+  <bind gaction="win.layer-next" />
+  <bind gaction="win.layer-delete" />
+
+
+<!-- Dialogs -->
+
+  <bind gaction="win.dialog-open('FillStroke')"              keys="&lt;shift&gt;&lt;primary&gt;f"  />
+  <bind gaction="win.dialog-open('ObjectProperties')"        keys="&lt;shift&gt;&lt;primary&gt;o"  />
+  <bind gaction="win.dialog-open('Symbols')"                 keys="&lt;shift&gt;&lt;primary&gt;y"  />
+  <bind gaction="win.dialog-open('Selectors')"               keys="&lt;shift&gt;&lt;primary&gt;q"  />
+  <bind gaction="win.dialog-open('Transform')"               keys="&lt;shift&gt;&lt;primary&gt;m"  />
+  <bind gaction="win.dialog-open('AlignDistribute')"         keys="&lt;shift&gt;&lt;primary&gt;a"  />
+  <bind gaction="win.dialog-open('UndoHistory')"             keys="&lt;primary&gt;&lt;shift&gt;h"  />
+  <bind gaction="win.dialog-open('Find')"                    keys="&lt;primary&gt;f" />
+  <bind gaction="win.dialog-open('Clonetiler')"/>
+  <bind gaction="win.dialog-open('XMLEditor')"               keys="&lt;primary&gt;&lt;shift&gt;x" />
+  <bind gaction="win.dialog-open('Input')" />
+  <bind gaction="app.preferences"                            keys="&lt;primary&gt;&lt;shift&gt;p, &lt;Meta&gt;comma" />
+  <bind gaction="win.dialog-open('LivePathEffect')"          keys="&lt;primary&gt;ampersand, &lt;primary&gt;&lt;shift&gt;7" />
+  <bind gaction="win.dialog-open('Trace')"                   keys="&lt;alt&gt;&lt;shift&gt;b"/>
+  <bind gaction="win.dialog-open('DocumentProperties')"      keys="&lt;primary&gt;&lt;shift&gt;d" />
+  <bind gaction="win.dialog-open('Swatches')"                keys="&lt;primary&gt;&lt;shift&gt;w" />
+  <bind gaction="win.dialog-open('Messages')" />
+  <bind gaction="win.dialog-open('Objects')"                 keys="&lt;primary&gt;&lt;shift&gt;l" />
+  <bind gaction="win.dialog-open('Text')"                    keys="&lt;primary&gt;&lt;shift&gt;t"/>
+  <bind gaction="win.dialog-open('Spellcheck')"              keys="&lt;primary&gt;&lt;alt&gt;k"/>
+  <bind gaction="win.dialog-open('Memory')" />
+
+  <bind gaction="win.dialog-toggle"                          keys="F12"/>
+
+<!-- Help -->
+
+  <bind gaction="app.about" />
+  <!-- There are also verbs for tutorials, if you really need them -->
+
+<!-- Effects -->
+
+  <bind gaction="app.last-effect" />
+  <bind gaction="app.last-effect-pref" />
+  <!-- You can also assign keys to individual effects. The action should be set to he
+  effect id from the .inx file, for example "org.ekips.filter.addnodes" for the Add
+  Nodes effect. -->
+
+</keys>

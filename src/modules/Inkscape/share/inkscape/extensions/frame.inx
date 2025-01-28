@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Frame</name>
+    <id>frame</id>
+    <param name="type" type="optiongroup" appearance="combo" gui-text="Frame type">
+        <option value="rect">Rectangle</option>
+        <option value="ellipse">Ellipse</option>
+    </param>
+    <param name="corner_radius" type="int" min="0" max="1000" gui-text="Rectangle corner radius">0</param>
+    <param name="asgroup" type="bool" gui-text="Treat selection as group">false</param>
+    <param name="offset_absolute" type="float" min="-1000" max="1000" precision="1"
+        gui-text="Absolute offset (user units)"
+        gui-description="A positive value moves the frame to the outside of the bounding box of the selected object(s).">0</param>
+    <param name="offset_relative" type="float" min="-50" max="1000" precision="1"
+        gui-text="Relative offset (percentage)"
+        gui-description="A positive value moves the frame to the outside of the bounding box of the selected object(s).
+        Relative offset is usually preferable over absolute offset if the selection height and width differ significantly.">1</param>
+
+    <label appearance="header">Style of the frame:</label>
+
+    <param name="tab" type="notebook">
+        <page name="stroke" gui-text="Stroke">
+            <param name="stroke_color" type="color" gui-text="Stroke Color:">255</param>
+        </page>
+        <page name="fill" gui-text="Fill">
+            <param name="fill_color" type="color" gui-text="Fill Color:">0</param>
+        </page>
+    </param>
+    <param name="width" type="float" min="0" max="100" gui-text="Stroke width (user units)">2</param>
+    <param name="z_position" type="optiongroup" appearance="combo" gui-text="Stacking order">
+        <option value="bottom">Frame below object(s)</option>
+        <option value="split">Fill below, stroke above object(s)</option>
+        <option value="top">Frame on top of object(s)</option>
+    </param>
+
+    <param name="clip" type="bool" gui-text="Clip framed object(s) to frame">false</param>
+    <param name="group" type="bool" gui-text="Group frame and framed object(s)">false</param>
+
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+           <submenu name="Generate from Path"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">frame.py</command>
+    </script>
+</inkscape-extension>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Split Text</name>
+    <id>org.inkscape.text_split</id>
+    <param name="tab" type="notebook">
+        <page name="Options" gui-text="Options">
+            <param name="splittype" type="optiongroup" appearance="combo" gui-text="Split:">
+                <option context="split" value="line">Lines</option>
+                <option context="split"  value="word">Words</option>
+                <option context="split"  value="letter">Letters</option>
+            </param>
+            <param name="separation" type="float" gui-text="Threshold for separating manual kerns into words (multiples of font size)">1.0</param>
+            <param name="preserve" type="bool" gui-text="Preserve original text">true</param>
+        </page>
+        <page name="Help" gui-text="Help">
+            <label>This effect splits texts into different lines, words or letters.</label>
+            <label>Doing so leads the text to lose a lot of its semantics. Only use this effect if
+you know what you're doing!</label>
+            <label>This extension can work with standard text elements, both SVG2 and SVG1.2 flowed text elements and 
+manual kerns. It does not work for TextPath elements.</label>
+            <label>Note that the extension only uses a very rough estimate of the position of each word/letter. 
+            Text with different writing mode (e.g. tb-rl) is processed, but will be misaligned.
+            Automatic line breaks in legacy flowtext (flowroot elements) are ignored.</label>
+        </page>
+    </param>
+    <effect>
+        <object-type>text</object-type>
+        <effects-menu>
+            <submenu name="Text"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">text_split.py</command>
+    </script>
+</inkscape-extension>

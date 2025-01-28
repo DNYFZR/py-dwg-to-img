@@ -1,0 +1,59 @@
+/* default highlight colors; variant for light backgrounds
+ * 
+ * gray, blue, yellow, red, green, orange, cyan, purple
+ */
+
+.bright .highlight-color-1 {
+    color: #babdb6;
+}
+.bright .highlight-color-2 {
+    color: #729fcf;
+}
+.bright .highlight-color-3 {
+    color: #edd400;
+}
+.bright .highlight-color-4 {
+    color: #eb486a;
+}
+.bright .highlight-color-5 {
+    color: #73b92f;
+}
+.bright .highlight-color-6 {
+    color: #fcaf3e;
+}
+.bright .highlight-color-7 {
+    color: #54d5ba;
+}
+.bright .highlight-color-8 {
+    color: #ad7fa8;
+}
+
+/* default highlight colors; variant for dark backgrounds
+ * 
+ * gray, blue, yellow, red, green, orange, cyan, purple
+ */
+
+.dark .highlight-color-1 {
+    color: #b1b5ad;
+}
+.dark .highlight-color-2 {
+    color: #3b80ee;
+}
+.dark .highlight-color-3 {
+    color: #c3e33e;
+}
+.dark .highlight-color-4 {
+    color: #f3215a;
+}
+.dark .highlight-color-5 {
+    color: #36a949;
+}
+.dark .highlight-color-6 {
+    color: #f37f35;
+}
+.dark .highlight-color-7 {
+    color: #3be3c2;
+}
+.dark .highlight-color-8 {
+    color: #b85ac9;
+}

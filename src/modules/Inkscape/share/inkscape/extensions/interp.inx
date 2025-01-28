@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Interpolate Between Paths</name>
+    <id>effect.interpolate</id>
+    <param name="exponent" type="float" min="0" max="100" gui-text="Exponent:">1.00</param>
+    <param name="steps" type="int" min="1" max="1000" gui-text="Interpolation steps:">5</param>
+    <param name="method" gui-text="Interpolation method:" type="optiongroup" appearance="radio" gui-description="The first option rediscretizes both paths before the interpolation with the other path's node positions. The second option removes extra nodes of the longer path.">
+                <option value="equalSubsegments" >Split paths into segments of equal lengths</option>
+                <option value="firstNodes">Discard extra nodes of longer path</option>
+            </param>
+    <param name="dup" type="bool" gui-text="Duplicate endpaths">true</param>
+    <param name="style" type="bool" gui-text="Interpolate style">false</param>
+    <param name="zsort" type="bool" gui-text="Use Z-order" gui-description="Workaround for reversed selection order in Live Preview cycles">false</param>
+    <effect>
+        <object-type>path</object-type>
+                <effects-menu>
+                    <submenu name="Generate from Path"/>
+                </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">interp.py</command>
+    </script>
+</inkscape-extension>

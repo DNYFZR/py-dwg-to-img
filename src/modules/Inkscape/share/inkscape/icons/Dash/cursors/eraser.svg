@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="32" height="32"
+     inkscape:hotspot_x="4"
+     inkscape:hotspot_y="4"
+     style="fill:gray;stroke:black">
+
+<style>@import './cursors.css';</style>
+
+  <!-- Pointer. Paste svg code here -->
+  <g id="cross" style="">
+     <path d="M9 4.5H4.5M4.5 4.5V9M4.5 4.5V0M4.5 4.5H0" stroke="white" stroke-width="3"/>
+     <path d="M9 4.5H5.5M4.5 9V5.5M4.5 0V3.5M0 4.5H3.5" stroke="black"/>
+  </g>
+
+<g id="cursor" class="drop-shadow" style="">
+     <path d="M26.0029 15.7958L20.71 10.5029C20.3195 10.1124 19.6863 10.1124 19.2958 10.5029L10.0029 19.7958C9.61241 20.1863 9.6124 20.8195 10.0029 21.21L14.5029 25.71C14.6905 25.8976 14.9448 26.0029 15.21 26.0029H16.7958C17.061 26.0029 17.3154 25.8976 17.5029 25.71L26.0029 17.21C26.3935 16.8195 26.3935 16.1863 26.0029 15.7958Z" fill="white" stroke="white"/>
+     <path d="M15.5029 25.0029H24.5029" stroke="white" stroke-width="3" stroke-linecap="round"/>
+     <path d="M20.0029 11.21L25.2958 16.5029L16.7958 25.0029H15.21L10.71 20.5029L20.0029 11.21Z" fill="white" stroke="black"/>
+     <path d="M15.5029 25.0029H24.5029" stroke="black" stroke-linecap="round"/>
+     <path d="M14.21 17.21L19.21 22.21" stroke="black"/>
+     <path d="M10.96 20.46L14.21 17.21L19.21 22.21L16.71 24.71H15.21L10.96 20.46Z" fill="black" stroke="none" fill-opacity="0.3"/>
+</g>
+
+</svg>

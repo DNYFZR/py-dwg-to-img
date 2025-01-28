@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="bspline" clip-path="url(#clip0_241_9652)">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M0 0.5C0 0.223858 0.223858 0 0.5 0H1.5C1.77614 0 2 0.223858 2 0.5V1H11.2112C10.2914 1.24832 9.40784 1.58486 8.57012 2H2.00195V8.56618C1.58701 9.40287 1.25047 10.2853 1.00195 11.204V2H0.5C0.223858 2 0 1.77614 0 1.5V0.5Z" fill="#9E9E9E"/>
+<path class="warning" fill-rule="evenodd" clip-rule="evenodd" d="M14.9999 2.5999C8.15157 2.5999 2.5999 8.15157 2.5999 14.9999C2.5999 15.3313 2.33127 15.5999 1.9999 15.5999C1.66853 15.5999 1.3999 15.3313 1.3999 14.9999C1.3999 7.48883 7.48883 1.3999 14.9999 1.3999C15.3313 1.3999 15.5999 1.66853 15.5999 1.9999C15.5999 2.33127 15.3313 2.5999 14.9999 2.5999Z" fill="black" fill-opacity="0.9"/>
+</g>
+<defs>
+<clipPath id="clip0_241_9652">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkTextBuffer" id="stacktrace"/>
+  <object class="GtkMessageDialog" id="crash_dialog">
+    <property name="resizable">True</property>
+    <property name="message-type">error</property>
+    <property name="buttons">ok</property>
+    <property name="text" translatable="yes">Inkscape has crashed and will now close.</property>
+    <property name="secondary-text" translatable="yes">If you can reproduce this crash, please &lt;a href="https://inkscape.org/report"&gt;file a bug&lt;/a&gt; and include the backtrace from the area below.</property>
+    <property name="secondary-use-markup">True</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="margin-start">10</property>
+        <property name="margin-end">10</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkBox">
+            <property name="homogeneous">True</property>
+            <property name="halign">end</property>
+          </object>
+          <packing>
+            <property name="fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="message">
+            <property name="visible">True</property>
+            <property name="margin-start">4</property>
+            <property name="margin-end">4</property>
+            <property name="margin-top">2</property>
+            <property name="margin-bottom">8</property>
+            <property name="label">(this text will be replaced) autosave file has been created</property>
+            <property name="use-markup">True</property>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="stacktrace_area">
+            <property name="name">stacktrace_area</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkTextView">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="vexpand">True</property>
+                <property name="editable">False</property>
+                <property name="buffer">stacktrace</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

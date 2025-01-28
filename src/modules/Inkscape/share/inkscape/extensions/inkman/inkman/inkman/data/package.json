@@ -1,0 +1,20 @@
+{
+   "author" : "doctormo",
+   "dates" : {
+      "created" : "2021-04-22T15:08:20",
+      "edited" : "2021-04-22T15:08:20"
+   },
+   "files" : [],
+   "icon" : "inkman/data/pixmaps/icon.svg",
+   "id" : "org.inkscape.extension.inkman",
+   "license" : "GPLv3",
+   "links" : {
+       "file": "https://media.inkscape.org/static/extensions-manager-fallback.zip"
+   },
+   "name" : "Inkscape Extensions Manager",
+   "summary" : "Manage extensions from inside another extension",
+   "tags" : [
+      "infrastructure"
+   ],
+   "verified" : true
+}

@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="object-locked">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5ZM5 7V5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5V7C11.5523 7 12 7.44772 12 8V13C12 13.5523 11.5523 14 11 14H5C4.44772 14 4 13.5523 4 13V8C4 7.44772 4.44772 7 5 7ZM11 8H10H6H5V13H11V8Z" fill="black"/>
+<rect id="rectangle" opacity="0.2" x="5" y="8" width="6" height="5" fill="black"/>
+</g>
+</svg>

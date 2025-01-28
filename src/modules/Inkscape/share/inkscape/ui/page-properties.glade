@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkAdjustment" id="adj-page-height">
+    <property name="lower">0.001</property>
+    <property name="upper">10000000</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adj-page-width">
+    <property name="lower">0.001</property>
+    <property name="upper">10000000</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adj-scale-x">
+    <property name="lower">9.9999999999999995e-07</property>
+    <property name="upper">1000000</property>
+    <property name="value">1</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="adj-viewbox-height">
+    <property name="lower">0.001</property>
+    <property name="upper">10000000</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adj-viewbox-width">
+    <property name="lower">0.001</property>
+    <property name="upper">10000000</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adj-viewbox-x">
+    <property name="lower">-10000000</property>
+    <property name="upper">10000000</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adj-viewbox-y">
+    <property name="lower">-10000000</property>
+    <property name="upper">10000000</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkPopover" id="templates-popover">
+    <property name="position">bottom</property>
+  </object>
+  <!-- n-columns=3 n-rows=2 -->
+  <object class="GtkGrid" id="main-grid">
+    <property name="visible">True</property>
+    <property name="no-show-all">True</property>
+    <property name="halign">start</property>
+    <property name="valign">start</property>
+    <!-- n-columns=4 n-rows=16 -->
+    <child>
+      <object class="GtkGrid" id="left-grid">
+        <property name="visible">True</property>
+        <property name="halign">start</property>
+        <property name="valign">start</property>
+        <property name="row-spacing">4</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Front page</property>
+            <style>
+              <class name="heading"/>
+              <class name="top"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Width:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Height:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="page-width">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Width of front page</property>
+            <property name="width-chars">9</property>
+            <property name="adjustment">adj-page-width</property>
+            <property name="digits">3</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">2</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="page-height">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Height of front page</property>
+            <property name="width-chars">9</property>
+            <property name="adjustment">adj-page-height</property>
+            <property name="digits">3</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">3</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Resize to content:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">6</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="margin-top">3</property>
+            <property name="margin-bottom">3</property>
+            <property name="hexpand">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">start</property>
+                <property name="valign">center</property>
+                <property name="label" translatable="yes">Orientation:</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkRadioButton" id="page-landscape">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="margin-end">5</property>
+                <property name="active">True</property>
+                <property name="draw-indicator">True</property>
+                <property name="group">page-portrait</property>
+                <child>
+                  <object class="GtkImage" id="image2">
+                    <property name="visible">True</property>
+                    <property name="pixel-size">20</property>
+                    <property name="icon-name">page-landscape-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="pack-type">end</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkRadioButton" id="page-portrait">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="margin-end">5</property>
+                <property name="active">True</property>
+                <property name="draw-indicator">True</property>
+                <child>
+                  <object class="GtkImage" id="image1">
+                    <property name="visible">True</property>
+                    <property name="pixel-size">20</property>
+                    <property name="icon-name">page-portrait-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="pack-type">end</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">5</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="page-resize">
+            <property name="width-request">50</property>
+            <property name="visible">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Fit the page to the current selection or the drawing if there's no selection.</property>
+            <property name="halign">end</property>
+            <child>
+              <object class="GtkImage" id="image-resize">
+                <property name="visible">True</property>
+                <property name="icon-name">pages-resize-symbolic</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">2</property>
+            <property name="top-attach">6</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="link-width-height">
+            <property name="visible">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="halign">start</property>
+            <property name="margin-start">2</property>
+            <property name="margin-top">5</property>
+            <property name="margin-bottom">5</property>
+            <property name="relief">none</property>
+            <style>
+              <class name="link-edit-button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">3</property>
+            <property name="top-attach">2</property>
+            <property name="height">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="scale-x-label">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Scale:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">7</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="scale-x">
+            <property name="visible">True</property>
+            <property name="valign">center</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Document scale establishes size of user units.
+SVG element positions are expressed in user units.</property>
+            <property name="width-chars">9</property>
+            <property name="adjustment">adj-scale-x</property>
+            <property name="digits">6</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">7</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">X:</property>
+            <style>
+              <class name="viewbox"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">11</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Y:</property>
+            <style>
+              <class name="viewbox"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">12</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Width:</property>
+            <style>
+              <class name="viewbox"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">13</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Height:</property>
+            <style>
+              <class name="viewbox"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">14</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="viewbox-x">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">9</property>
+            <property name="adjustment">adj-viewbox-x</property>
+            <property name="digits">3</property>
+            <style>
+              <class name="viewbox"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">11</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="viewbox-y">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">9</property>
+            <property name="adjustment">adj-viewbox-y</property>
+            <property name="digits">3</property>
+            <style>
+              <class name="viewbox"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">12</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="viewbox-width">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">9</property>
+            <property name="adjustment">adj-viewbox-width</property>
+            <property name="digits">3</property>
+            <style>
+              <class name="viewbox"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">13</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="viewbox-height">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">9</property>
+            <property name="adjustment">adj-viewbox-height</property>
+            <property name="digits">3</property>
+            <style>
+              <class name="viewbox"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">14</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="margin-end">2</property>
+            <property name="label" translatable="yes">Format:</property>
+            <property name="tooltip-text" translatable="yes">Predefined paper sizes to choose from</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkMenuButton" id="page-menu-btn">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="margin-end">2</property>
+            <property name="hexpand">True</property>
+            <property name="direction">none</property>
+            <property name="popover">templates-popover</property>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="orientation">horizontal</property>
+                <property name="spacing">2</property>
+                <child>
+                  <object class="GtkLabel" id="page-template-name">
+                    <property name="visible">True</property>
+                    <property name="xalign">0.0</property>
+                    <property name="hexpand">True</property>
+                    <property name="ellipsize">end</property>
+                    <property name="single-line-mode">True</property>
+                    <property name="width-chars">10</property>
+                    <property name="max-width-chars">10</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="icon-name">pan-down-symbolic</property>
+                    <style>
+                      <class name="arrow"/>
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="page-units">
+            <property name="visible">True</property>
+            <property name="tooltip-text" translatable="yes">Document's units used to specify document size only</property>
+          </object>
+          <packing>
+            <property name="left-attach">2</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkExpander" id="viewbox-expander">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="margin-top">6</property>
+            <property name="margin-bottom">4</property>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="tooltip-text" translatable="yes">Advanced viewbox scaling options</property>
+                <property name="label" translatable="yes">Viewbox</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">10</property>
+            <property name="width">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="linked-scale-img">
+            <property name="visible">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="margin-start">2</property>
+            <property name="icon-name">image-missing</property>
+            <style>
+              <class name="viewbox"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">3</property>
+            <property name="top-attach">13</property>
+            <property name="height">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="nonuniform-scale">
+                <property name="name">non-uniform-scale</property>
+                <property name="visible">True</property>
+                <property name="halign">start</property>
+                <property name="label" translatable="yes">Non-uniform scale!</property>
+                <attributes>
+                  <attribute name="style" value="italic"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">9</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="user-units">
+                <property name="visible">True</property>
+                <property name="label">xx</property>
+                <style>
+                  <class name="small-font"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="margin-start">4</property>
+                <property name="label" translatable="yes">per user unit</property>
+                <style>
+                  <class name="small-font"/>
+                </style>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">8</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="unsupported">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Unsupported percentage size!</property>
+            <attributes>
+              <attribute name="style" value="italic"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">4</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="link-scale-content">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Link the scale of the viewbox to the scale of the content in the document.</property>
+            <property name="halign">start</property>
+            <property name="margin-left">2</property>
+            <property name="margin-start">2</property>
+            <property name="margin-top">5</property>
+            <property name="margin-bottom">5</property>
+            <property name="relief">none</property>
+            <style>
+              <class name="link-edit-button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">3</property>
+            <property name="top-attach">7</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <!-- n-columns=5 n-rows=5 -->
+    <child>
+      <object class="GtkGrid">
+        <property name="visible">True</property>
+        <property name="halign">start</property>
+        <property name="valign">start</property>
+        <property name="row-spacing">4</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Display</property>
+            <style>
+              <class name="heading"/>
+              <class name="top"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+            <property name="width">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Display units:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">1</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="display-units">
+            <property name="visible">True</property>
+            <property name="tooltip-text" translatable="yes">Units used throughout the user interface</property>
+            <property name="halign">end</property>
+          </object>
+          <packing>
+            <property name="left-attach">3</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="preview-box">
+            <property name="height-request">132</property>
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">2</property>
+            <property name="width">4</property>
+          </packing>
+        </child>
+        <!-- n-columns=3 n-rows=2 -->
+        <child>
+          <object class="GtkGrid">
+            <property name="visible">True</property>
+            <property name="halign">center</property>
+            <property name="margin-bottom">6</property>
+            <property name="row-spacing">2</property>
+            <property name="column-spacing">4</property>
+            <property name="column-homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="background-color">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-text" translatable="yes">Page background color used during editing and exporting</property>
+                <property name="halign">center</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="border-color">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-text" translatable="yes">Page border and drop shadow color</property>
+                <property name="halign">center</property>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="desk-color">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-text" translatable="yes">Desk background color surrounding pages</property>
+                <property name="halign">center</property>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">center</property>
+                <property name="label" translatable="yes">Border</property>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">center</property>
+                <property name="label" translatable="yes">Page</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">center</property>
+                <property name="label" translatable="yes">Desk</property>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">3</property>
+            <property name="width">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkCheckButton" id="checkerboard">
+                <property name="label" translatable="yes">Checkerboard</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">If set, use a colored checkerboard for the desk background.</property>
+                <property name="halign">start</property>
+                <property name="valign">center</property>
+                <property name="draw-indicator">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="border">
+                <property name="label" translatable="yes">Border</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">If set, a rectangular page border is shown.</property>
+                <property name="halign">start</property>
+                <property name="valign">center</property>
+                <property name="draw-indicator">True</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="border-top">
+                <property name="label" translatable="yes">Always on top</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">If set, the page border is always on top of the drawing.</property>
+                <property name="halign">start</property>
+                <property name="valign">center</property>
+                <property name="draw-indicator">True</property>
+                <style>
+                  <class name="indent"/>
+                </style>
+              </object>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="shadow">
+                <property name="label" translatable="yes">Show shadow</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">If set, the page border shows a shadow on its right and lower side.</property>
+                <property name="halign">start</property>
+                <property name="valign">center</property>
+                <property name="draw-indicator">True</property>
+                <style>
+                  <class name="indent"/>
+                </style>
+              </object>
+              <packing>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="page-label-style">
+                <property name="label" translatable="yes">Show big page labels</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">Show the big page labels below the page border.</property>
+                <property name="halign">start</property>
+                <property name="draw-indicator">True</property>
+              </object>
+              <packing>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">start</property>
+                <property name="label" translatable="yes">Render</property>
+                <style>
+                  <class name="heading"/>
+                </style>
+              </object>
+              <packing>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="clip-to-page">
+                <property name="label" translatable="yes">Clip to page</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">Anything that is not on a page will not be displayed</property>
+                <property name="halign">start</property>
+                <property name="draw-indicator">True</property>
+              </object>
+              <packing>
+                <property name="position">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="use-antialias">
+                <property name="label" translatable="yes">Use antialiasing</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">If unset, no antialiasing will be done on the drawing.</property>
+                <property name="halign">start</property>
+                <property name="valign">center</property>
+                <property name="draw-indicator">True</property>
+              </object>
+              <packing>
+                <property name="position">6</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">4</property>
+            <property name="width">4</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="left-attach">2</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="label"/>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+  </object>
+</interface>

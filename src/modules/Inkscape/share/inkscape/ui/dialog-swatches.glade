@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkBox" id="main">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="no-show-all">True</property>
+    <property name="orientation">vertical</property>
+    <child>
+      <object class="GtkBox" id="header">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-start">4</property>
+        <property name="margin-end">4</property>
+        <property name="margin-top">4</property>
+        <property name="margin-bottom">4</property>
+        <property name="spacing">4</property>
+        <child>
+          <object class="GtkMenuButton" id="selector">
+            <property name="visible">True</property>
+            <property name="hexpand">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">True</property>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="orientation">horizontal</property>
+                <property name="spacing">2</property>
+                <child>
+                  <object class="GtkLabel" id="selector-label">
+                    <property name="visible">True</property>
+                    <property name="hexpand">True</property>
+                    <property name="xalign">0.0</property>
+                    <property name="ellipsize">middle</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="icon-name">pan-down-symbolic</property>
+                    <style>
+                      <class name="arrow" />
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSearchEntry" id="search">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="tooltip-text" translatable="yes">Search colors by their name</property>
+            <property name="width-chars">15</property>
+            <property name="primary-icon-name">edit-find-symbolic</property>
+            <property name="primary-icon-activatable">False</property>
+            <property name="primary-icon-sensitive">False</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="can-focus">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="content">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-start">4</property>
+        <property name="margin-end">4</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <child>
+          <placeholder/>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="footer">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-start">4</property>
+        <property name="margin-end">4</property>
+        <property name="margin-top">2</property>
+        <property name="margin-bottom">2</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkButton" id="open">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Load palette of colors or swatches</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage" id="image-open">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">document-open</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="new">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">New swatch</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage" id="image-new">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">list-add</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="edit">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Edit swatch</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage" id="image-edit">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">edit</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="delete">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Delete swatch</property>
+            <property name="margin-start">12</property>
+            <property name="margin-end">12</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage" id="image-del">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">edit-delete</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="list">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="halign">end</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Show colors with names</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">grid</property>
+            <child>
+              <object class="GtkImage" id="image-list">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">glyph-list</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="grid">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Show colors in a grid</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <child>
+              <object class="GtkImage" id="image-grid">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">glyph-grid</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuButton" id="settings">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Settings</property>
+            <property name="margin-start">3</property>
+            <property name="relief">none</property>
+            <property name="direction">up</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">gear</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

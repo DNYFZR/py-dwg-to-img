@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="750"
+   height="625"
+   viewBox="0 0 750 625"
+   version="1.1"
+   sodipodi:docname="about_screen.svg"
+   id="svg685"
+   inkscape:version="1.3-dev (7393e8a172, 2022-04-28, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs687" />
+  <sodipodi:namedview
+     pagecolor="#b1b1b1"
+     bordercolor="#2a2a2a"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:showpageshadow="false"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="750px"
+     height="1140px"
+     borderlayer="true"
+     inkscape:zoom="0.35014432"
+     inkscape:cx="1099.5466"
+     inkscape:cy="44.267462"
+     inkscape:current-layer="layer1"
+     id="namedview670"
+     inkscape:blackoutopacity="0.0"
+     inkscape:deskcolor="#494949"
+     inkscape:window-maximized="1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="750"
+       height="625"
+       id="page1792"
+       inkscape:label="About Screen" />
+    <inkscape:page
+       x="800.33966"
+       y="-1.2340232"
+       width="960"
+       height="360"
+       id="page1794"
+       inkscape:label="Website Download Splash" />
+    <inkscape:page
+       x="931.97632"
+       y="401.65384"
+       width="700"
+       height="220"
+       id="page4330"
+       inkscape:label="Welcome Screen" />
+  </sodipodi:namedview>
+  <g
+     inkscape:label="Background"
+     inkscape:groupmode="layer"
+     id="bg"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#ffffff;stroke-width:1.109;stop-color:#000000"
+       id="rect194"
+       width="750"
+       height="625"
+       x="0"
+       y="0" />
+    <path
+       id="rect194-3"
+       style="fill:#ffffff;stroke-width:1.109;stop-color:#000000"
+       d="M 800.33966,-1.2340232 V 358.76598 h 54.57812 v -71.65039 h 850.84372 v 71.65039 h 54.5781 V -1.2340232 Z" />
+    <rect
+       style="fill:#ffffff;stroke-width:1.109;stop-color:#000000"
+       id="rect1266"
+       width="700"
+       height="220"
+       x="931.97632"
+       y="401.65381" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;line-height:1.25;font-family:Aclonica;-inkscape-font-specification:Aclonica;text-align:start;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+       x="1006.1695"
+       y="-39.8265"
+       id="text7093-6-5-5"><tspan
+         sodipodi:role="line"
+         id="tspan7091-7-3-6"
+         style="font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start"
+         x="1006.1695"
+         y="-39.8265">Optional formats to consider when making your graphic</tspan></text>
+  </g>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1" />
+  <inkscape:templateinfo>
+    <inkscape:name>About Screen</inkscape:name>
+    <inkscape:author>Martin Owens</inkscape:author>
+    <inkscape:shortdesc>A set of pages for the about screen contest entry</inkscape:shortdesc>
+    <inkscape:date>2021-12-30</inkscape:date>
+    <inkscape:icon>about</inkscape:icon>
+  </inkscape:templateinfo>
+</svg>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 48 47.999999"
+   version="1.1"
+   sodipodi:docname="reactome.svg"
+   width="48"
+   height="48"
+   inkscape:version="1.0.2 (1.0.2+r75+1)">
+  <metadata
+     id="metadata47">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Reactome_Imagotype_Positive</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="0"
+     inkscape:window-width="1534"
+     inkscape:window-height="843"
+     id="namedview45"
+     showgrid="false"
+     inkscape:zoom="2.1826528"
+     inkscape:cx="124.13182"
+     inkscape:cy="104.77682"
+     inkscape:window-x="66"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#2f9ec2;}.cls-2{fill:#d1eaf2;}.cls-3{fill:#9bd1e2;}.cls-4{fill:#80c4da;}.cls-5{fill:#65b7d2;}.cls-6{fill:#4aabca;}</style>
+  </defs>
+  <title
+     id="title6">Reactome_Imagotype_Positive</title>
+  <g
+     id="g884"
+     transform="translate(-9.6921658,-91.760459)">
+    <polygon
+       class="cls-2"
+       points="6.697,15.467 20.092,7.733 20.092,0 0,11.6 0,34.801 6.697,30.934 "
+       id="polygon24"
+       transform="translate(14.104496,92.732857)" />
+    <polygon
+       class="cls-3"
+       points="6.697,38.667 13.395,34.801 13.395,27.067 6.697,30.934 "
+       id="polygon26"
+       transform="translate(14.104496,92.732857)" />
+    <polygon
+       class="cls-3"
+       points="26.79,3.867 20.092,7.733 20.092,15.467 26.79,11.6 "
+       id="polygon28"
+       transform="translate(14.104496,92.732857)" />
+    <polygon
+       class="cls-4"
+       points="13.395,27.067 13.395,19.334 20.092,15.467 20.092,7.733 6.697,15.467 6.697,30.934 "
+       id="polygon30"
+       transform="translate(14.104496,92.732857)" />
+    <polygon
+       class="cls-5"
+       points="26.79,27.067 26.79,34.801 33.487,30.934 33.487,23.2 "
+       id="polygon32"
+       transform="translate(14.104496,92.732857)" />
+    <polygon
+       class="cls-5"
+       points="33.487,7.733 26.79,11.6 26.79,19.334 33.487,15.467 "
+       id="polygon34"
+       transform="translate(14.104496,92.732857)" />
+    <polygon
+       class="cls-5"
+       points="13.395,42.534 20.092,38.667 20.092,30.934 13.395,34.801 "
+       id="polygon36"
+       transform="translate(14.104496,92.732857)" />
+    <polygon
+       class="cls-6"
+       points="13.395,27.067 13.395,34.801 20.092,30.934 20.092,23.2 26.79,19.334 26.79,11.6 20.092,15.467 20.092,23.2 "
+       id="polygon38"
+       transform="translate(14.104496,92.732857)" />
+    <polygon
+       class="cls-1"
+       points="13.395,27.067 20.092,23.2 20.092,15.467 13.395,19.334 "
+       id="polygon40"
+       transform="translate(14.104496,92.732857)" />
+    <polygon
+       class="cls-1"
+       points="20.092,46.401 26.79,42.534 26.79,34.801 26.79,27.067 26.79,27.067 26.79,27.067 33.487,23.2 40.184,19.334 40.184,11.6 33.487,15.467 26.79,19.334 20.092,23.2 20.092,30.934 20.092,38.667 "
+       id="polygon42"
+       transform="translate(14.104496,92.732857)" />
+  </g>
+</svg>

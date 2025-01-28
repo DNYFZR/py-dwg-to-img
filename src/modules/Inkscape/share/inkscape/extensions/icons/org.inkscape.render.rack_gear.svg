@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
+   width="70"
+   height="60"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="org.inkscape.render.rack-gear.svg"
+   inkscape:version="1.4-dev (de72ba3c18, 2023-06-27, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="6.5739327"
+     inkscape:cx="76.666437"
+     inkscape:cy="35.747248"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#3f84a6"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="org.inkscape.render.rack-gear"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       inkscape:label="Rendered Gear Rack"
+       transform="matrix(0.65815731,0,0,0.62896343,4.48062,26.48879)"
+       id="g3431"
+       style="stroke-width:1.55426">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.55426"
+         d="M 0,0 3.64,10 H 10 L 13.64,0 H 20 l 3.64,10 H 30 L 33.64,0 H 40 l 3.64,10 H 50 L 53.64,0 H 60 l 3.64,10 H 70 L 73.64,0 H 80 l 3.64,10 H 90 L 93.64,0"
+         id="path3431" />
+    </g>
+  </g>
+</svg>

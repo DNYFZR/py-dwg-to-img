@@ -1,0 +1,18 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="edit-select-same-stroke-style" clip-path="url(#clip0_241_9684)">
+<g id=".accessory / selection box B">
+<rect id="rectangle" width="2" height="2" rx="0.5" fill="black"/>
+<rect id="rectangle_2" x="14" width="2" height="2" rx="0.5" fill="black"/>
+<rect id="rectangle_3" x="14" y="14" width="2" height="2" rx="0.5" fill="black"/>
+<rect id="rectangle_4" y="14" width="2" height="2" rx="0.5" fill="black"/>
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M6.125 0C5.84886 0 5.625 0.223858 5.625 0.5C5.625 0.776142 5.84886 1 6.125 1H9.875C10.1511 1 10.375 0.776142 10.375 0.5C10.375 0.223858 10.1511 0 9.875 0H6.125ZM1 6.125C1 5.84886 0.776142 5.625 0.5 5.625C0.223858 5.625 0 5.84886 0 6.125V9.875C0 10.1511 0.223858 10.375 0.5 10.375C0.776142 10.375 1 10.1511 1 9.875V6.125ZM16 6.125C16 5.84886 15.7761 5.625 15.5 5.625C15.2239 5.625 15 5.84886 15 6.125V9.875C15 10.1511 15.2239 10.375 15.5 10.375C15.7761 10.375 16 10.1511 16 9.875V6.125ZM6.125 15C5.84886 15 5.625 15.2239 5.625 15.5C5.625 15.7761 5.84886 16 6.125 16H9.875C10.1511 16 10.375 15.7761 10.375 15.5C10.375 15.2239 10.1511 15 9.875 15H6.125Z" fill="black"/>
+</g>
+<path id="neutral" opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M4 4H12V12H4V4ZM6 6V10H10V6H6Z" fill="black"/>
+<path id="neutral_2" fill-rule="evenodd" clip-rule="evenodd" d="M6 4H4V6H6V4ZM6 10H4V12H6V10ZM10 4H12V6H10V4ZM12 10H10V12H12V10Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_241_9684">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

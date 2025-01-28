@@ -1,0 +1,5 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="dashed-stroke">
+<path class="warning" fill-rule="evenodd" clip-rule="evenodd" d="M4 1H2.5H1V2.5V4H2.5V2.5H4V1ZM1 6H2.5V10H1V6ZM10 2.5V1H6V2.5L10 2.5ZM13.5 6H15V10H13.5V6ZM10 15V13.5H6V15H10ZM12 15V13.5H13.5V12H15V13.5V15H13.5H12ZM15 2.5V4L13.5 4V2.5L12 2.5V1H13.5H15V2.5ZM1 13.5V12H2.5L2.5 13.5H4L4 15H2.5H1V13.5Z" fill="#505050"/>
+</g>
+</svg>

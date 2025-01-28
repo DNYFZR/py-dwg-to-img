@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkAdjustment" id="adjustment-aspect">
+    <property name="lower">-1</property>
+    <property name="upper">1</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">0.20</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment-border">
+    <property name="upper">8</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment-rows">
+    <property name="lower">1</property>
+    <property name="upper">5</property>
+    <property name="value">1</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment-size">
+    <property name="lower">4</property>
+    <property name="upper">32</property>
+    <property name="value">8</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">2</property>
+  </object>
+  <object class="GtkBox" id="palette-box">
+    <property name="visible">True</property>
+    <child>
+      <object class="GtkFlowBox" id="pinned">
+        <property name="visible">True</property>
+        <property name="halign">start</property>
+        <property name="valign">end</property>
+        <property name="margin-top">1</property>
+        <property name="margin-bottom">1</property>
+        <property name="homogeneous">True</property>
+        <property name="column-spacing">1</property>
+        <property name="row-spacing">1</property>
+        <property name="min-children-per-line">1</property>
+        <property name="selection-mode">none</property>
+        <style>
+          <class name="color-palette"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkScrolledWindow" id="scroll-wnd">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="valign">end</property>
+        <property name="margin-top">1</property>
+        <property name="margin-bottom">1</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <property name="hscrollbar-policy">external</property>
+        <property name="vscrollbar-policy">never</property>
+        <property name="min-content-width">1</property>
+        <property name="min-content-height">1</property>
+        <property name="overlay-scrolling">False</property>
+        <child>
+          <object class="GtkViewport" id="view-port">
+            <property name="visible">True</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkFlowBox" id="flow-box">
+                <property name="visible">True</property>
+                <property name="halign">start</property>
+                <property name="valign">end</property>
+                <property name="homogeneous">True</property>
+                <property name="column-spacing">1</property>
+                <property name="row-spacing">1</property>
+                <property name="min-children-per-line">6</property>
+                <property name="max-children-per-line">6</property>
+                <property name="selection-mode">none</property>
+                <style>
+                  <class name="color-palette"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="btn-left">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="no-show-all">True</property>
+        <property name="margin-start">1</property>
+        <property name="margin-end">1</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="small"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image5">
+            <property name="visible">True</property>
+            <property name="icon-name">go-previous</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="btn-right">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="no-show-all">True</property>
+        <property name="margin-start">1</property>
+        <property name="margin-end">1</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="small"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image4">
+            <property name="visible">True</property>
+            <property name="icon-name">go-next</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkFlowBox" id="scroll-buttons">
+        <property name="visible">True</property>
+        <property name="no-show-all">True</property>
+        <property name="orientation">vertical</property>
+        <property name="column-spacing">1</property>
+        <property name="max-children-per-line">2</property>
+        <property name="selection-mode">none</property>
+        <child>
+          <object class="GtkFlowBoxChild">
+            <property name="width-request">10</property>
+            <property name="height-request">10</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <child>
+              <object class="GtkButton" id="btn-up">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="focus-on-click">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-start">1</property>
+                <property name="margin-end">1</property>
+                <property name="relief">none</property>
+                <style>
+                  <class name="small"/>
+                </style>
+                <child>
+                  <object class="GtkImage" id="image1">
+                    <property name="visible">True</property>
+                    <property name="icon-name">go-up</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkFlowBoxChild">
+            <property name="width-request">10</property>
+            <property name="height-request">10</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <child>
+              <object class="GtkButton" id="btn-down">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="focus-on-click">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-start">1</property>
+                <property name="margin-end">1</property>
+                <property name="relief">none</property>
+                <style>
+                  <class name="small"/>
+                </style>
+                <child>
+                  <object class="GtkImage" id="image2">
+                    <property name="visible">True</property>
+                    <property name="icon-name">go-down</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="fill">False</property>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="btn-menu">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="halign">end</property>
+        <property name="valign">end</property>
+        <property name="margin-start">1</property>
+        <property name="margin-end">1</property>
+        <property name="relief">none</property>
+        <property name="direction">none</property>
+        <property name="use-popover">False</property>
+        <style>
+          <class name="small"/>
+        </style>
+      </object>
+      <packing>
+        <property name="fill">False</property>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <style>
+      <class name="color-palette-main-box"/>
+    </style>
+  </object>
+  <object class="GtkPopover" id="config-popup">
+    <property name="relative-to">btn-menu</property>
+    <!-- n-columns=2 n-rows=8 -->
+    <child>
+      <object class="GtkGrid" id="main-grid">
+        <property name="visible">True</property>
+        <property name="halign">start</property>
+        <property name="valign">start</property>
+        <property name="margin">12</property>
+        <property name="row-spacing">7</property>
+        <property name="column-spacing">8</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Tile size:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScale" id="border-slider">
+            <property name="width-request">180</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="adjustment">adjustment-border</property>
+            <property name="show-fill-level">True</property>
+            <property name="fill-level">50</property>
+            <property name="round-digits">0</property>
+            <property name="digits">0</property>
+            <property name="value-pos">right</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Border:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScale" id="size-slider">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="adjustment">adjustment-size</property>
+            <property name="show-fill-level">True</property>
+            <property name="fill-level">50</property>
+            <property name="round-digits">0</property>
+            <property name="digits">0</property>
+            <property name="value-pos">right</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="row-label">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Rows:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScale" id="row-slider">
+            <property name="width-request">180</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="adjustment">adjustment-rows</property>
+            <property name="show-fill-level">True</property>
+            <property name="fill-level">50</property>
+            <property name="round-digits">0</property>
+            <property name="digits">0</property>
+            <property name="value-pos">right</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="aspect-label">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Aspect:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScale" id="aspect-slider">
+            <property name="width-request">180</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="adjustment">adjustment-aspect</property>
+            <property name="show-fill-level">True</property>
+            <property name="fill-level">50</property>
+            <property name="value-pos">right</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="use-sb">
+            <property name="label" translatable="yes">Use scrollbar</property>
+            <property name="can-focus">True</property>
+            <property name="halign">start</property>
+            <property name="draw-indicator">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="stretch">
+            <property name="label" translatable="yes">Stretch to fill</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="halign">start</property>
+            <property name="draw-indicator">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="enlarge">
+            <property name="label" translatable="yes">Enlarge pinned colors</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="halign">start</property>
+            <property name="draw-indicator">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">6</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="show-labels">
+            <property name="label" translatable="yes">Show color labels</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="halign">start</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">7</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

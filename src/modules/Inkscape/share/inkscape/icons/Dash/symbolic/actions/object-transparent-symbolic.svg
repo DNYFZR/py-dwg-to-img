@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="object-transparent">
+<rect id="rectangle" opacity="0.15" x="3" y="3" width="10" height="10" rx="1" fill="black"/>
+<path id="Union" opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 3.44771 3 4 3H6V4L4 4V6H3V4ZM12 4H10V3H12C12.5523 3 13 3.44771 13 4V6H12V4ZM4 10V12H6V13H4C3.44772 13 3 12.5523 3 12V10H4ZM12 12V10H13V12C13 12.5523 12.5523 13 12 13H10V12H12Z" fill="black"/>
+</g>
+</svg>

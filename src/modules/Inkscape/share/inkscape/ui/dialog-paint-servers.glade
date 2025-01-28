@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- n-columns=2 n-rows=3 -->
+  <object class="GtkGrid" id="PaintServersContainerGrid">
+    <property name="visible">True</property>
+    <property name="margin-start">3</property>
+    <property name="margin-end">3</property>
+    <property name="margin-top">3</property>
+    <property name="row-spacing">3</property>
+    <property name="column-spacing">4</property>
+    <child>
+      <object class="GtkLabel" id="ServerLabel">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Server:</property>
+        <property name="justify">right</property>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkComboBoxText" id="ServersDropdown">
+        <property name="visible">True</property>
+        <property name="hexpand">True</property>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="TargetLabel">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Change:</property>
+        <property name="justify">right</property>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="TargetRadioContainer">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkRadioButton" id="TargetRadioFill">
+            <property name="label" translatable="yes">Fill</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Apply the paint to the fill of objects</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+          </object>
+          <packing>
+            <property name="fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="TargetRadioStroke">
+            <property name="label" translatable="yes">Stroke</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Apply the paint to the stroke of objects</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">TargetRadioFill</property>
+          </object>
+          <packing>
+            <property name="fill">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkScrolledWindow" id="IconScroller">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <property name="vscrollbar-policy">always</property>
+        <property name="shadow-type">in</property>
+        <property name="overlay-scrolling">False</property>
+        <child>
+          <object class="GtkIconView" id="PaintIcons">
+            <property name="width-request">200</property>
+            <property name="height-request">200</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="vexpand">True</property>
+            <property name="item-width">100</property>
+            <property name="tooltip-column">0</property>
+            <property name="activate-on-single-click">True</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">2</property>
+        <property name="width">2</property>
+      </packing>
+    </child>
+  </object>
+</interface>

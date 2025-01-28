@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Replace Color</name>
+    <id>org.inkscape.color.replace_color</id>
+    <param name="tab" type="notebook">
+      <page name="from" gui-text="Color to replace">
+        <param name="from_color" type="color" gui-text="From color"></param>
+        <param name="ignore_opacity" type="bool" 
+               gui-text="Ignore opacity when searching for colors to replace">true</param>
+      </page>
+      <page name="to" gui-text="New color">
+        <param name="to_color" type="color" gui-text="To color"></param>
+      </page>
+    </param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Color"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">color_replace.py</command>
+    </script>
+</inkscape-extension>

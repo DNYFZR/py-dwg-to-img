@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="32" height="32"
+     inkscape:hotspot_x="4"
+     inkscape:hotspot_y="4"
+     style="fill:gray;stroke:black">
+
+<style>@import './cursors.css';</style>
+
+<g id="cursor" class="drop-shadow" style="">
+<path id="Vector" d="M9 14.0736H8.5V14.5736V19.5736V20.0736H9H9.7868C10.6962 20.0736 11.5684 19.7123 12.2114 19.0693C14.3038 16.9769 17.6962 16.9769 19.7886 19.0693C20.4316 19.7123 21.3038 20.0736 22.2132 20.0736H23H23.5V19.5736V14.5736V14.0736H23H22.2132C21.569 14.0736 20.9512 13.8177 20.4957 13.3622C18.0128 10.8793 13.9872 10.8793 11.5043 13.3622C11.0488 13.8177 10.431 14.0736 9.7868 14.0736H9Z" fill="white" stroke="white"/>
+<path id="Vector_2" d="M8.5 19.0736V15.0736H9.7868C10.6962 15.0736 11.5684 14.7123 12.2114 14.0693C14.3038 11.9769 17.6962 11.9769 19.7886 14.0693C20.4316 14.7123 21.3038 15.0736 22.2132 15.0736H23.5V19.0736H22.2132C21.569 19.0736 20.9512 18.8177 20.4957 18.3622C18.0128 15.8793 13.9872 15.8793 11.5043 18.3622C11.0488 18.8177 10.431 19.0736 9.7868 19.0736H8.5Z" fill="black" stroke="black" stroke-linecap="round"/>
+</g>
+
+</svg>

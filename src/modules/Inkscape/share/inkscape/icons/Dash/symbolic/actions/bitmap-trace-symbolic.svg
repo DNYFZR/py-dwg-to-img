@@ -1,0 +1,13 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="bitmap-trace">
+<rect id="neutral" opacity="0.3" x="2.00098" y="5" width="3" height="3" fill="black"/>
+<path id="rectangle" opacity="0.5" d="M5.00098 5H7.50098V8H5.00098V5Z" fill="black"/>
+<path id="rectangle_2" opacity="0.6" d="M5.00098 8H7.50098V11H5.00098V8Z" fill="black"/>
+<rect id="rectangle_3" opacity="0.15" x="2.00098" y="2" width="3" height="3" fill="black"/>
+<path id="rectangle_4" opacity="0.4" d="M5.00098 2H7.50098V5H5.00098V2Z" fill="black"/>
+<rect id="rectangle_5" opacity="0.35" x="2.00098" y="8" width="3" height="3" fill="black"/>
+<rect id="rectangle_6" opacity="0.15" x="2.00098" y="11" width="3" height="3" fill="black"/>
+<path id="rectangle_7" opacity="0.4" d="M5.00098 11H7.50098V14H5.00098V11Z" fill="black"/>
+<path id="Intersect" fill-rule="evenodd" clip-rule="evenodd" d="M8.50098 2.02039C11.5807 2.27446 14.001 4.85452 14.001 7.99985C14.001 11.1452 11.5807 13.7252 8.50098 13.9793V2.02039Z" fill="black"/>
+</g>
+</svg>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- interface-css-provider-path style.css -->
+  <object class="GtkBox" id="main-box">
+    <property name="visible">True</property>
+    <property name="orientation">vertical</property>
+    <child>
+      <object class="GtkScrolledWindow" id="scrolled-wnd">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="shadow-type">in</property>
+        <child>
+          <object class="GtkTreeView" id="tree-view">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="headers-clickable">False</property>
+            <property name="enable-search">False</property>
+            <property name="hover-selection">True</property>
+            <property name="activate-on-single-click">True</property>
+            <child internal-child="selection">
+              <object class="GtkTreeSelection"/>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkScrolledWindow" id="content-sw">
+        <property name="can-focus">True</property>
+        <property name="no-show-all">True</property>
+        <property name="shadow-type">in</property>
+        <style>
+          <class name="mono-font"/>
+        </style>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="status-box">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel" id="status-label">
+            <property name="width-request">1</property>
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="use-markup">True</property>
+            <property name="wrap">True</property>
+            <style>
+              <class name="small-font"/>
+            </style>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="padding">2</property>
+        <property name="pack-type">end</property>
+        <property name="position">2</property>
+      </packing>
+    </child>
+  </object>
+  <menu id="menu1">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes" context="Precision" comments="This symbolizes precision of 0 digits after the decimal separator.">N</attribute>
+        <attribute name="action">attrdialog.precision</attribute>
+        <attribute name="target" type="i">0</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes" context="Precision" comments="This symbolizes precision of 1 digit after the decimal separator. Please adjust to your language's number format (e.g. N,N).">N.N</attribute>
+        <attribute name="action">attrdialog.precision</attribute>
+        <attribute name="target" type="i">1</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes" context="Precision" comments="This symbolizes precision of 2 digits after the decimal separator. Please adjust to your language's number format (e.g. N,NN).">N.NN</attribute>
+        <attribute name="action">attrdialog.precision</attribute>
+        <attribute name="target" type="i">2</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes" context="Precision" comments="This symbolizes precision of 3 digits after the decimal separator. Please adjust to your language's number format (e.g. N,NNN).">N.NNN</attribute>
+        <attribute name="action">attrdialog.precision</attribute>
+        <attribute name="target" type="i">3</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes" context="Precision" comments="This symbolizes precision of 4 digits after the decimal separator. Please adjust to your language's number format (e.g. N,NNNN).">N.NNNN</attribute>
+        <attribute name="action">attrdialog.precision</attribute>
+        <attribute name="target" type="i">4</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes" context="Precision" comments="This symbolizes precision of 5 digits after the decimal separator. Please adjust to your language's number format (e.g. N,NNNNN).">N.NNNNN</attribute>
+        <attribute name="action">attrdialog.precision</attribute>
+        <attribute name="target" type="i">5</attribute>
+      </item>
+    </section>
+  </menu>
+  <object class="GtkPopover" id="popup">
+    <property name="position">bottom</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkScrolledWindow" id="scroll-wnd">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="margin-start">3</property>
+            <property name="margin-end">3</property>
+            <property name="margin-top">3</property>
+            <property name="margin-bottom">4</property>
+            <property name="vexpand">True</property>
+            <property name="propagate-natural-width">True</property>
+            <style>
+              <class name="mono-font"/>
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="no-show-all">True</property>
+            <property name="margin-start">5</property>
+            <property name="margin-end">5</property>
+            <property name="margin-bottom">4</property>
+            <property name="spacing">6</property>
+            <child type="center">
+              <object class="GtkBox" id="rounding-box">
+                <property name="visible">True</property>
+                <property name="margin-end">5</property>
+                <child>
+                  <object class="GtkButton" id="btn-truncate">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">Round selected numbers to n digits</property>
+                    <property name="use-underline">True</property>
+                    <child>
+                      <object class="GtkImage" id="image1">
+                        <property name="visible">True</property>
+                        <property name="icon-name">rounding</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuButton" id="btn-menu">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="focus-on-click">False</property>
+                    <property name="receives-default">True</property>
+                    <property name="margin-start">2</property>
+                    <property name="relief">none</property>
+                    <property name="menu-model">menu1</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="margin-start">2</property>
+                        <property name="margin-end">2</property>
+                        <child>
+                          <object class="GtkLabel" id="precision">
+                            <property name="visible">True</property>
+                            <property name="xalign">0.0</property>
+                            <property name="width-chars">8</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="visible">True</property>
+                            <property name="icon-name">pan-down-symbolic</property>
+                            <style>
+                              <class name="arrow"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <style>
+                      <class name="menu-btn-tight"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">9</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="help">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Shift+Return to close</property>
+                <property name="justify">center</property>
+                <property name="wrap">True</property>
+                <property name="max-width-chars">2</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn-ok">
+                <property name="label" translatable="yes">OK</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
+              </object>
+              <packing>
+                <property name="pack-type">end</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn-cancel">
+                <property name="label" translatable="yes">Cancel</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
+              </object>
+              <packing>
+                <property name="pack-type">end</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <style>
+              <class name="small-font"/>
+            </style>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkSizeGroup">
+    <widgets>
+      <widget name="btn-cancel"/>
+      <widget name="btn-ok"/>
+    </widgets>
+  </object>
+  <object class="GtkListStore" id="store">
+    <columns>
+      <!-- column-name attr-name -->
+      <column type="gchararray"/>
+      <!-- column-name attr-value -->
+      <column type="gchararray"/>
+      <!-- column-name attr-value-renderer -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+</interface>

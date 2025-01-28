@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkAdjustment" id="opacity_adj">
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkPopover" id="opacity_popover">
+    <child>
+      <object class="GtkScale" id="opacity_scale">
+        <property name="height-request">150</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="orientation">vertical</property>
+        <property name="adjustment">opacity_adj</property>
+        <property name="fill-level">100</property>
+        <property name="round-digits">1</property>
+        <property name="value-pos">bottom</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkBox" id="booleans-toolbar">
+    <property name="visible">True</property>
+    <property name="halign">start</property>
+    <property name="valign">center</property>
+    <property name="spacing">3</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkRadioButton" id="radio_button_group">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Add to the Shape</property>
+        <property name="action-name">win.shape-builder-mode</property>
+        <property name="action-target">0</property>
+        <property name="relief">none</property>
+        <property name="active">True</property>
+        <property name="draw-indicator">False</property>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="visible">True</property>
+            <property name="icon-name">shapebuilder-tool-union</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkRadioButton">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Remove from Shape</property>
+        <property name="action-name">win.shape-builder-mode</property>
+        <property name="action-target">1</property>
+        <property name="relief">none</property>
+        <property name="active">True</property>
+        <property name="draw-indicator">False</property>
+        <property name="group">radio_button_group</property>
+        <child>
+          <object class="GtkImage" id="image2">
+            <property name="visible">True</property>
+            <property name="icon-name">shapebuilder-tool-difference</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="margin-start">3</property>
+        <property name="label" translatable="yes">Finish:</property>
+        <property name="use-markup">True</property>
+      </object>
+      <packing>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="confirm_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Accept</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image3">
+            <property name="visible">True</property>
+            <property name="icon-name">on</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="cancel_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Cancel</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image4">
+            <property name="visible">True</property>
+            <property name="icon-name">off</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">8</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="relief">none</property>
+        <property name="popover">opacity_popover</property>
+        <child>
+          <object class="GtkImage">
+            <property name="visible">True</property>
+            <property name="icon-name">object-visible</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">9</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton">
+        <property name="visible">True</property>
+        <property name="action-name">win.shape-builder-replace</property>
+        <property name="relief">none</property>
+        <property name="use-underline">True</property>
+        <child>
+          <object class="GtkImage" id="image5">
+            <property name="visible">True</property>
+            <property name="icon-name">layer-delete</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">10</property>
+      </packing>
+    </child>
+    <style>
+      <class name="toolbar"/>
+    </style>
+  </object>
+</interface>

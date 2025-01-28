@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.108853;-inkscape-stroke:none;paint-order:stroke markers fill"
+       id="rect1"
+       width="210"
+       height="297"
+       x="0"
+       y="0"
+       ry="0" />
+    <path
+       d="m 57.14137,181.49583 h 13.529654 v 16.28688 H 57.14137 Z"
+       id="path1"
+       style="font-size:131.321px;line-height:1.1;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#2e3436;stroke-width:2.13332;paint-order:stroke markers fill" />
+    <path
+       d="m 98.884519,181.49583 h 13.529651 v 16.28688 H 98.884519 Z"
+       id="path2"
+       style="font-size:131.321px;line-height:1.1;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#555753;stroke-width:2.13332;paint-order:stroke markers fill" />
+    <path
+       d="m 140.62767,181.49583 h 13.52965 v 16.28688 h -13.52965 z"
+       id="path3"
+       style="font-size:131.321px;line-height:1.1;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#888a85;stroke-width:2.13332;paint-order:stroke markers fill" />
+  </g>
+</svg>

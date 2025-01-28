@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="no-marker" clip-path="url(#clip0_241_9380)">
+<g id="paint-none">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M2 2H13.2929L2 13.2929V2ZM2.70711 14H14V2.70711L2.70711 14ZM1 2C1 1.44772 1.44772 1 2 1H14C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H2C1.44772 15 1 14.5523 1 14V2Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_241_9380">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 48 47.999999"
+   version="1.1"
+   sodipodi:docname="wikimedia.svg"
+   width="48"
+   height="48"
+   inkscape:version="1.0.2 (1.0.2+r75+1)">
+  <metadata
+     id="metadata47">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Reactome_Imagotype_Positive</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="0"
+     inkscape:window-width="1534"
+     inkscape:window-height="843"
+     id="namedview45"
+     showgrid="false"
+     inkscape:zoom="2.1826528"
+     inkscape:cx="124.13182"
+     inkscape:cy="104.77682"
+     inkscape:window-x="66"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     inkscape:document-rotation="0" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#2f9ec2;}.cls-2{fill:#d1eaf2;}.cls-3{fill:#9bd1e2;}.cls-4{fill:#80c4da;}.cls-5{fill:#65b7d2;}.cls-6{fill:#4aabca;}</style>
+    <clipPath
+       id="a">
+      <path
+         d="M47.5-87.5v425h-95v-425l-552-552v1250h1199v-1250z"
+         id="path1135" />
+    </clipPath>
+  </defs>
+  <title
+     id="title6">Reactome_Imagotype_Positive</title>
+  <g
+     id="g1160"
+     transform="matrix(0.04316547,0,0,0.04316547,23.654678,24.345325)">
+    <g
+       clip-path="url(#a)"
+       id="g1144">
+      <circle
+         r="336.5"
+         fill="#339966"
+         id="circle1140"
+         cx="0"
+         cy="0" />
+      <circle
+         r="480.25"
+         fill="none"
+         stroke="#006699"
+         stroke-width="135.5"
+         id="circle1142"
+         cx="0"
+         cy="0" />
+    </g>
+    <circle
+       cy="-379.5"
+       r="184.5"
+       fill="#990000"
+       id="circle1146"
+       cx="0" />
+  </g>
+</svg>

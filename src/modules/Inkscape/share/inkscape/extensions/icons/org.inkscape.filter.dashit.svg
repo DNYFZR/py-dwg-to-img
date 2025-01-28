@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70"
+   height="60"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="org.inkscape.filter.dashit.svg"
+   inkscape:version="1.4-dev (f25ce46d5c, 2023-06-29)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="5.8588132"
+     inkscape:cx="36.184803"
+     inkscape:cy="48.303298"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#3f84a6"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7">
+      <rect
+         style="fill:#0b5cd5;fill-rule:evenodd;stroke:#0b5cd5;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7;stroke-opacity:1"
+         id="rect8"
+         width="70"
+         height="60"
+         x="-19.419874"
+         y="-12.514425"
+         transform="rotate(30)" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="org.inkscape.filter.dashit"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g7"
+       transform="rotate(-30,33.062172,-29.980765)"
+       clip-path="url(#clipPath7)">
+      <rect
+         style="fill:#a8cbfe;fill-rule:evenodd;stroke:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7"
+         id="rect1"
+         width="30"
+         height="15"
+         x="34.999996"
+         y="14.999998" />
+      <rect
+         style="fill:#0b5cd5;fill-rule:evenodd;stroke:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7"
+         id="rect2"
+         width="27"
+         height="1"
+         x="38"
+         y="22" />
+      <circle
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#0b5cd5;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7;stroke-opacity:1"
+         id="path1"
+         cx="35.049999"
+         cy="22.5"
+         r="2.5" />
+      <rect
+         style="fill:#a8cbfe;fill-rule:evenodd;stroke:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7"
+         id="rect3"
+         width="30"
+         height="15"
+         x="-10.000004"
+         y="14.999998" />
+      <rect
+         style="fill:#0b5cd5;fill-rule:evenodd;stroke:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7"
+         id="rect4"
+         width="27"
+         height="1"
+         x="-8"
+         y="22" />
+      <circle
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#0b5cd5;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7;stroke-opacity:1"
+         id="circle1"
+         cx="20.049999"
+         cy="22.5"
+         r="2.5" />
+      <circle
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#0b5cd5;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7;stroke-opacity:1"
+         id="circle4"
+         cx="-9.9500008"
+         cy="22.5"
+         r="2.5" />
+      <rect
+         style="fill:#a8cbfe;fill-rule:evenodd;stroke:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7"
+         id="rect5"
+         width="30"
+         height="15"
+         x="-55.000004"
+         y="14.999998" />
+      <rect
+         style="fill:#0b5cd5;fill-rule:evenodd;stroke:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7"
+         id="rect6"
+         width="27"
+         height="1"
+         x="-53"
+         y="22" />
+      <circle
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#0b5cd5;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7;stroke-opacity:1"
+         id="circle6"
+         cx="-24.950001"
+         cy="22.5"
+         r="2.5" />
+    </g>
+  </g>
+</svg>

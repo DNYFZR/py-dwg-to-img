@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkAdjustment" id="_col_adj">
+    <property name="lower">1</property>
+    <property name="upper">20</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="_row_adj">
+    <property name="lower">1</property>
+    <property name="upper">20</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">1</property>
+  </object>
+  <object class="GtkRadioButton" id="new_fillstroke_buttons_group">
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="always-show-image">True</property>
+    <property name="active">True</property>
+    <property name="draw-indicator">False</property>
+  </object>
+  <object class="GtkRadioButton" id="new_type_buttons_group">
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="always-show-image">True</property>
+    <property name="active">True</property>
+    <property name="draw-indicator">False</property>
+  </object>
+  <object class="GtkPopover" id="popover1">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box1">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkBox" id="mesh-toolbar">
+    <property name="visible">True</property>
+    <property name="halign">start</property>
+    <property name="valign">center</property>
+    <property name="spacing">3</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="margin-start">3</property>
+        <property name="label" translatable="yes">&lt;b&gt;New:&lt;/b&gt;</property>
+        <property name="use-markup">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="new_type_buttons_box">
+        <property name="visible">True</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Create mesh gradient</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">new_type_buttons_group</property>
+            <child>
+              <object class="GtkImage" id="image1">
+                <property name="visible">True</property>
+                <property name="icon-name">paint-gradient-mesh</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Create conical gradient</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">new_type_buttons_group</property>
+            <child>
+              <object class="GtkImage" id="image2">
+                <property name="visible">True</property>
+                <property name="icon-name">paint-gradient-conical</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">4</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="new_fillstroke_buttons_box">
+        <property name="visible">True</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Create gradient in the fill</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">new_fillstroke_buttons_group</property>
+            <child>
+              <object class="GtkImage" id="image3">
+                <property name="visible">True</property>
+                <property name="icon-name">object-fill</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Create gradient in the stroke</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">new_fillstroke_buttons_group</property>
+            <child>
+              <object class="GtkImage" id="image4">
+                <property name="visible">True</property>
+                <property name="icon-name">object-stroke</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">4</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="row_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Number of rows in new mesh</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Rows:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_row_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">3</property>
+            <property name="text">0.000</property>
+            <property name="adjustment">_row_adj</property>
+            <property name="climb-rate">1</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="col_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Number of columns in new mesh</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Columns:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_col_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">3</property>
+            <property name="text">0.000</property>
+            <property name="adjustment">_col_adj</property>
+            <property name="climb-rate">0.10</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_edit_fill_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Edit fill mesh</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image11">
+            <property name="visible">True</property>
+            <property name="icon-name">object-fill</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_edit_stroke_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Edit stroke mesh</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image12">
+            <property name="visible">True</property>
+            <property name="icon-name">object-stroke</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">8</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn1">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover1</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkLabel">
+		<property name="visible">True</property>
+		<property name="label" translatable="yes">Options</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">9</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="show_handles_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Show handles</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image13">
+            <property name="visible">True</property>
+            <property name="icon-name">show-node-handles</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">10</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="toggle_sides_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Toggle selected sides between Beziers and lines.</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image6">
+            <property name="visible">True</property>
+            <property name="icon-name">node-segment-line</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">11</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="make_elliptical_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Make selected sides elliptical by changing length of handles. Works best if handles already approximate ellipse.</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image7">
+            <property name="visible">True</property>
+            <property name="icon-name">node-segment-curve</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">12</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="pick_colors_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Pick colors for selected corner nodes from underneath mesh.</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image8">
+            <property name="visible">True</property>
+            <property name="icon-name">color-picker</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">13</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="scale_mesh_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Scale mesh to fit inside bounding box.</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image9">
+            <property name="visible">True</property>
+            <property name="icon-name">mesh-gradient-fit</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">14</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">15</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="warning_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">WARNING: Mesh SVG Syntax Subject to Change</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image10">
+            <property name="visible">True</property>
+            <property name="icon-name">dialog-warning</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">16</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="select_type_box">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">17</property>
+      </packing>
+    </child>
+    <style>
+      <class name="toolbar"/>
+    </style>
+  </object>
+</interface>

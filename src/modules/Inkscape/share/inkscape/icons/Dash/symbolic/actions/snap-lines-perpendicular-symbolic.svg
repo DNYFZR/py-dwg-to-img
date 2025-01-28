@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="snap-lines-perpendicular">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M2.00098 1.5C2.00098 1.22386 1.77712 1 1.50098 1C1.22483 1 1.00098 1.22386 1.00098 1.5V14.4685C1.00033 14.4789 1 14.4894 1 14.5C1 14.7761 1.22386 15 1.5 15H1.50098L14.5 15C14.7761 15 15 14.7761 15 14.5C15 14.2239 14.7761 14 14.5 14L2.00098 14V1.5Z" fill="black"/>
+<path class="error" fill-rule="evenodd" clip-rule="evenodd" d="M3.00098 8.5C3.00098 8.22386 3.22483 8 3.50098 8H7.50098H8.00098V8.5V12.5C8.00098 12.7761 7.77712 13 7.50098 13C7.22483 13 7.00098 12.7761 7.00098 12.5V9H3.50098C3.22483 9 3.00098 8.77614 3.00098 8.5Z" fill="black"/>
+</g>
+</svg>

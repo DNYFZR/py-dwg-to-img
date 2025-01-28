@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>QR Code</name>
+  <id>org.inkscape.qr_code</id>
+  <param name="text" type="string" appearance="multiline"  gui-text="Text:" gui-description="The content of the QR code, most commonly a web link.">https://inkscape.org</param>
+  <param name="typenumber" type="optiongroup" appearance="combo" gui-description="With 'Auto', the extension will choose the best size, depending upon the length of the text and the selected error correction level." gui-text="Size, in unit squares:">
+    <option value="0">Auto</option>
+    <option translatable="no" value="1">21x21</option>
+    <option translatable="no" value="2">25x25</option>
+    <option translatable="no" value="3">29x29</option>
+    <option translatable="no" value="4">33x33</option>
+    <option translatable="no" value="5">37x37</option>
+    <option translatable="no" value="6">41x41</option>
+    <option translatable="no" value="7">45x45</option>
+    <option translatable="no" value="8">49x49</option>
+    <option translatable="no" value="9">53x53</option>
+    <option translatable="no" value="10">57x57</option>
+    <option translatable="no" value="11">61x61</option>
+    <option translatable="no" value="12">65x65</option>
+    <option translatable="no" value="13">69x69</option>
+    <option translatable="no" value="14">73x73</option>
+    <option translatable="no" value="15">77x77</option>
+    <option translatable="no" value="16">81x81</option>
+    <option translatable="no" value="17">85x85</option>
+    <option translatable="no" value="18">89x89</option>
+    <option translatable="no" value="19">93x93</option>
+    <option translatable="no" value="20">97x97</option>
+    <option translatable="no" value="21">101x101</option>
+    <option translatable="no" value="22">105x105</option>
+    <option translatable="no" value="23">109x109</option>
+    <option translatable="no" value="24">113x113</option>
+    <option translatable="no" value="25">117x117</option>
+    <option translatable="no" value="26">121x121</option>
+    <option translatable="no" value="27">125x125</option>
+    <option translatable="no" value="28">129x129</option>
+    <option translatable="no" value="29">133x133</option>
+    <option translatable="no" value="30">137x137</option>
+    <option translatable="no" value="31">141x141</option>
+    <option translatable="no" value="32">145x145</option>
+    <option translatable="no" value="33">149x149</option>
+    <option translatable="no" value="34">153x153</option>
+    <option translatable="no" value="35">157x157</option>
+    <option translatable="no" value="36">161x161</option>
+    <option translatable="no" value="37">165x165</option>
+    <option translatable="no" value="38">169x169</option>
+    <option translatable="no" value="39">173x173</option>
+    <option translatable="no" value="40">177x177</option>
+  </param>
+  <param name="correctionlevel" type="optiongroup" appearance="combo" gui-description="If your QR code is likely to get smudged or readability will be reduced in some other way, choose a high error correction level. Higher error correction levels mean that the text that can be encoded must be shorter." gui-text="Error correction level:">
+    <option value="1">L (Approx. 7%)</option>
+    <option value="0">M (Approx. 15%)</option>
+    <option value="3">Q (Approx. 25%)</option>
+    <option value="2">H (Approx. 30%)</option>
+  </param>
+  <param name="qrmode" type="optiongroup" appearance="combo" gui-text="QR Mode:" gui-description="'Bytes array': can encode any text, 'Only numbers': can only encode numbers, 'ALPHAnum': can only encode capital letters and some symbols, sufficient for most web urls.">
+    <option translatable="yes" value="0">Bytes array</option>
+    <option translatable="yes" value="1">Only numbers</option>
+    <option translatable="no" value="2">ALPHAnum</option>
+  </param>
+  <param name="encoding" type="optiongroup" appearance="combo" gui-text="Character encoding:">
+    <option translatable="no" value="latin_1">Latin 1</option>
+    <option translatable="no" value="cp1250">CP 1250</option>
+    <option translatable="no" value="cp1252">CP 1252</option>
+    <option translatable="no" value="utf_8">UTF-8</option>
+  </param>
+  <param name="invert" type="bool" gui-text="Invert QR code:" gui-description="Invert the colors, may fail for symbols option">false</param>
+  <param name="modulesize" type="float" min="0" max="1000" gui-text="Square size (px):">4</param>
+  <param name="drawtype" type="notebook" gui-text="Drawing type:">
+    <page name="smooth" gui-text="Smooth">
+      <param name="smoothness" type="optiongroup" appearance="radio" 
+             gui-text="Smooth type:">
+        <option value="neutral">Neutral</option>
+        <option value="greedy">Greedy</option>
+        <option value="proud">Proud</option>
+      </param>
+    </page>
+    <page name="pathpreset" gui-text="Shapes">
+      <param name="pathtype" type="optiongroup" appearance="radio" 
+      gui-text="Use predefined shape:">
+        <option value="simple">Square</option>
+        <option value="circle">Circle</option>
+      </param>
+    </page>
+    <page name="selection" gui-text="Clones">
+      <label>The first selected object will be cloned.</label>
+     </page>
+    <page name="symbol" gui-text="Symbols">
+      <param name="symbolid" type="string" gui-description="The ID of the selected symbol. Open the XML editor to find it as the value for 'xlink:href' for a selected instance of the symbol." gui-text="Symbol ID:"></param>
+    </page>
+  </param>
+  <param name="smoothval" type="float" min="0.0" max="1.0" precision="2" gui-text="Smooth square value (0-1):">0.2</param>
+  <label>Manually define the group ID of the generated QR code. Leave blank to have it auto-generated.</label>
+  <param name="groupid" type="string" gui-text="Group ID:"></param>
+  <label>For details about QR codes, see:</label>
+  <label appearance="url" indent="1">https://www.qrcode.com</label>
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu name="Render">
+        <submenu name="Barcode / QR Code" />
+      </submenu>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">render_barcode_qrcode.py</command>
+  </script>
+</inkscape-extension>

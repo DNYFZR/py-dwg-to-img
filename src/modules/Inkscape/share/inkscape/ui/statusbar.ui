@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- Zoom Adjustment -->
+  <object class="GtkAdjustment" id="statusbar-zoom-adjustment">
+    <property name="step-increment">0.1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <!-- Zoom Menu -->
+  <menu id="statusbar-zoom-menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Zoom Selection</attribute>
+        <attribute name="action">win.canvas-zoom-selection</attribute>
+        <attribute name="icon">zoom-fit-selection</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Zoom Drawing</attribute>
+        <attribute name="action">win.canvas-zoom-drawing</attribute>
+        <attribute name="icon">zoom-fit-drawing</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Zoom Page</attribute>
+        <attribute name="action">win.canvas-zoom-page</attribute>
+        <attribute name="icon">zoom-fit-page</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Zoom Page Width</attribute>
+        <attribute name="action">win.canvas-zoom-page-width</attribute>
+        <attribute name="icon">zoom-fit-width</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Center Page</attribute>
+        <attribute name="action">win.canvas-zoom-center-page</attribute>
+        <attribute name="icon">zoom-center-page</attribute>
+      </item>
+    </section>
+    <!-- Both attemps fail! -->
+    <!-- <section> -->
+    <!--   <item> -->
+    <!--     <attribute name='label'  translatable="yes">Zoom 1000%</attribute> -->
+    <!--     <attribute name='action-name'>"win.canvas-zoom-absolute(10.0)"</attribute> -->
+    <!--   </item> -->
+    <!--   <item> -->
+    <!--     <attribute name='label'  translatable="yes">Zoom 500%</attribute> -->
+    <!--     <attribute name='action-name'>win.canvas-zoom-absolute</attribute> -->
+    <!--     <attribute name='action-target' type="d">5.0</attribute> -->
+    <!--   </item> -->
+    <!-- </section> -->
+  </menu>
+  <!-- Rotation Adjustment -->
+  <object class="GtkAdjustment" id="statusbar-rotate-adjustment">
+    <property name="step-increment">1</property>
+    <property name="page-increment">15</property>
+    <property name="lower">-360</property>
+    <property name="upper">360</property>
+  </object>
+  <!-- Rotate Menu -->
+  <menu id="statusbar-rotate-menu"/>
+  <!-- Statusbar -->
+  <object class="GtkBox" id="statusbar">
+    <property name="visible">True</property>
+    <property name="name">Statusbar</property>
+    <property name="margin-end">10</property>
+    <!-- Selected Style -->
+    <child>
+      <object class="GtkBox" id="statusbar-selected-style"/>
+      <packing>
+        <property name="fill">False</property>
+      </packing>
+    </child>
+    <!-- Layer Selector -->
+    <child>
+      <object class="GtkSeparator">
+        <property name="orientation">vertical</property>
+        <property name="margin-top">6</property>
+        <property name="margin-bottom">6</property>
+        <property name="margin-end">6</property>
+      </object>
+      <packing>
+        <property name="fill">False</property>
+      </packing>
+    </child>
+    <!-- Selection Status -->
+    <child>
+      <!-- avoid resizes with external scrolls-->
+      <object class="GtkScrolledWindow">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <property name="hscrollbar-policy">external</property>
+        <property name="vscrollbar-policy">external</property>
+        <child>
+          <object class="GtkLabel" id="statusbar-selection">
+            <property name="name">StatusbarSelection</property>
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">&lt;b&gt;Welcome to Inkscape!&lt;/b&gt; Use shape or freehand tools to create objects; use selector (arrow) to move or transform them.</property>
+            <property name="use-markup">True</property>
+            <!-- 
+            do not wrap is necesary need for fast render in windows a non ellipsize label https://docs.gtk.org/Pango/method.Layout.is_wrapped.html 
+            -->
+            <property name="wrap">False</property>
+            <property name="ellipsize">end</property>
+            <property name="lines">2</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="fill">True</property>
+      </packing>
+    </child>
+    <!-- Page Selector -->
+    <child>
+      <object class="GtkSeparator">
+        <property name="orientation">vertical</property>
+        <property name="margin-top">6</property>
+        <property name="margin-bottom">6</property>
+        <property name="margin-end">6</property>
+      </object>
+    </child>
+    <!-- Coordinates -->
+    <!-- n-columns=2 n-rows=2 -->
+    <child>
+      <object class="GtkGrid" id="statusbar-coordinates">
+        <property name="name">StatusbarCoordinates</property>
+        <property name="visible">True</property>
+        <property name="column-spacing">10</property>
+        <property name="margin-end">10</property>
+        <property name="tooltip-text" translatable="yes">Cursor coordinates</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">X:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Y:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="statusbar-coordinate-x">
+            <property name="name">StatusbarCoordinateX</property>
+            <property name="visible">True</property>
+            <property name="halign">end</property>
+            <property name="label" translatable="no">   0.00 </property>
+            <property name="use-markup">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="statusbar-coordinate-y">
+            <property name="name">StatusbarCoordinateY</property>
+            <property name="visible">True</property>
+            <property name="halign">end</property>
+            <property name="label" translatable="no">   0.00 </property>
+            <property name="use-markup">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <!-- Zoom -->
+    <child>
+      <object class="GtkBox" id="statusbar-zoom">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Zoom (also Ctrl+scroll)</property>
+        <child>
+          <object class="GtkLabel" id="statusbar-label-z">
+            <property name="name">StatusbarZoomLabel</property>
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Z:</property>
+            <property name="margin-start">2</property>
+            <property name="margin-end">4</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="statusbar-zoom-value">
+            <property name="name">StatusbarZoomValue</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="adjustment">statusbar-zoom-adjustment</property>
+            <property name="width-chars">6</property>
+            <property name="width-request">57</property>
+            <property name="value">100</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <!-- Rotation -->
+    <child>
+      <object class="GtkBox" id="statusbar-rotate">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Rotation (also Ctrl+Shift+scroll)</property>
+        <child>
+          <object class="GtkLabel" id="statusbar-label-R">
+            <property name="name">StatusbarRotateLabel</property>
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">R:</property>
+            <property name="margin-start">10</property>
+            <property name="margin-end">4</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="statusbar-rotate-value">
+            <property name="name">StatusbarRotateValue</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="adjustment">statusbar-rotate-adjustment</property>
+            <property name="width-chars">7</property>
+            <property name="width-request">57</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

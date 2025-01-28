@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkImage" id="gear_icon">
+    <property name="visible">True</property>
+    <property name="icon-name">gear</property>
+  </object>
+  <object class="GtkPopover" id="pref_popover">
+    <property name="constrain-to">none</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="name">pref_label</property>
+            <property name="visible">True</property>
+            <property name="margin-start">10</property>
+            <property name="margin-end">10</property>
+            <property name="margin-top">5</property>
+            <property name="label" translatable="yes">Export Format Options</property>
+          </object>
+          <packing>
+            <property name="fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkViewport" id="pref_holder">
+            <property name="visible">True</property>
+            <property name="shadow-type">none</property>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkMenuButton" id="pref_button">
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="receives-default">True</property>
+    <property name="image">gear_icon</property>
+    <property name="direction">left</property>
+    <property name="popover">pref_popover</property>
+    <property name="tooltip-text" translatable="yes">View export format options</property>
+  </object>
+</interface>

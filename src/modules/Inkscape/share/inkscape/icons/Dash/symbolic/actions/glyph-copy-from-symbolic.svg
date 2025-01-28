@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="glyph-copy-from" clip-path="url(#clip0_241_9657)">
+<g id="edit-copy">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M10.001 2H2.00098V10H5.00098V6C5.00098 5.44772 5.44869 5 6.00098 5H10.001V2ZM11.001 5H14.001C14.5533 5 15.001 5.44772 15.001 6V14C15.001 14.5523 14.5533 15 14.001 15H6.00098C5.44869 15 5.00098 14.5523 5.00098 14V11H2.00098C1.44869 11 1.00098 10.5523 1.00098 10V2C1.00098 1.44772 1.44869 1 2.00098 1H10.001C10.5533 1 11.001 1.44772 11.001 2V5ZM6.00098 6H14.001V14H6.00098V6Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_241_9657">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

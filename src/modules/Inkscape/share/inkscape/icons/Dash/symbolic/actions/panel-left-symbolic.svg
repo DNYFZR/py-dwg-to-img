@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="panel-left">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M2.00098 2C1.44869 2 1.00098 2.44772 1.00098 3V13C1.00098 13.5523 1.44869 14 2.00098 14H5.00098H14.001C14.5533 14 15.001 13.5523 15.001 13V3C15.001 2.44771 14.5533 2 14.001 2H5.00098H2.00098ZM5.00098 3L2.00098 3V13H5.00098V3ZM6.00098 13V3H14.001V13H6.00098Z" fill="black"/>
+<rect id="neutral" opacity="0.3" x="2.00098" y="3" width="3" height="10" fill="black"/>
+</g>
+</svg>

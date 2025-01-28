@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="path-intersection" clip-path="url(#clip0_241_9545)">
+<path id="neutral" opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M11 4.08296V10.4444C11 10.7513 10.7513 11 10.4444 11H4.08296C4.0284 10.6748 4 10.3407 4 10C4 6.68629 6.68629 4 10 4C10.3407 4 10.6748 4.0284 11 4.08296Z" fill="black"/>
+<path id="Union" opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447716 0 1V10C0 10.5523 0.447716 11 1 11H4.08296C4.55904 13.8377 7.027 16 10 16C13.3137 16 16 13.3137 16 10C16 7.027 13.8377 4.55904 11 4.08296V1C11 0.447715 10.5523 0 10 0H1ZM10 4V1L1 1V10H4C4 6.68629 6.68629 4 10 4ZM5 10C5 7.23858 7.23858 5 10 5V10H5ZM5.10002 11H10C10.5523 11 11 10.5523 11 10V5.10002C13.2822 5.56329 15 7.58104 15 10C15 12.7614 12.7614 15 10 15C7.58104 15 5.56329 13.2822 5.10002 11Z" fill="black"/>
+<path id="Union_2" fill-rule="evenodd" clip-rule="evenodd" d="M10 10V5C7.23858 5 5 7.23858 5 10H10ZM4.08296 11H10.4444C10.7513 11 11 10.7513 11 10.4444V4.08296C10.6748 4.0284 10.3407 4 10 4C6.68629 4 4 6.68629 4 10C4 10.3407 4.0284 10.6748 4.08296 11Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_241_9545">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

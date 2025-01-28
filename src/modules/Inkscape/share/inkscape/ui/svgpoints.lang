@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This file is part of Inkscape.
+
+ Authors:
+   Rafael Siejakowski <rs@rs-math.net>
+
+ Copyright (C) 2022 the Authors.
+
+ Released under GNU GPL v2+, read the file 'COPYING' for more information.
+-->
+<language id="svgpoints" _name="SVG attribute 'points' of polygon and polyline elements" version="2.0" _section="Markup">
+  <styles>
+    <style id="error" _name="Error" map-to="def:error"/>
+    <style id="numeric" _name="Vertex coordinate" map-to="def:number"/>
+  </styles>
+
+  <definitions>
+    <define-regex id="exponent">e[+\-]?\d+</define-regex>
+    <define-regex id="fractional-constant">\d*\.\d+|\d+</define-regex>
+    <define-regex id="number">\%{fractional-constant}(\%{exponent})?</define-regex>
+    <define-regex id="coordinate">[+\-]?\%{number}</define-regex>
+    <define-regex id="invalid">[^\-+\s\r\n,\.0-9eE]</define-regex>
+
+    <!-- Invalid character (not allowed in the 'points' attribute). -->
+    <context id="invalid-char" style-ref="error" extend-parent="false" end-parent="true">
+      <match>\%{invalid}</match>
+    </context>
+
+    <!-- The 'points' attribute. -->
+    <context id="svgpoints">
+      <include>
+        <!-- Coordinate pair is defined as a region (allows for two numbers on separate lines). -->
+        <context id="point">
+          <start>\%{coordinate}</start>
+          <end>\%{coordinate}</end>
+          <include>
+            <context ref="invalid-char"/>
+            <context sub-pattern="0" where="start" style-ref="numeric"/>
+            <context sub-pattern="0" where="end" style-ref="numeric"/>
+          </include>
+        </context>
+        <context ref="invalid-char"/>
+      </include>
+    </context>
+  </definitions>
+</language>

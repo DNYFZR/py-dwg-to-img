@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkPopover" id="popover">
+    <property name="no-show-all">True</property>
+    <property name="position">left</property>
+    <property name="constrain-to">none</property>
+    <!-- n-columns=3 n-rows=13 -->
+    <child>
+      <object class="GtkGrid">
+        <property name="visible">True</property>
+        <property name="halign">start</property>
+        <property name="valign">start</property>
+        <property name="margin-start">8</property>
+        <property name="margin-end">8</property>
+        <property name="margin-top">8</property>
+        <property name="margin-bottom">8</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="margin-bottom">5</property>
+            <property name="label" translatable="yes">Display mode:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <!-- TODO: GTK4: ModelButton is gone: use ToggleButtons in group, not working in GTK3 -->
+          <object class="GtkModelButton" id="normal">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Use normal rendering mode</property>
+            <property name="halign">start</property>
+            <property name="action-name">win.canvas-display-mode</property>
+            <property name="action-target">0</property>
+            <property name="text" translatable="yes">Normal</property>
+            <property name="inverted">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">1</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="outline">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Show only object outlines</property>
+            <property name="halign">start</property>
+            <property name="action-name">win.canvas-display-mode</property>
+            <property name="action-target">1</property>
+            <property name="text" translatable="yes">Outline</property>
+            <property name="inverted">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">2</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="overlay">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Show objects as outlines, and the actual drawing below them with reduced opacity</property>
+            <property name="halign">start</property>
+            <property name="action-name">win.canvas-display-mode</property>
+            <property name="action-target">4</property>
+            <property name="text" translatable="yes">Outline overlay</property>
+            <property name="inverted">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">3</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="enhanced">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Ensure all strokes are displayed on screen as at least 1 pixel wide</property>
+            <property name="halign">start</property>
+            <property name="action-name">win.canvas-display-mode</property>
+            <property name="action-target">3</property>
+            <property name="text" translatable="yes">Enhance thin lines</property>
+            <property name="inverted">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">4</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="no-filter">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Do not render filters (for speed)</property>
+            <property name="halign">start</property>
+            <property name="action-name">win.canvas-display-mode</property>
+            <property name="action-target">2</property>
+            <property name="text" translatable="yes">No filters</property>
+            <property name="inverted">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">5</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Quick zoom:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">8</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Quick preview:</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">9</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="visible">True</property>
+            <property name="margin-top">3</property>
+            <property name="margin-bottom">3</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">7</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="visible">True</property>
+            <property name="margin-top">3</property>
+            <property name="margin-bottom">3</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">11</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="zoom-resize">
+            <property name="label" translatable="yes">Zoom with window size</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Zoom drawing when window size changes</property>
+            <property name="draw-indicator">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">12</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="tooltip-text" translatable="yes">Hold this key to activate quick zoom</property>
+            <property name="halign">center</property>
+            <property name="margin-top">1</property>
+            <property name="margin-bottom">1</property>
+            <property name="label" translatable="yes">&lt;b&gt;Q&lt;/b&gt;</property>
+            <property name="use-markup">True</property>
+            <property name="justify">center</property>
+            <property name="width-chars">3</property>
+            <style>
+              <class name="key"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">8</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="tooltip-text" translatable="yes">Hold this key for document preview, hiding grids, guides, handles etc.</property>
+            <property name="halign">center</property>
+            <property name="margin-top">1</property>
+            <property name="margin-bottom">1</property>
+            <property name="label" translatable="yes">&lt;b&gt;F&lt;/b&gt;</property>
+            <property name="use-markup">True</property>
+            <property name="justify">center</property>
+            <property name="width-chars">3</property>
+            <style>
+              <class name="key"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">9</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="margin-top">5</property>
+            <property name="spacing">5</property>
+            <child>
+              <object class="GtkToggleButton" id="color-managed">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-text" translatable="yes">Toggle between normal and color managed modes</property>
+                <property name="action-name">win.canvas-color-manage</property>
+                <child>
+                  <object class="GtkImage" id="image1">
+                    <property name="visible">True</property>
+                    <property name="icon-name">color-management-symbolic</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkToggleButton" id="grayscale">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-text" translatable="yes">Toggle between normal and grayscale modes</property>
+                <property name="action-name">win.canvas-color-mode</property>
+                <child>
+                  <object class="GtkImage" id="image2">
+                    <property name="visible">True</property>
+                    <property name="icon-name">grayscale-mode-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">6</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

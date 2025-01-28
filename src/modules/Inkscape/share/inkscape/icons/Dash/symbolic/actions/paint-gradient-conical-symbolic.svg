@@ -1,0 +1,15 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="paint-gradient-conical">
+<g id="Group 43" opacity="0.7">
+<path id="Vector 140" opacity="0.8" d="M8 14V8L14 14H8Z" fill="black"/>
+<path id="Vector 142" opacity="0.7" d="M14 8V14L8 8H14Z" fill="black"/>
+<path id="Vector 144" opacity="0.6" d="M14 8V2L8 8H14Z" fill="black"/>
+<path id="Vector 146" opacity="0.3" d="M2 8V2L8 8H2Z" fill="black"/>
+<path id="Vector 143" opacity="0.2" d="M2 8V14L8 8H2Z" fill="black"/>
+<path id="Vector 145" opacity="0.5" d="M8 2V8L14 2H8Z" fill="black"/>
+<path id="Vector 147" opacity="0.4" d="M8 2V8L2 2H8Z" fill="black"/>
+<path id="Vector 141" opacity="0.1" d="M8 14V8L2 14H8Z" fill="black"/>
+</g>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M13.5 2H2.5C2.22386 2 2 2.22386 2 2.5V13.5C2 13.7761 2.22386 14 2.5 14H13.5C13.7761 14 14 13.7761 14 13.5V2.5C14 2.22386 13.7761 2 13.5 2ZM2.5 1C1.67157 1 1 1.67157 1 2.5V13.5C1 14.3284 1.67157 15 2.5 15H13.5C14.3284 15 15 14.3284 15 13.5V2.5C15 1.67157 14.3284 1 13.5 1H2.5Z" fill="black"/>
+</g>
+</svg>

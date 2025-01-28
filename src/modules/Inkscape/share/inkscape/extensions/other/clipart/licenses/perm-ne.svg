@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="1.2-alpha1 (8b0d57f509, 2022-03-02, custom)"
+   width="48"
+   height="48"
+   version="1.0"
+   sodipodi:docname="perm-ne.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/doctormo/Desktop/small-pd.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5">
+    <foreignObject
+       requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       id="foreignObject8" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="807"
+     inkscape:window-width="1472"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="1.4717"
+     inkscape:cx="78.480669"
+     inkscape:cy="18.006387"
+     inkscape:window-x="64"
+     inkscape:window-y="20"
+     inkscape:current-layer="svg2"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d3d3d3" />
+  <g
+     id="g3344"
+     transform="matrix(1.5682857,0,0,1.5682857,-47.233683,69.165764)"
+     style="fill:#ffffff;stroke-width:0.349142">
+    <circle
+       r="10.621033"
+       cy="-37.690372"
+       cx="54.028732"
+       transform="matrix(1.2907631,0,0,1.2907631,-24.316921,19.849894)"
+       id="path3342"
+       style="color:#000000;overflow:visible;color-interpolation-filters:linearRGB;stroke:#000000;stroke-width:2.47001;stroke-linecap:round;marker:none;image-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+  </g>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#000000;stroke-width:5"
+     d="M 44.315576,30.028303 42.525834,33.953831 4.51764,16.828405 6.3073829,12.90288 Z"
+     id="rect2247"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     id="path9953"
+     style="opacity:0.8;fill:#000000;stroke-width:5;stop-color:#000000"
+     inkscape:transform-center-y="-4.0093488"
+     d="m 28.435058,8.3588897 c -1.811949,0.1347295 -3.869563,2.4224093 -5.670766,2.6939023 -2.180369,0.328644 -5.488969,-1.746164 -7.330993,-0.534161 -1.739088,1.144271 -0.929741,4.851041 -1.970623,6.653911 -1.102491,1.909587 -4.7870042,3.203529 -4.9879087,5.399355 -0.1896692,2.073112 3.2124387,3.751669 3.9730007,5.689534 0.805584,2.052572 -0.479872,5.738438 1.111635,7.264586 1.502563,1.440858 4.936034,-0.171842 6.925322,0.441765 2.107037,0.649928 4.18836,3.953918 6.373836,3.661167 2.063343,-0.276391 2.941599,-3.966784 4.661636,-5.139493 1.821851,-1.242124 5.702073,-0.809919 6.835814,-2.701121 1.070381,-1.785513 -1.265753,-4.772856 -1.110188,-6.848807 0.164773,-2.198832 2.922806,-4.963727 2.15108,-7.029267 -0.728599,-1.950106 -4.522959,-1.985345 -6.04901,-3.401304 C 31.731511,13.009182 31.290499,9.129993 29.194432,8.44551 28.947066,8.3647313 28.693908,8.3396427 28.435058,8.3588897 Z M 24.00008,15.002694 a 8.9976648,8.9976648 0 0 1 8.996999,8.997 8.9976648,8.9976648 0 0 1 -8.996999,8.996999 8.9976648,8.9976648 0 0 1 -8.997003,-8.996999 8.9976648,8.9976648 0 0 1 8.997003,-8.997 z" />
+</svg>

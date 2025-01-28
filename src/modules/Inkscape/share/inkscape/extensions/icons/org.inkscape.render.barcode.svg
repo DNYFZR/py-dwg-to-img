@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
+   width="70"
+   height="60"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="org.inkscape.render.barcode.svg"
+   inkscape:version="1.4-dev (de72ba3c18, 2023-06-27, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="7.445865"
+     inkscape:cx="62.719375"
+     inkscape:cy="44.857112"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#3f84a6"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="org.inkscape.render.barcode"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       x="4.9999957"
+       y="5"
+       id="barcode_bar2"
+       width="1.2765957"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="7.5531869"
+       y="5"
+       id="barcode_bar4"
+       width="2.5531914"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="11.382975"
+       y="5"
+       id="barcode_bar6"
+       width="5.1063828"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="17.765953"
+       y="5"
+       id="barcode_bar8"
+       width="1.2765957"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="20.319143"
+       y="5"
+       id="barcode_bar10"
+       width="1.2765957"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="22.872335"
+       y="5"
+       id="barcode_bar12"
+       width="2.5531914"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="27.978718"
+       y="5"
+       id="barcode_bar14"
+       width="2.5531914"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="31.808506"
+       y="5"
+       id="barcode_bar16"
+       width="1.2765957"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="35.638294"
+       y="5"
+       id="barcode_bar18"
+       width="3.829787"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="40.744675"
+       y="5"
+       id="barcode_bar20"
+       width="1.2765957"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="43.297867"
+       y="5"
+       id="barcode_bar22"
+       width="1.2765957"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="47.127655"
+       y="5"
+       id="barcode_bar24"
+       width="2.5531914"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="52.234035"
+       y="5"
+       id="barcode_bar26"
+       width="1.2765957"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="54.787228"
+       y="5"
+       id="barcode_bar28"
+       width="1.2765957"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="57.34042"
+       y="5"
+       id="barcode_bar30"
+       width="2.5531914"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <rect
+       x="63.723396"
+       y="5"
+       id="barcode_bar32"
+       width="1.2765957"
+       height="38.297871"
+       style="fill:#000000;stroke-width:1" />
+    <path
+       d="m 13.439933,52.742118 c 0.01149,0.333193 0.02298,0.907663 0.471065,1.413196 0.505534,0.58596 1.34426,0.827237 2.182986,0.827237 1.849794,0 2.757456,-1.229366 2.757456,-2.343837 0,-0.160852 0,-1.688942 -1.700431,-1.93022 1.229366,-0.275745 1.585537,-1.217876 1.585537,-1.872772 0,-1.102982 -0.861705,-2.148517 -2.596604,-2.148517 -0.643406,0 -2.504689,0.195319 -2.573626,2.171496 h 1.16043 c 0.103404,-0.988088 0.850215,-1.252344 1.447664,-1.252344 0.792769,0 1.401707,0.356171 1.401707,1.252344 0,1.286813 -1.33277,1.447664 -2.125539,1.378728 v 0.930641 c 0.402129,-0.01149 0.689364,-0.02298 1.102982,0.05745 0.58596,0.126384 1.14894,0.562981 1.14894,1.401707 0,0.700854 -0.471065,1.413196 -1.585537,1.413196 -0.976599,0 -1.470643,-0.540001 -1.459154,-1.298302 z m 12.259185,2.045113 h 1.102983 v -7.950664 h -1.022557 c -0.448086,0.37915 -1.183408,0.861705 -1.930219,1.252344 v 1.14894 c 0.562981,-0.264256 1.355749,-0.735321 1.849793,-1.14894 z m 10.374924,0 h 1.102983 v -1.72341 h 1.160429 V 52.13318 h -1.160429 v -5.400018 h -1.240856 l -3.44682,4.963421 v 1.367238 h 3.584693 z M 33.362544,52.13318 36.10851,47.939549 v 4.193631 z m 11.500885,2.654051 h 1.102982 v -7.950664 h -1.022556 c -0.448087,0.37915 -1.183409,0.861705 -1.93022,1.252344 v 1.14894 c 0.562981,-0.264256 1.35575,-0.735321 1.849794,-1.14894 z m 7.111934,-1.884261 c 0.05745,1.355749 1.080004,2.068092 2.366816,2.068092 1.7349,0 2.837882,-1.183408 2.837882,-2.745967 0,-1.367238 -0.781279,-2.619583 -2.378306,-2.619583 -0.930641,0 -1.436175,0.494044 -1.677452,0.735322 l 0.149362,-2.573626 h 3.481288 v -0.930641 h -4.469376 l -0.206809,4.733632 h 1.045535 c 0.05745,-0.18383 0.126383,-0.425107 0.367661,-0.666385 0.241277,-0.241277 0.608938,-0.413618 1.068514,-0.413618 0.919152,0 1.505111,0.631917 1.505111,1.71192 0,0.517023 -0.18383,1.826815 -1.574047,1.826815 -0.597449,0 -1.298303,-0.321703 -1.321281,-1.125961 z"
+       id="barcode_text"
+       style="text-align:center;text-anchor:middle"
+       aria-label="3 1 4 1 5" />
+  </g>
+</svg>
