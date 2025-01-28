@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="selection-make-bitmap-copy">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M12 2H2L2 12H3V4C3 3.44772 3.44772 3 4 3H12V2ZM13 3H14C14.5523 3 15 3.44772 15 4V14C15 14.5523 14.5523 15 14 15H4C3.44772 15 3 14.5523 3 14V13H2C1.44772 13 1 12.5523 1 12V2C1 1.44772 1.44772 1 2 1H12C12.5523 1 13 1.44772 13 2V3ZM4 4H14V14H4L4 4Z" fill="black"/>
+<path id="neutral" opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M7 8C7.55228 8 8 7.55228 8 7C8 6.44772 7.55228 6 7 6C6.44772 6 6 6.44772 6 7C6 7.55228 6.44772 8 7 8ZM5 13H13V9L11 7L8 10L7 9L5 11V13Z" fill="black"/>
+</g>
+</svg>

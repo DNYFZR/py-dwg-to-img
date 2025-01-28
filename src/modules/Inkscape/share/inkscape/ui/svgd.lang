@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This file is part of Inkscape.
+
+ Authors:
+   Rafael Siejakowski <rs@rs-math.net>
+
+ Copyright (C) 2022 the Authors.
+
+ Released under GNU GPL v2+, read the file 'COPYING' for more information.
+-->
+<language id="svgd" _name="SVG path attribute 'd'" version="2.0" _section="Markup">
+  <styles>
+    <style id="command" _name="Path command" map-to="def:keyword"/>
+    <style id="error" _name="Error" map-to="def:error"/>
+    <style id="numeric" _name="Path node coordinate" map-to="def:number"/>
+    <style id="alternate-numeric" _name="Control point coordinate" map-to="def:special-constant"/>
+    <style id="angle" _name="Ellipse rotation angle" map-to="def:type"/>
+    <style id="flags" _name="Boolean flags" map-to="def:preprocessor"/>
+  </styles>
+
+  <default-regex-options case-sensitive="false"/>
+
+  <definitions>
+    <!-- Based on SVG2 specification, § 9.3.9. The grammar for path data. -->
+
+    <define-regex id="maybecwsp">(?m)[\s,\r\n]*</define-regex>
+    <define-regex id="exponent">e[+\-]?\d+</define-regex>
+    <define-regex id="fractional-constant">\d*\.\d+|\d+</define-regex>
+    <define-regex id="number">\%{fractional-constant}(\%{exponent})?</define-regex>
+    <define-regex id="coordinate">[+\-]?\%{number}</define-regex>
+    <define-regex id="positive-coordinate">\+?\%{number}</define-regex>
+    <define-regex id="command-letter">[MLHVCSQTAZ]</define-regex>
+    <define-regex id="invalid">[^\-+\s\r\n,\.MLHVCSQTAZmlhvcsqtaz0-9Ee]</define-regex>
+    <define-regex id="command-end">(?m)(?=\%{command-letter}|\%{invalid})</define-regex>
+
+    <!-- Define error contexts -->
+    <context id="command-not-allowed" style-ref="error" extend-parent="false" end-parent="true">
+      <match>(\%{command-letter}|e)</match>
+    </context>
+
+    <context id="invalid-char" style-ref="error" extend-parent="false" end-parent="true">
+      <match>\%{invalid}</match>
+    </context>
+
+    <!-- Coordinate pair is defined as a region (allows for two numbers on separate lines). -->
+    <context id="point">
+      <start>\%{coordinate}</start>
+      <end>\%{coordinate}</end>
+      <include>
+        <context ref="command-not-allowed"/>
+        <context ref="invalid-char"/>
+        <context sub-pattern="0" where="start" style-ref="numeric"/>
+        <context sub-pattern="0" where="end" style-ref="numeric"/>
+      </include>
+    </context>
+
+    <!-- PRIVATE: A pair of numbers with different highlighting. -->
+    <context id="PRIVATE-heterochromic4-inner2" extend-parent="true" once-only="true">
+      <start>\%{coordinate}</start>
+      <end>\%{coordinate}</end>
+      <include>
+        <context ref="command-not-allowed"/>
+        <context ref="invalid-char"/>
+        <context sub-pattern="0" where="start" style-ref="alternate-numeric"/>
+        <context sub-pattern="0" where="end" style-ref="numeric"/>
+      </include>
+    </context>
+
+    <!-- A 4-tuple of numbers with different highlighting for the first two than for the last two. -->
+    <context id="heterochromic4" extend-parent="false">
+      <start>\%{coordinate}</start>
+      <end>\%{coordinate}</end>
+      <include>
+        <context ref="command-not-allowed"/>
+        <context ref="invalid-char"/>
+        <context id="heterochromic4-first" sub-pattern="0" where="start" style-ref="alternate-numeric"/>
+        <context id="heterochromic4-last" sub-pattern="0" where="end" style-ref="numeric"/>
+        <context ref="PRIVATE-heterochromic4-inner2"/>
+      </include>
+    </context>
+
+    <!-- PRIVATE: A pair of numbers with alternate highlighting. -->
+    <context id="PRIVATE-heterochromic6-inner4-inner2" extend-parent="true" once-only="true">
+      <start>\%{coordinate}</start>
+      <end>\%{coordinate}</end>
+      <include>
+        <context ref="command-not-allowed"/>
+        <context ref="invalid-char"/>
+        <context sub-pattern="0" where="start" style-ref="alternate-numeric"/>
+        <context sub-pattern="0" where="end" style-ref="alternate-numeric"/>
+      </include>
+    </context>
+
+    <!-- PRIVATE: A 4-tuple of numbers with different highlighting for the first three than for the last one. -->
+    <context id="PRIVATE-heterochromic6-inner4" extend-parent="true" once-only="true">
+      <start>\%{coordinate}</start>
+      <end>\%{coordinate}</end>
+      <include>
+        <context ref="command-not-allowed"/>
+        <context ref="invalid-char"/>
+        <context sub-pattern="0" where="start" style-ref="alternate-numeric"/>
+        <context sub-pattern="0" where="end" style-ref="numeric"/>
+        <context ref="PRIVATE-heterochromic6-inner4-inner2"/>
+      </include>
+    </context>
+
+    <!-- A 6-tuple of numbers with different highlighting for the first four than for the last two. -->
+    <context id="heterochromic6" extend-parent="false">
+      <start>\%{coordinate}</start>
+      <end>\%{coordinate}</end>
+      <include>
+        <context ref="command-not-allowed"/>
+        <context ref="invalid-char"/>
+        <context sub-pattern="0" where="start" style-ref="alternate-numeric"/>
+        <context sub-pattern="0" where="end" style-ref="numeric"/>
+        <context ref="PRIVATE-heterochromic6-inner4"/>
+      </include>
+    </context>
+
+    <!-- PRIVATE: The third shell of arcto arguments. -->
+    <context id="PRIVATE-arcto-shell3" extend-parent="true" once-only="true">
+      <start>\%{coordinate}</start><!-- rotation angle -->
+      <end>(0|1)\%{maybecwsp}(0|1)</end><!-- flags -->
+      <include>
+        <context ref="command-not-allowed"/>
+        <context ref="invalid-char"/>
+        <context sub-pattern="0" where="start" style-ref="angle"/>
+        <context sub-pattern="0" where="end" style-ref="flags"/>
+      </include>
+    </context>
+
+    <!-- PRIVATE: The second shell of arcto arguments. -->
+    <context id="PRIVATE-arcto-shell2" extend-parent="true" once-only="true">
+      <start>\%{positive-coordinate}</start><!-- ray y -->
+      <end>\%{coordinate}</end><!-- endpoint x -->
+      <include>
+        <context ref="command-not-allowed"/>
+        <context ref="invalid-char"/>
+        <context sub-pattern="0" where="start" style-ref="alternate-numeric"/>
+        <context sub-pattern="0" where="end" style-ref="numeric"/>
+        <context ref="PRIVATE-arcto-shell3"/>
+      </include>
+    </context>
+
+    <!-- The arguments of an arcto command. -->
+    <context id="arcto-args" extend-parent="false">
+      <start>\%{positive-coordinate}</start><!-- ray x -->
+      <end>\%{coordinate}</end><!-- endpoint y -->
+      <include>
+        <context ref="command-not-allowed"/>
+        <context ref="invalid-char"/>
+        <context sub-pattern="0" where="start" style-ref="alternate-numeric"/>
+        <context sub-pattern="0" where="end" style-ref="numeric"/>
+        <context ref="PRIVATE-arcto-shell2"/>
+      </include>
+    </context>
+
+    <!-- A valid SVG coordinate. -->
+    <context id="coord" style-ref="numeric">
+      <match>\%{coordinate}</match>
+    </context>
+
+    <!-- Start the SVG path `d` definition. -->
+    <context id="svgd">
+      <include>
+
+        <!-- An M, L or T command (expecting a sequence of points). -->
+        <context id="moveto">
+          <start>M|L|T</start>
+          <end>\%{command-end}</end>
+          <include>
+            <context sub-pattern="0" where="start" style-ref="command"/>
+            <context ref="point"/>
+          </include>
+        </context>
+
+        <!-- An H or V command (expecting a sequence of coordinates). -->
+        <context id="paraxial">
+          <start>H|V</start>
+          <end>\%{command-end}</end>
+          <include>
+            <context sub-pattern="0" where="start" style-ref="command"/>
+            <context ref="coord"/>
+          </include>
+        </context>
+
+        <!-- S and Q commands: expecting a sequence of **pairs** of points. -->
+        <context id="smooth-cubic-or-quadratic">
+          <start>S|Q</start>
+          <end>\%{command-end}</end>
+          <include>
+            <context sub-pattern="0" where="start" style-ref="command"/>
+            <!-- The argument of the S/Q command is 4*n numbers; in each 4-tuple we
+                 highlight the first two coords differently than the last two. -->
+            <context ref="heterochromic4"/>
+          </include>
+        </context>
+
+        <!-- C command: expecting a sequence of **triples** of points. -->
+        <context id="cubic-bezier">
+          <start>C</start>
+          <end>\%{command-end}</end>
+          <include>
+            <context sub-pattern="0" where="start" style-ref="command"/>
+            <!-- In each 6-tuple we highlight the first four numbers differently than the last two. -->
+            <context ref="heterochromic6"/>
+          </include>
+        </context>
+
+        <!-- A command: elliptical arc. -->
+        <context id="elliptical-arc">
+          <start>A</start>
+          <end>\%{command-end}</end>
+          <include>
+            <context sub-pattern="0" where="start" style-ref="command"/>
+            <context ref="arcto-args"/>
+          </include>
+        </context>
+
+        <context id="z-command" style-ref="command">
+          <keyword>Z</keyword>
+        </context>
+
+        <context ref="invalid-char"/>
+      </include>
+    </context>
+  </definitions>
+</language>

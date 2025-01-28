@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="align-horizontal-center-symbolic.svg"
+   viewBox="0 0 16 16"
+   height="16"
+   width="16"
+   id="svg1"
+   version="1.1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <style
+     id="s0">
+   .success { fill: #009909; }
+   .warning { fill: #FF1990; }
+   .error   { fill: #00AAFF; }
+  </style>
+  <style
+     id="s2"> 
+     @import '../../highlights.css'; 
+  </style>
+  <metadata
+     id="metadata199">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs197">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="8.0000297,12"
+       end_point="8.0000297,16"
+       center_point="8.0000297,14"
+       id="path-effect1306"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="1132.7494,587.1121"
+       end_point="1132.7494,603.61226"
+       center_point="1132.7494,595.36218"
+       id="path-effect1114"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:snap-global="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="align-horizontal-center"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="54"
+     inkscape:window-height="1177"
+     inkscape:window-width="1858"
+     inkscape:cy="6.2276786"
+     inkscape:cx="5.3236607"
+     inkscape:zoom="44.8"
+     showgrid="true"
+     id="namedview"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true">
+    <inkscape:grid
+       spacingy="1"
+       spacingx="1"
+       id="grid"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <g
+     id="align-horizontal-center"
+     inkscape:label="00271"
+     transform="matrix(0.666667,0,0,0.666666,-746.66667,-396.90779)">
+    <path
+       transform="scale(-1,1)"
+       style="opacity:0;fill:none"
+       d="m -1144,595.36218 h 24 v 24 h -24 z"
+       id="rect22217"
+       inkscape:connector-curvature="0" />
+    <path
+       class="success"
+       style="opacity:1;fill-opacity:1;stroke-width:1.15467"
+       d="m 1133.4994,595.36218 h -0.75 -0.75 v 24 h 1.5 z"
+       id="rect22219"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       sodipodi:nodetypes="ccccccccccccccc"
+       inkscape:connector-curvature="0"
+       id="rect22225"
+       style="opacity:1"
+       d="m 1122.9994,610.36229 v 4.50001 h 7.5 v -4.50001 z m 3,-6 v 4.5 h 4.5 v -4.5 z m -2.9999,-6 -10e-5,4.5 h 7.5 v -4.50001 z m 19.4999,12 v 4.50001 h -7.5 v -4.50001 z m -3,-6 v 4.5 h -4.5 v -4.5 z m 2.9999,-6 10e-5,4.5 h -7.5 v -4.50001 z"
+       inkscape:path-effect="#path-effect1114"
+       inkscape:original-d="m 1122.9994,610.36229 v 4.50001 h 7.5 v -4.50001 z m 3,-6 v 4.5 h 4.5 v -4.5 z m -2.9999,-6 -10e-5,4.5 h 7.5 v -4.50001 z" />
+  </g>
+</svg>

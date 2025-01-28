@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70"
+   height="60"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="org.ekips.filter.plot.svg"
+   inkscape:version="1.4-dev (f25ce46d5c, 2023-06-29)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="90"
+     inkscape:cy="4"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#3f84a6"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect8"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,2.9704457,0,1 @ F,0,0,1,0,2.8055879,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="org.ekips.filter.plot"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g11"
+       transform="translate(-0.500002,-0.5)">
+      <rect
+         style="fill:#e0e0e0;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:3.3"
+         id="rect7"
+         width="45"
+         height="17"
+         x="12.999999"
+         y="11"
+         ry="1.6249003"
+         rx="1.6249003" />
+      <rect
+         style="fill:#e0e0e0;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:3.3"
+         id="rect6"
+         width="43"
+         height="2"
+         x="13.999999"
+         y="46" />
+      <circle
+         style="fill:#c0c0c0;fill-rule:evenodd;stroke:#000000;stroke-miterlimit:3.3"
+         id="path8"
+         cx="30.5"
+         cy="18.5"
+         r="1.5" />
+      <circle
+         style="fill:#c0c0c0;fill-rule:evenodd;stroke:#000000;stroke-miterlimit:3.3"
+         id="circle8"
+         cx="36.5"
+         cy="18.5"
+         r="1.5" />
+      <rect
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:3.3"
+         id="rect9"
+         width="29"
+         height="26"
+         x="20.999998"
+         y="24" />
+      <g
+         id="g10"
+         transform="translate(-5)">
+        <rect
+           style="fill:#e0e0e0;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:3.3"
+           id="rect4"
+           width="2"
+           height="21"
+           x="17"
+           y="31" />
+        <path
+           style="fill:#e0e0e0;fill-rule:evenodd;stroke:#000000;stroke-width:0.999996;stroke-miterlimit:3.3"
+           id="rect8"
+           width="6"
+           height="8"
+           x="15"
+           y="15"
+           inkscape:path-effect="#path-effect8"
+           sodipodi:type="rect"
+           d="m 17.970446,15 0.223966,0 A 2.8055879,2.8055879 45 0 1 21,17.805588 V 23 H 15 V 17.970446 A 2.9704457,2.9704457 135 0 1 17.970446,15 Z" />
+        <rect
+           style="fill:#e0e0e0;fill-rule:evenodd;stroke:#000000;stroke-width:0.999995;stroke-miterlimit:3.3"
+           id="rect1"
+           width="6"
+           height="9.9999981"
+           x="15"
+           y="21" />
+        <rect
+           style="fill:#e0e0e0;fill-rule:evenodd;stroke:#000000;stroke-miterlimit:3.3"
+           id="rect10"
+           width="4"
+           height="2"
+           x="16"
+           y="52" />
+      </g>
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g10"
+         id="use10"
+         transform="translate(45)" />
+      <rect
+         style="fill:#c0c0c0;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:3.3"
+         id="rect11"
+         width="7"
+         height="5"
+         x="19"
+         y="16"
+         ry="0.99999994"
+         rx="1" />
+      <path
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-miterlimit:3.3"
+         d="m 18.500002,24 h 34"
+         id="path11"
+         sodipodi:nodetypes="cc" />
+    </g>
+  </g>
+</svg>

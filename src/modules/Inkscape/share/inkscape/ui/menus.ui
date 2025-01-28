@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <menu id="menus">
+    <submenu id="file-menu">
+      <attribute name="label" translatable="yes">_File</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_New</attribute>
+          <attribute name="action">win.document-new</attribute>
+          <attribute name="icon">document-new</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">New from _Template...</attribute>
+          <attribute name="action">win.document-dialog-templates</attribute>
+          <attribute name="icon">dialog-templates</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Open...</attribute>
+          <attribute name="action">win.document-open</attribute>
+          <attribute name="icon">document-open</attribute>
+        </item>
+      </section>
+      <submenu id="recent-files">
+        <attribute name="label" translatable="yes">Open _Recent</attribute>
+      </submenu>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Re_vert</attribute>
+          <attribute name="action">win.document-revert</attribute>
+          <attribute name="icon">document-revert</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Save</attribute>
+          <attribute name="action">win.document-save</attribute>
+          <attribute name="icon">document-save</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Save _As...</attribute>
+          <attribute name="action">win.document-save-as</attribute>
+          <attribute name="icon">document-save-as</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Save a Cop_y...</attribute>
+          <attribute name="action">win.document-save-copy</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Save Template...</attribute>
+          <attribute name="action">win.document-save-template</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Import...</attribute>
+          <attribute name="action">win.document-import</attribute>
+          <attribute name="icon">document-import</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Import _Web Image...</attribute>
+          <attribute name="action">app.org.inkscape.import-web-image</attribute>
+          <attribute name="icon">document-import-web</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Export...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Export</attribute>
+          <attribute name="icon">document-export</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Print...</attribute>
+          <attribute name="action">win.document-print</attribute>
+          <attribute name="icon">document-print</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Clean _Up Document</attribute>
+          <attribute name="action">win.document-cleanup</attribute>
+          <attribute name="icon">document-cleanup</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Document Resources</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">DocumentResources</attribute>
+          <attribute name="icon">document-resources</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Document Properties...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">DocumentProperties</attribute>
+          <attribute name="icon">document-properties</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Close</attribute>
+          <attribute name="action">win.document-close</attribute>
+          <attribute name="icon">window-close</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Quit</attribute>
+          <attribute name="action">app.quit</attribute>
+          <attribute name="icon">application-exit</attribute>
+          <attribute name="hidden-when">macos-menubar</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu id="edit-menu">
+      <attribute name="label" translatable="yes">_Edit</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Undo</attribute>
+          <attribute name="action">doc.undo</attribute>
+          <attribute name="icon">edit-undo</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Redo</attribute>
+          <attribute name="action">doc.redo</attribute>
+          <attribute name="icon">edit-redo</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Undo _History...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">UndoHistory</attribute>
+          <attribute name="icon">edit-undo-history</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Cu_t</attribute>
+          <attribute name="action">app.cut</attribute>
+          <attribute name="icon">edit-cut</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Copy</attribute>
+          <attribute name="action">app.copy</attribute>
+          <attribute name="icon">edit-copy</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Paste</attribute>
+          <attribute name="action">win.paste</attribute>
+          <attribute name="icon">edit-paste</attribute>
+        </item>
+      </section>
+      <submenu id="paste-size">
+        <attribute name="label" translatable="yes">P_aste...</attribute>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">_In Place</attribute>
+            <attribute name="action">win.paste-in-place</attribute>
+            <attribute name="icon">edit-paste-in-place</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">_On Page</attribute>
+            <attribute name="action">win.paste-on-page</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">_Style</attribute>
+            <attribute name="action">app.paste-style</attribute>
+            <attribute name="icon">edit-paste-style</attribute>
+          </item>
+        </section>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Si_ze</attribute>
+            <attribute name="action">app.paste-size</attribute>
+            <attribute name="icon">edit-paste-size</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">_Width</attribute>
+            <attribute name="action">app.paste-width</attribute>
+            <attribute name="icon">edit-paste-width</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">_Height</attribute>
+            <attribute name="action">app.paste-height</attribute>
+            <attribute name="icon">edit-paste-height</attribute>
+          </item>
+        </section>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Size Separately</attribute>
+            <attribute name="action">app.paste-size-separately</attribute>
+            <attribute name="icon">edit-paste-size-separately</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Width Separately</attribute>
+            <attribute name="action">app.paste-width-separately</attribute>
+            <attribute name="icon">edit-paste-width-separately</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Height Separately</attribute>
+            <attribute name="action">app.paste-height-separately</attribute>
+            <attribute name="icon">edit-paste-height-separately</attribute>
+          </item>
+        </section>
+      </submenu>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Find/Replace...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Find</attribute>
+          <attribute name="icon">edit-find</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Duplic_ate</attribute>
+          <attribute name="action">app.duplicate</attribute>
+          <attribute name="icon">edit-duplicate</attribute>
+        </item>
+        <submenu id="paste-size">
+          <attribute name="label" translatable="yes">Clo_ne</attribute>
+          <section>
+            <item>
+              <attribute name="label" translatable="yes">Create Clo_ne</attribute>
+              <attribute name="action">app.clone</attribute>
+              <attribute name="icon">edit-clone</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Create Tiled Clones...</attribute>
+              <attribute name="action">win.dialog-open</attribute>
+              <attribute name="target">CloneTiler</attribute>
+              <attribute name="icon">dialog-tile-clones</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Unlin_k Clone</attribute>
+              <attribute name="action">app.clone-unlink</attribute>
+              <attribute name="icon">edit-clone-unlink</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Unlink Clones _recursively</attribute>
+              <attribute name="action">app.clone-unlink-recursively</attribute>
+              <attribute name="icon">edit-clone-unlink</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Relink to Copied</attribute>
+              <attribute name="action">app.clone-link</attribute>
+              <attribute name="icon">edit-clone-link</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Select _Original</attribute>
+              <attribute name="action">app.select-original</attribute>
+              <attribute name="icon">edit-select-original</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Clone original path (LPE)</attribute>
+              <attribute name="action">app.clone-link-lpe</attribute>
+              <attribute name="icon">edit-clone-link-lpe</attribute>
+            </item>
+          </section>
+        </submenu>
+        <item>
+          <attribute name="label" translatable="yes">Make a _Bitmap Copy</attribute>
+          <attribute name="action">app.selection-make-bitmap-copy</attribute>
+          <attribute name="icon">selection-make-bitmap-copy</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Delete</attribute>
+          <attribute name="action">app.delete</attribute>
+          <attribute name="icon">edit-delete</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Select Al_l</attribute>
+          <attribute name="action">win.select-all</attribute>
+          <attribute name="icon">edit-select-all</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Select All in All La_yers</attribute>
+          <attribute name="action">win.select-all-layers</attribute>
+          <attribute name="icon">edit-select-all-layers</attribute>
+        </item>
+        <submenu id="select-size">
+          <attribute name="label" translatable="yes">Select Sa_me</attribute>
+          <section>
+            <item>
+              <attribute name="label" translatable="yes">Fill _and Stroke</attribute>
+              <attribute name="action">win.select-same-fill-and-stroke</attribute>
+              <attribute name="icon">edit-select-same-fill-and-stroke</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Fill Color</attribute>
+              <attribute name="action">win.select-same-fill</attribute>
+              <attribute name="icon">edit-select-same-fill</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Stroke Color</attribute>
+              <attribute name="action">win.select-same-stroke-color</attribute>
+              <attribute name="icon">edit-select-same-stroke-color</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Stroke St_yle</attribute>
+              <attribute name="action">win.select-same-stroke-style</attribute>
+              <attribute name="icon">edit-select-same-stroke-style</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Object Type</attribute>
+              <attribute name="action">win.select-same-object-type</attribute>
+              <attribute name="icon">edit-select-same-object-type</attribute>
+            </item>
+          </section>
+        </submenu>
+        <item>
+          <attribute name="label" translatable="yes">In_vert Selection</attribute>
+          <attribute name="action">win.select-invert</attribute>
+          <attribute name="icon">edit-select-invert</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">D_eselect</attribute>
+          <attribute name="action">win.select-none</attribute>
+          <attribute name="icon">edit-select-none</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Resize Page to Selection</attribute>
+          <attribute name="action">app.page-fit-to-selection</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Create _Guides Around the Current Page</attribute>
+          <attribute name="action">doc.create-guides-around-page</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Lock All Guides</attribute>
+          <attribute name="action">doc.lock-all-guides</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Delete All Guides</attribute>
+          <attribute name="action">doc.delete-all-guides</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_XML Editor...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">XMLEditor</attribute>
+          <attribute name="icon">dialog-xml-editor</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">P_references</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Preferences</attribute>
+          <attribute name="icon">preferences-system</attribute>
+          <attribute name="use-icon">True</attribute>
+          <attribute name="hidden-when">macos-menubar</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu id="view-menu">
+      <attribute name="label" translatable="yes">_View</attribute>
+      <submenu id="zoom-menu">
+        <attribute name="label" translatable="yes">_Zoom</attribute>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Zoom in</attribute>
+            <attribute name="action">win.canvas-zoom-in</attribute>
+            <attribute name="icon">zoom-in</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Zoom out</attribute>
+            <attribute name="action">win.canvas-zoom-out</attribute>
+            <attribute name="icon">zoom-out</attribute>
+          </item>
+        </section>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Zoom to 1:1</attribute>
+            <attribute name="action">win.canvas-zoom-1-1</attribute>
+            <attribute name="icon">zoom-original</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Zoom to 1:2</attribute>
+            <attribute name="action">win.canvas-zoom-1-2</attribute>
+            <attribute name="icon">zoom-half-size</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Zoom to 2:1</attribute>
+            <attribute name="action">win.canvas-zoom-2-1</attribute>
+            <attribute name="icon">zoom-double-size</attribute>
+          </item>
+        </section>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Zoom Selection</attribute>
+            <attribute name="action">win.canvas-zoom-selection</attribute>
+            <attribute name="icon">zoom-fit-selection</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Zoom Drawing</attribute>
+            <attribute name="action">win.canvas-zoom-drawing</attribute>
+            <attribute name="icon">zoom-fit-drawing</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Zoom Page</attribute>
+            <attribute name="action">win.canvas-zoom-page</attribute>
+            <attribute name="icon">zoom-fit-page</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Zoom Page Width</attribute>
+            <attribute name="action">win.canvas-zoom-page-width</attribute>
+            <attribute name="icon">zoom-fit-width</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Center Page</attribute>
+            <attribute name="action">win.canvas-zoom-center-page</attribute>
+            <attribute name="icon">zoom-center-page</attribute>
+          </item>
+        </section>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Zoom Previous</attribute>
+            <attribute name="action">win.canvas-zoom-prev</attribute>
+            <attribute name="icon">zoom-previous</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Zoom Next</attribute>
+            <attribute name="action">win.canvas-zoom-next</attribute>
+            <attribute name="icon">zoom-next</attribute>
+          </item>
+        </section>
+      </submenu>
+      <submenu id="orientation-menu">
+        <attribute name="label" translatable="yes">_Orientation</attribute>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Rotate Clockwise</attribute>
+            <attribute name="action">win.canvas-rotate-cw</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Rotate Counter-Clockwise</attribute>
+            <attribute name="action">win.canvas-rotate-ccw</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Reset Rotation</attribute>
+            <attribute name="action">win.canvas-rotate-reset</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Lock Rotation</attribute>
+            <attribute name="action">win.canvas-rotate-lock</attribute>
+          </item>
+        </section>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Flip Horizontally</attribute>
+            <attribute name="action">win.canvas-flip-horizontal</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Flip Vertically</attribute>
+            <attribute name="action">win.canvas-flip-vertical</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Reset Flipping</attribute>
+            <attribute name="action">win.canvas-flip-reset</attribute>
+          </item>
+        </section>
+      </submenu>
+      <submenu id="display-mode-menu">
+        <attribute name="label" translatable="yes">_Display Mode</attribute>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Normal</attribute>
+            <attribute name="action">win.canvas-display-mode</attribute>
+            <attribute name="target" type="i">0</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Outline</attribute>
+            <attribute name="action">win.canvas-display-mode</attribute>
+            <attribute name="target" type="i">1</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Outline Overlay</attribute>
+            <attribute name="action">win.canvas-display-mode</attribute>
+            <attribute name="target" type="i">4</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Enhance Thin Lines</attribute>
+            <attribute name="action">win.canvas-display-mode</attribute>
+            <attribute name="target" type="i">3</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">No Filters</attribute>
+            <attribute name="action">win.canvas-display-mode</attribute>
+            <attribute name="target" type="i">2</attribute>
+          </item>
+        </section>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Cycle</attribute>
+            <attribute name="action">win.canvas-display-mode-cycle</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Toggle</attribute>
+            <attribute name="action">win.canvas-display-mode-toggle</attribute>
+          </item>
+        </section>
+      </submenu>
+      <submenu id="split-mode-menu">
+        <attribute name="label" translatable="yes">_Split Mode</attribute>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">None</attribute>
+            <attribute name="action">win.canvas-split-mode</attribute>
+            <attribute name="target" type="i">0</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Split</attribute>
+            <attribute name="action">win.canvas-split-mode</attribute>
+            <attribute name="target" type="i">1</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">X-Ray</attribute>
+            <attribute name="action">win.canvas-split-mode</attribute>
+            <attribute name="target" type="i">2</attribute>
+          </item>
+        </section>
+      </submenu>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Gray Scale</attribute>
+          <attribute name="action">win.canvas-color-mode</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Color Management</attribute>
+          <attribute name="action">win.canvas-color-manage</attribute>
+        </item>
+      </section>
+      <item>
+        <attribute name="label" translatable="yes">Page _Grid</attribute>
+        <attribute name="action">doc.show-grids</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">G_uides</attribute>
+        <attribute name="action">doc.show-all-guides</attribute>
+      </item>
+      <section>
+        <submenu id="display-show-hide">
+          <attribute name="label" translatable="yes">Sh_ow/Hide</attribute>
+          <section>
+            <item>
+              <attribute name="label" translatable="yes">_Commands Bar</attribute>
+              <attribute name="action">win.canvas-commands-bar</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Sn_ap Controls Bar</attribute>
+              <attribute name="action">win.canvas-snap-controls-bar</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">T_ool Controls Bar</attribute>
+              <attribute name="action">win.canvas-tool-control-bar</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Toolbox</attribute>
+              <attribute name="action">win.canvas-toolbox</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Rulers</attribute>
+              <attribute name="action">win.canvas-rulers</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Scroll_bars</attribute>
+              <attribute name="action">win.canvas-scroll-bars</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Palette</attribute>
+              <attribute name="action">win.canvas-palette</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Statusbar</attribute>
+              <attribute name="action">win.canvas-statusbar</attribute>
+            </item>
+          </section>
+        </submenu>
+        <item>
+          <attribute name="label" translatable="yes">Show/Hide D_ialogs</attribute>
+          <attribute name="action">win.dialog-toggle</attribute>
+          <attribute name="icon">show-dialogs</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Command Palette</attribute>
+          <attribute name="action">win.canvas-command-palette</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">S_watches...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Swatches</attribute>
+          <attribute name="icon">swatches</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Messages...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Messages</attribute>
+          <attribute name="icon">dialog-messages</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">P_revious Window</attribute>
+          <attribute name="action">win.window-previous</attribute>
+          <attribute name="icon">window-previous</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">N_ext Window</attribute>
+          <attribute name="action">win.window-next</attribute>
+          <attribute name="icon">window-next</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Icon Preview</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">IconPreview</attribute>
+          <attribute name="icon">dialog-icon-preview</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Duplic_ate Window</attribute>
+          <attribute name="action">win.window-new</attribute>
+          <attribute name="icon">window-new</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Fullscreen</attribute>
+          <attribute name="action">win.view-fullscreen</attribute>
+          <attribute name="icon">view-fullscreen</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Wide Screen</attribute>
+          <attribute name="action">win.canvas-interface-mode</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu id="layer-menu">
+      <attribute name="label" translatable="yes">_Layer</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Layers and Objects...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Objects</attribute>
+          <attribute name="icon">dialog-objects</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Add Layer...</attribute>
+          <attribute name="action">win.layer-new</attribute>
+          <attribute name="icon">layer-new</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Re_name Layer...</attribute>
+          <attribute name="action">win.layer-rename</attribute>
+          <attribute name="icon">layer-rename</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Show/Hide Current Layer</attribute>
+          <attribute name="action">win.layer-hide-toggle</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Lock/Unlock Current Layer</attribute>
+          <attribute name="action">win.layer-lock-toggle</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Switch to Layer Abov_e</attribute>
+          <attribute name="action">win.layer-previous</attribute>
+          <attribute name="icon">layer-previous</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Switch to Layer Belo_w</attribute>
+          <attribute name="action">win.layer-next</attribute>
+          <attribute name="icon">layer-next</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Move Selection to Layer Abo_ve</attribute>
+          <attribute name="action">win.selection-move-to-layer-above</attribute>
+          <attribute name="icon">selection-move-to-layer-above</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Move Selection to Layer Bel_ow</attribute>
+          <attribute name="action">win.selection-move-to-layer-below</attribute>
+          <attribute name="icon">selection-move-to-layer-below</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Move Selection to Layer...</attribute>
+          <attribute name="action">win.selection-move-to-layer</attribute>
+          <attribute name="icon">selection-move-to-layer</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Layer to _Top</attribute>
+          <attribute name="action">win.layer-top</attribute>
+          <attribute name="icon">layer-top</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Raise Layer</attribute>
+          <attribute name="action">win.layer-raise</attribute>
+          <attribute name="icon">layer-raise</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Lower Layer</attribute>
+          <attribute name="action">win.layer-lower</attribute>
+          <attribute name="icon">layer-lower</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Layer to _Bottom</attribute>
+          <attribute name="action">win.layer-bottom</attribute>
+          <attribute name="icon">layer-bottom</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">D_uplicate Current Layer</attribute>
+          <attribute name="action">win.layer-duplicate</attribute>
+          <attribute name="icon">layer-duplicate</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Delete Current Layer</attribute>
+          <attribute name="action">win.layer-delete</attribute>
+          <attribute name="icon">layer-delete</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu id="object-menu">
+      <attribute name="label" translatable="yes">_Object</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Layers and Objects...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Objects</attribute>
+          <attribute name="icon">dialog-objects</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Fill and Stroke...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">FillStroke</attribute>
+          <attribute name="icon">dialog-fill-and-stroke</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Object Properties...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">ObjectProperties</attribute>
+          <attribute name="icon">dialog-object-properties</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">S_ymbols...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Symbols</attribute>
+          <attribute name="icon">symbols</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Paint Servers...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">PaintServers</attribute>
+          <attribute name="icon">symbols</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Selectors and CSS...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Selectors</attribute>
+          <attribute name="icon">dialog-selectors</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Group</attribute>
+          <attribute name="action">app.selection-group</attribute>
+          <attribute name="icon">object-group</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Ungroup</attribute>
+          <attribute name="action">app.selection-ungroup</attribute>
+          <attribute name="icon">object-ungroup</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Pop Selected Objects out of Group</attribute>
+          <attribute name="action">app.selection-ungroup-pop</attribute>
+          <attribute name="icon">object-ungroup-pop-selection</attribute>
+        </item>
+      </section>
+      <section>
+        <submenu id="object-clip">
+          <attribute name="label" translatable="yes">Cli_p</attribute>
+          <section>
+            <item>
+              <attribute name="label" translatable="yes">_Set Clip</attribute>
+              <attribute name="action">app.object-set-clip</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Set Inverse Clip (LPE)</attribute>
+              <attribute name="action">app.object-set-inverse-clip</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Release Clip</attribute>
+              <attribute name="action">app.object-release-clip</attribute>
+            </item>
+          </section>
+        </submenu>
+      </section>
+      <submenu id="object-mask">
+        <attribute name="label" translatable="yes">Mas_k</attribute>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">_Set Mask</attribute>
+            <attribute name="action">app.object-set-mask</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">_Set Inverse Mask (LPE)</attribute>
+            <attribute name="action">app.object-set-inverse-mask</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">_Release Mask</attribute>
+            <attribute name="action">app.object-release-mask</attribute>
+          </item>
+        </section>
+      </submenu>
+      <submenu id="object-mask">
+        <attribute name="label" translatable="yes">Patter_n</attribute>
+        <section>
+          <item>
+            <attribute name="label" translatable="yes">Objects to Patter_n</attribute>
+            <attribute name="action">app.object-to-pattern</attribute>
+          </item>
+          <item>
+            <attribute name="label" translatable="yes">Pattern to _Objects</attribute>
+            <attribute name="action">app.pattern-to-object</attribute>
+          </item>
+        </section>
+      </submenu>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Objects to _Marker</attribute>
+          <attribute name="action">app.object-to-marker</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Objects to Gu_ides</attribute>
+          <attribute name="action">app.object-to-guides</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Raise to _Top</attribute>
+          <attribute name="action">app.selection-top</attribute>
+          <attribute name="icon">selection-top</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Raise</attribute>
+          <attribute name="action">app.selection-raise</attribute>
+          <attribute name="icon">selection-raise</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Lower</attribute>
+          <attribute name="action">app.selection-lower</attribute>
+          <attribute name="icon">selection-lower</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Lower to _Bottom</attribute>
+          <attribute name="action">app.selection-bottom</attribute>
+          <attribute name="icon">selection-bottom</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Rotate 90° CW</attribute>
+          <attribute name="action">app.object-rotate-90-cw</attribute>
+          <attribute name="icon">object-rotate-right</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Rotate 90° CCW</attribute>
+          <attribute name="action">app.object-rotate-90-ccw</attribute>
+          <attribute name="icon">object-rotate-left</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Flip _Horizontal</attribute>
+          <attribute name="action">app.object-flip-horizontal</attribute>
+          <attribute name="icon">object-flip-horizontal</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Flip _Vertical</attribute>
+          <attribute name="action">app.object-flip-vertical</attribute>
+          <attribute name="icon">object-flip-vertical</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Unhide All</attribute>
+          <attribute name="action">app.unhide-all</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Unlock All</attribute>
+          <attribute name="action">app.unlock-all</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Transfor_m...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Transform</attribute>
+          <attribute name="icon">dialog-transform</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Align and Distribute...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">AlignDistribute</attribute>
+          <attribute name="icon">dialog-align-and-distribute</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu id="path-menu">
+      <attribute name="label" translatable="yes">_Path</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Object to Path</attribute>
+          <attribute name="action">app.object-to-path</attribute>
+          <attribute name="icon">object-to-path</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Stroke to Path</attribute>
+          <attribute name="action">app.object-stroke-to-path</attribute>
+          <attribute name="icon">stroke-to-path</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Trace Bitmap...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Trace</attribute>
+          <attribute name="icon">bitmap-trace</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Union</attribute>
+          <attribute name="action">app.path-union</attribute>
+          <attribute name="icon">path-union</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Difference</attribute>
+          <attribute name="action">app.path-difference</attribute>
+          <attribute name="icon">path-difference</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Intersection</attribute>
+          <attribute name="action">app.path-intersection</attribute>
+          <attribute name="icon">path-intersection</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">E_xclusion</attribute>
+          <attribute name="action">app.path-exclusion</attribute>
+          <attribute name="icon">path-exclusion</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Di_vision</attribute>
+          <attribute name="action">app.path-division</attribute>
+          <attribute name="icon">path-division</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Cut _Path</attribute>
+          <attribute name="action">app.path-cut</attribute>
+          <attribute name="icon">path-cut</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Combine</attribute>
+          <attribute name="action">app.path-combine</attribute>
+          <attribute name="icon">path-combine</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Break _Apart</attribute>
+          <attribute name="action">app.path-break-apart</attribute>
+          <attribute name="icon">path-break-apart</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Split Pat_h</attribute>
+          <attribute name="action">app.path-split</attribute>
+          <attribute name="icon">path-split</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Fracture</attribute>
+          <attribute name="action">app.path-fracture</attribute>
+          <attribute name="icon">path-fracture</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Flatten</attribute>
+          <attribute name="action">app.path-flatten</attribute>
+          <attribute name="icon">path-flatten</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">I_nset</attribute>
+          <attribute name="action">win.path-inset</attribute>
+          <attribute name="icon">path-inset</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Outs_et</attribute>
+          <attribute name="action">win.path-offset</attribute>
+          <attribute name="icon">path-outset</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">D_ynamic Offset</attribute>
+          <attribute name="action">win.path-offset-dynamic</attribute>
+          <attribute name="icon">path-offset-dynamic</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Linked Offset</attribute>
+          <attribute name="action">win.path-offset-linked</attribute>
+          <attribute name="icon">path-offset-linked</attribute>
+          <attribute name="use-icon">True</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Fill between paths</attribute>
+          <attribute name="action">app.path-fill-between-paths</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Si_mplify</attribute>
+          <attribute name="action">app.path-simplify</attribute>
+          <attribute name="icon">path-simplify</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Reverse</attribute>
+          <attribute name="action">win.path-reverse</attribute>
+          <attribute name="icon">path-reverse</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Path E_ffects...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">LivePathEffect</attribute>
+          <attribute name="icon">dialog-path-effects</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Paste Path _Effect</attribute>
+          <attribute name="action">app.paste-path-effect</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Remove Path _Effect</attribute>
+          <attribute name="action">app.remove-path-effect</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu id="text-menu">
+      <attribute name="label" translatable="yes">_Text</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Text and Font...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Text</attribute>
+          <attribute name="icon">dialog-text-and-font</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">SVG Font Editor...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">SVGFonts</attribute>
+          <attribute name="icon">dialog-svg-font</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Unicode Characters...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Glyphs</attribute>
+          <attribute name="icon">accessories-character-map</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Put on Path</attribute>
+          <attribute name="action">app.text-put-on-path</attribute>
+          <attribute name="icon">text-put-on-path</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Remove from Path</attribute>
+          <attribute name="action">app.text-remove-from-path</attribute>
+          <attribute name="icon">text-remove-from-path</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Flow into Frame</attribute>
+          <attribute name="action">app.text-flow-into-frame</attribute>
+          <attribute name="icon">text-flow-into-frame</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Set _Subtraction Frames</attribute>
+          <attribute name="action">app.text-flow-subtract-frame</attribute>
+          <attribute name="icon">text-flow-subtract-frame</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Unflow</attribute>
+          <attribute name="action">app.text-unflow</attribute>
+          <attribute name="icon">text-unflow</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Convert to Text</attribute>
+          <attribute name="action">app.text-convert-to-regular</attribute>
+          <attribute name="icon">text-convert-to-regular</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Remove Manual _Kerns</attribute>
+          <attribute name="action">app.text-unkern</attribute>
+          <attribute name="icon">text-unkern</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Text to Glyphs</attribute>
+          <attribute name="action">app.text-convert-to-glyphs</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Check Spellin_g...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">Spellcheck</attribute>
+          <attribute name="icon">tools-check-spelling</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu id="filter-menu">
+      <attribute name="label" translatable="yes">Filter_s</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Filter _Gallery...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">FilterGallery</attribute>
+          <attribute name="icon">dialog-filters</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Filter _Editor...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">FilterEffects</attribute>
+          <attribute name="icon">dialog-filters</attribute>
+        </item>
+      </section>
+      <section id="filter-menu-filters"/>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Remove Filters</attribute>
+          <attribute name="action">app.edit-remove-filter</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu id="effect-menu">
+      <attribute name="label" translatable="yes">Exte_nsions</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Previous Exte_nsion</attribute>
+          <attribute name="action">app.last-effect</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Previous Extension Settings...</attribute>
+          <attribute name="action">app.last-effect-pref</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Extension Gallery...</attribute>
+          <attribute name="action">win.dialog-open</attribute>
+          <attribute name="target">ExtensionsGallery</attribute>
+          <attribute name="icon">dialog-extensions</attribute>
+        </item>
+      </section>
+      <section id="effect-menu-effects"/>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Manage Extensions...</attribute>
+          <attribute name="action">app.org.inkscape.extension.manager</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu id="help-menu">
+      <attribute name="label" translatable="yes">_Help</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Inkscape Manual</attribute>
+          <attribute name="action">win.help-url-manual</attribute>
+        </item>
+        <submenu id="tutorial">
+          <attribute name="label" translatable="yes">Tutorials</attribute>
+	  <section>
+            <item>
+              <attribute name="label" translatable="yes">Beginner's Guide</attribute>
+              <attribute name="action">win.help-url-beginners-guide</attribute>
+            </item>
+	  </section>
+	  <section>
+	    <item>
+              <attribute name="label" translatable="yes">Inkscape: _Basic</attribute>
+              <attribute name="action">app.tutorial-basic</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Inkscape: _Shapes</attribute>
+              <attribute name="action">app.tutorial-shapes</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Inkscape: _Advanced</attribute>
+              <attribute name="action">app.tutorial-advanced</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Inkscape: T_racing</attribute>
+              <attribute name="action">app.tutorial-tracing</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Inkscape: Tracing Pixel Art</attribute>
+              <attribute name="action">app.tutorial-tracing-pixelart</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Inkscape: _Calligraphy</attribute>
+              <attribute name="action">app.tutorial-calligraphy</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Inkscape: _Interpolate</attribute>
+              <attribute name="action">app.tutorial-interpolate</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Elements of Design</attribute>
+              <attribute name="action">app.tutorial-design</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Tips and Tricks</attribute>
+              <attribute name="action">app.tutorial-tips</attribute>
+            </item>
+	  </section>
+        </submenu>
+	<submenu id="learn-more">
+          <attribute name="label" translatable="yes">Learn more</attribute>
+	  <section>
+            <item>
+              <attribute name="label" translatable="yes">Keys and Mouse Reference</attribute>
+              <attribute name="action">win.help-url-keys</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Command Line Options</attribute>
+              <attribute name="action">win.help-url-man</attribute>
+            </item>
+          </section>
+	  <section>
+            <item>
+              <attribute name="label" translatable="yes">Extension Development Guide</attribute>
+              <attribute name="action">win.help-url-inkex</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">SVG 1.1 Specification</attribute>
+              <attribute name="action">win.help-url-svg11-spec</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">SVG 2 Specification</attribute>
+              <attribute name="action">win.help-url-svg2-spec</attribute>
+            </item>
+          </section>
+	  <section>
+            <item>
+              <attribute name="label" translatable="yes">FAQ</attribute>
+              <attribute name="action">win.help-url-faq</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Ask Us a Question</attribute>
+              <attribute name="action">win.help-url-ask-question</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">Report a Bug</attribute>
+              <attribute name="action">win.help-url-report-bug</attribute>
+            </item>
+          </section>
+        </submenu>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">New in This Version</attribute>
+          <attribute name="action">win.help-url-release-notes</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Donate</attribute>
+          <attribute name="action">win.help-url-donate</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_About Inkscape</attribute>
+          <attribute name="action">app.about</attribute>
+          <attribute name="icon">inkscape-logo</attribute>
+          <attribute name="use-icon">True</attribute>
+          <attribute name="hidden-when">macos-menubar</attribute>
+        </item>
+      </section>
+    </submenu>
+  </menu>
+</interface>

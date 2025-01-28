@@ -1,0 +1,8 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="grayscale-mode">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M1.00098 3C1.00098 2.44772 1.44869 2 2.00098 2H14.001C14.5533 2 15.001 2.44771 15.001 3V11C15.001 11.5523 14.5533 12 14.001 12H9.00098V13H11.501C11.7771 13 12.001 13.2239 12.001 13.5C12.001 13.7761 11.7771 14 11.501 14H4.50098C4.22483 14 4.00098 13.7761 4.00098 13.5C4.00098 13.2239 4.22483 13 4.50098 13H7.00098V12H2.00098C1.44869 12 1.00098 11.5523 1.00098 11V3ZM14.001 3L2.00098 3V11H14.001V3Z" fill="black"/>
+<rect id="rectangle" opacity="0.6" x="3.00098" y="4" width="3" height="6" fill="black"/>
+<rect id="rectangle_2" opacity="0.4" x="6.00098" y="4" width="4" height="6" fill="black"/>
+<rect id="rectangle_3" opacity="0.1" x="10.001" y="4" width="3" height="6" fill="black"/>
+</g>
+</svg>

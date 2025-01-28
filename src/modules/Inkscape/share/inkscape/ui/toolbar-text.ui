@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkAdjustment" id="_dx_adj">
+    <property name="lower">-1000</property>
+    <property name="upper">1000</property>
+    <property name="step-increment">0.01</property>
+    <property name="page-increment">0.10</property>
+  </object>
+  <object class="GtkAdjustment" id="_dy_adj">
+    <property name="lower">-1000</property>
+    <property name="upper">1000</property>
+    <property name="step-increment">0.01</property>
+    <property name="page-increment">0.10</property>
+  </object>
+  <object class="GtkAdjustment" id="_letter_spacing_adj">
+    <property name="lower">-1000</property>
+    <property name="upper">1000</property>
+    <property name="step-increment">0.01</property>
+    <property name="page-increment">0.10</property>
+  </object>
+  <object class="GtkAdjustment" id="_line_height_adj">
+    <property name="upper">1000</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="_rotation_adj">
+    <property name="lower">-180</property>
+    <property name="upper">180</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="_word_spacing_adj">
+    <property name="lower">-1000</property>
+    <property name="upper">1000</property>
+    <property name="step-increment">0.01</property>
+    <property name="page-increment">0.10</property>
+  </object>
+  <object class="GtkRadioButton" id="alignment_mode_group">
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="active">True</property>
+    <property name="draw-indicator">False</property>
+  </object>
+  <object class="GtkRadioButton" id="direction_buttons_mode_group">
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="draw-indicator">False</property>
+  </object>
+  <object class="GtkPopover" id="font_collections_popover">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="font_collections_box">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkFrame">
+            <property name="visible">True</property>
+            <property name="margin-start">3</property>
+            <property name="margin-top">3</property>
+            <property name="margin-bottom">3</property>
+            <child>
+              <object class="GtkListBox" id="_font_collections_list">
+                <property name="visible">True</property>
+                <property name="selection-mode">multiple</property>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Font Collections</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="fc_dialog_btn">
+            <property name="label" translatable="yes">Open Collections Editor</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Open the Font Collections dialog</property>
+            <property name="margin-top">3</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkRadioButton" id="orientation_buttons_mode_group">
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="draw-indicator">False</property>
+  </object>
+  <object class="GtkPopover" id="popover1">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box1">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover2">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box2">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover3">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box3">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover4">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box4">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover5">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box5">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover6">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box6">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkRadioButton" id="writing_buttons_mode_group">
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="draw-indicator">False</property>
+  </object>
+  <object class="GtkBox" id="text-toolbar">
+    <property name="visible">True</property>
+    <property name="halign">start</property>
+    <property name="valign">center</property>
+    <property name="spacing">3</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkMenuButton">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Select Font Collections</property>
+        <property name="relief">none</property>
+        <property name="popover">font_collections_popover</property>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="visible">True</property>
+            <property name="icon-name">font_collections</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="reset_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="tooltip-text" translatable="yes">Reset the font list (Deselects all the font collections and clears search results)</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image2">
+            <property name="visible">True</property>
+            <property name="icon-name">view-refresh</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="font_list_box">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="styles_list_box">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="font_size_box">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="unit_menu_box">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn1">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover1</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">text_line_spacing</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="line_height_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Spacing between baselines</property>
+        <child>
+          <object class="GtkImage" id="image3">
+            <property name="visible">True</property>
+            <property name="icon-name">text_line_spacing</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_line_height_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">5</property>
+            <property name="text">0.000</property>
+            <property name="adjustment">_line_height_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">2</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">8</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="line_height_unit_box">
+        <property name="visible">True</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">9</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">10</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn2">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover2</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">format-justify-left</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">11</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="alignment_buttons_box">
+        <property name="visible">True</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Align left</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">alignment_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image4">
+                <property name="visible">True</property>
+                <property name="icon-name">format-justify-left</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Align center</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">alignment_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image5">
+                <property name="visible">True</property>
+                <property name="icon-name">format-justify-center</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Align right</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">alignment_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image6">
+                <property name="visible">True</property>
+                <property name="icon-name">format-justify-right</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Justify (only flowed text)</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">alignment_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image7">
+                <property name="visible">True</property>
+                <property name="icon-name">format-justify-fill</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">5</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag2"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">12</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">13</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_superscript_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Toggle superscript</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image8">
+            <property name="visible">True</property>
+            <property name="icon-name">text_superscript</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">14</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_subscript_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Toggle subscript</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image9">
+            <property name="visible">True</property>
+            <property name="icon-name">text_subscript</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">15</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">16</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn3">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover3</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+                <property name="icon-name">frmt-text-direction-horizontal</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">17</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="writing_buttons_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Block progression</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Horizontal text</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">writing_buttons_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image15">
+                <property name="visible">True</property>
+                <property name="icon-name">frmt-text-direction-horizontal</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Vertical text — lines: right to left</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">writing_buttons_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image16">
+                <property name="visible">True</property>
+                <property name="icon-name">frmt-text-direction-vertical</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Vertical text — lines: left to right</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">writing_buttons_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image17">
+                <property name="visible">True</property>
+                <property name="icon-name">frmt-text-direction-vertical-lr</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag3"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">18</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">19</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn4">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover4</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+                <property name="icon-name">text-orientation-auto</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">20</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="orientation_buttons_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Text (glyph) orientation in vertical text.</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Auto glyph orientation</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">orientation_buttons_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image18">
+                <property name="visible">True</property>
+                <property name="icon-name">text-orientation-auto</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Upright glyph orientation</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">orientation_buttons_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image19">
+                <property name="visible">True</property>
+                <property name="icon-name">text-orientation-upright</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Sideways glyph orientation</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">orientation_buttons_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image20">
+                <property name="visible">True</property>
+                <property name="icon-name">text-orientation-sideways</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag4"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">21</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">22</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn5">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover5</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+                <property name="icon-name">frmt-text-direction-r2l</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">23</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="direction_buttons_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Text direction for normally horizontal text.</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Left to right text</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">direction_buttons_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image21">
+                <property name="visible">True</property>
+                <property name="icon-name">frmt-text-direction-horizontal</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Right to left text</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">direction_buttons_mode_group</property>
+            <child>
+              <object class="GtkImage" id="image22">
+                <property name="visible">True</property>
+                <property name="icon-name">frmt-text-direction-r2l</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag5"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">27</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">28</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn6">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover6</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">text_letter_spacing</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">29</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="letter_spacing_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Spacing between letters (px)</property>
+        <child>
+          <object class="GtkImage" id="image10">
+            <property name="visible">True</property>
+            <property name="icon-name">text_letter_spacing</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_letter_spacing_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">5</property>
+            <property name="text" translatable="yes">0</property>
+            <property name="adjustment">_letter_spacing_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">2</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag6"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">30</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="word_spacing_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Spacing between words (px)</property>
+        <child>
+          <object class="GtkImage" id="image11">
+            <property name="visible">True</property>
+            <property name="icon-name">text_word_spacing</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_word_spacing_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">5</property>
+            <property name="text">0.00</property>
+            <property name="adjustment">_word_spacing_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">2</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag6"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">31</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="dx_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Horizontal kerning (px)</property>
+        <child>
+          <object class="GtkImage" id="image12">
+            <property name="visible">True</property>
+            <property name="icon-name">text_horz_kern</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_dx_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">5</property>
+            <property name="text">0.00</property>
+            <property name="adjustment">_dx_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">2</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag6"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">32</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="dy_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Vertical kerning (px)</property>
+        <child>
+          <object class="GtkImage" id="image13">
+            <property name="visible">True</property>
+            <property name="icon-name">text_vert_kern</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_dy_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">5</property>
+            <property name="text">0.00</property>
+            <property name="adjustment">_dy_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">2</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag6"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">33</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="rotation_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Character rotation (degrees)</property>
+        <child>
+          <object class="GtkImage" id="image14">
+            <property name="visible">True</property>
+            <property name="icon-name">text_rotation</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_rotation_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">5</property>
+            <property name="text">0.00</property>
+            <property name="adjustment">_rotation_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">2</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag6"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">39</property>
+      </packing>
+    </child>
+    <style>
+      <class name="toolbar"/>
+    </style>
+  </object>
+</interface>

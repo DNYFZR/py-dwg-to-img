@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This file is part of Inkscape.
+
+ Copyright (C) 2022 the Authors.
+
+ Released under GNU GPL v2+, read the file 'COPYING' for more information.
+-->
+
+<style-scheme id="inkscape-dark" _name="Inkscape Dark" version="1.0">
+
+  <author>MK</author>
+  <_description>Dark color scheme for syntax highlighting</_description>
+
+  <color name="green"                       value="#a6e22e"/>
+  <color name="purple"                      value="#af83f8"/>
+  <color name="yellow"                      value="#f2d375"/>
+  <color name="cyan"                        value="#87dbe8"/>
+  <color name="pale-yellow"                 value="#795b07"/>
+  <color name="pale-red"                    value="#96242f"/>
+  <color name="orange"                      value="#ee9d70"/>
+  <color name="selection"                   value="#094bac"/>
+  <color name="white"                       value="#f0f0f0"/>
+  <color name="blue"                        value="#6d9eeb"/>
+  <color name="gray"                        value="#7f7f7f"/>
+  <color name="red"                         value="#f98691"/>
+
+  <!-- Global Settings -->
+  <style name="text"                        foreground="white" />
+  <style name="selection"                   foreground="white" background="selection"/>
+  <style name="cursor"                      foreground="white" bold="true" />
+  <style name="secondary-cursor"            foreground="white" bold="true" />
+  <style name="line-numbers"                foreground="gray"/>
+  <style name="draw-spaces"                 foreground="gray"/>
+  <style name="background-pattern" />
+  <style name="current-line" />
+
+  <!-- Bracket Matching -->
+  <style name="bracket-match"               foreground="red"/>
+  <style name="bracket-mismatch"            foreground="purple" background="pale-yellow"/>
+
+  <!-- Search Matching -->
+  <style name="search-match"                foreground="white" background="pale-yellow"/>
+
+  <!-- Comments -->
+  <style name="def:comment"                 foreground="orange"/>
+
+  <!-- Constants -->
+  <style name="def:constant"                foreground="cyan"/>
+  <style name="def:string"                  foreground="yellow"/>
+  <style name="def:special-char"            foreground="red"/>
+  <style name="def:special-constant"        foreground="cyan"/>
+  <style name="def:number"                  foreground="red"/>
+  <style name="def:decimal"                 foreground="red"/>
+  <style name="def:floating-point"          foreground="red"/>
+
+  <!-- Identifiers -->
+  <style name="def:identifier"              foreground="green"/>
+  <style name="def:keyword"                 foreground="blue" bold="true"/>
+  <style name="def:function"                foreground="purple" bold="false"/>
+
+  <!-- Statements -->
+  <style name="def:statement"               foreground="blue" bold="false"/>
+
+  <!-- Types -->
+  <style name="def:type"                    foreground="yellow" bold="false"/>
+
+  <!-- Others -->
+  <style name="css:delimiter"               foreground="gray"/>
+  <style name="def:complex"                 foreground="green"/>
+  <style name="def:preprocessor"            foreground="green"/>
+  <style name="def:error"                   foreground="white" background="pale-red" bold="false"/>
+  <style name="def:warning"                 foreground="white" background="pale-yellow"/>
+  <style name="def:note"                    foreground="gray" bold="false"/>
+  <style name="def:underlined"              italic="true" underline="single"/>
+
+</style-scheme>

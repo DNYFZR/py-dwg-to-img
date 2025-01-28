@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="70" height="60" viewBox="0 0 70 60"
+   version="1.1" id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs id="defs1" />
+  <g inkscape:label="org.inkscape.jessyink.master-slide" inkscape:groupmode="layer" id="layer1">
+     <image preserveAspectRatio="none"
+       inkscape:svg-dpi="192"
+       width="70" height="60"
+       xlink:href="presentation-icon.svg"
+       id="image1" x="0" y="0" />
+  </g>
+</svg>

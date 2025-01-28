@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkAdjustment" id="_height_adj">
+    <property name="upper">1000000</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">5</property>
+  </object>
+  <object class="GtkAdjustment" id="_rx_adj">
+    <property name="upper">1000000</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">5</property>
+  </object>
+  <object class="GtkAdjustment" id="_ry_adj">
+    <property name="upper">1000000</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">5</property>
+  </object>
+  <object class="GtkAdjustment" id="_width_adj">
+    <property name="upper">1000000</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">5</property>
+  </object>
+  <object class="GtkBox" id="dropper-toolbar">
+    <property name="visible">True</property>
+    <property name="halign">start</property>
+    <property name="valign">center</property>
+    <property name="spacing">3</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="margin-start">3</property>
+        <property name="label" translatable="yes">Opacity</property>
+        <property name="use-markup">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_pick_alpha_btn">
+        <property name="label" translatable="yes">Pick</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Pick both the color and the alpha (transparency) under cursor; otherwise, pick only the visible color premultiplied by alpha</property>
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_set_alpha_btn">
+        <property name="label" translatable="yes">Assign</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">If alpha was picked, assign it to selection as fill or stroke transparency</property>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <style>
+      <class name="toolbar"/>
+    </style>
+  </object>
+</interface>

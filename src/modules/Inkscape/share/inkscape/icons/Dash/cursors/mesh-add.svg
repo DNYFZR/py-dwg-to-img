@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="32" height="32"
+     inkscape:hotspot_x="4"
+     inkscape:hotspot_y="4"
+     style="fill:gray;stroke:black">
+
+<style>@import './cursors.css';</style>
+
+<!-- Pointer. Paste svg code here -->
+<g id="cross" style="">
+  <path d="M4.5 9V0" stroke="white" stroke-width="3"/>
+  <path d="M9 4.5H0" stroke="white" stroke-width="3"/>
+  <path d="M0 4.5H9" stroke="black"/>
+  <path d="M4.5 0V9" stroke="black"/>
+</g>
+
+<g id="cursor" class="drop-shadow" style="">
+    <rect x="10.5" y="10.5" width="15" height="15" rx="0.5" fill="white" stroke="black"/>
+    <path d="M18 10.5V16" stroke="black"/>
+    <path d="M25.5 18L20 18" stroke="black"/>
+    <path d="M18 20V25.5" stroke="black"/>
+    <path d="M16 18L10.5 18" stroke="black"/>
+    <path d="M15.7071 18.0001L18.0001 15.7071L20.2931 18.0001L18.0001 20.2931L15.7071 18.0001Z" fill="white" stroke="black"/>
+</g>
+
+<g id="add">
+     <path d="M28.5 25V32" stroke="white" stroke-width="4"/>
+     <path d="M32 28.5H25" stroke="white" stroke-width="4"/>
+     <path d="M28.5 25V32" stroke="black" stroke-width="1.5"/>
+     <path d="M32 28.5H25" stroke="black" stroke-width="1.5"/>
+</g>
+
+</svg>

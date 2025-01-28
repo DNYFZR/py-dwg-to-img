@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkAdjustment" id="_angle_x_adj">
+    <property name="lower">-360</property>
+    <property name="upper">360</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="_angle_y_adj">
+    <property name="lower">-360</property>
+    <property name="upper">360</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="_angle_z_adj">
+    <property name="lower">-360</property>
+    <property name="upper">360</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkBox" id="box3d-toolbar">
+    <property name="visible">True</property>
+    <property name="halign">start</property>
+    <property name="valign">center</property>
+    <property name="spacing">3</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkBox" id="angle_x_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Angle of perspective lines in x-direction</property>
+        <property name="margin-start">3</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Angle X:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_angle_x_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">8</property>
+            <property name="text">0.000</property>
+            <property name="adjustment">_angle_x_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">3</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_vp_x_state_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Toggle vanishing point in x-direction between 'finite' and 'infinite' (= parallel)</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="visible">True</property>
+            <property name="icon-name">perspective-parallel</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="angle_y_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Angle of perspective lines in y-direction</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Angle Y:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_angle_y_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">8</property>
+            <property name="text">0.000</property>
+            <property name="adjustment">_angle_y_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">3</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_vp_y_state_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Toggle vanishing point in y-direction between 'finite' and 'infinite' (= parallel)</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image2">
+            <property name="visible">True</property>
+            <property name="icon-name">perspective-parallel</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="angle_z_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Angle of perspective lines in z-direction</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Angle Z:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_angle_z_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">8</property>
+            <property name="text">0.000</property>
+            <property name="adjustment">_angle_z_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">3</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_vp_z_state_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Toggle vanishing point in z-direction between 'finite' and 'infinite' (= parallel)</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image3">
+            <property name="visible">True</property>
+            <property name="icon-name">perspective-parallel</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <style>
+      <class name="toolbar"/>
+    </style>
+  </object>
+</interface>

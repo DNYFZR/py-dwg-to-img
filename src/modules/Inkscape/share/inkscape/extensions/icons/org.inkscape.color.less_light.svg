@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70"
+   height="60"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="org.inkscape.color.less-light.svg"
+   inkscape:version="1.4-dev (de72ba3c18, 2023-06-27, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.9333333"
+     inkscape:cx="74.491525"
+     inkscape:cy="33.050847"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath262">
+      <path
+         style="opacity:1;fill:#246cff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-miterlimit:5.5"
+         d="M 25,265 H 37 L 25,277 Z"
+         id="path263"
+         sodipodi:nodetypes="cccc" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="org.inkscape.color.less-light"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g261"
+       clip-path="url(#clipPath262)"
+       transform="translate(-25,-265)">
+      <path
+         style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:5.5"
+         id="path259"
+         sodipodi:type="arc"
+         sodipodi:cx="25"
+         sodipodi:cy="265"
+         sodipodi:rx="12.5"
+         sodipodi:ry="12.5"
+         sodipodi:start="0"
+         sodipodi:end="0.52359878"
+         sodipodi:arc-type="slice"
+         d="m 37.5,265 a 12.5,12.5 0 0 1 -1.674682,6.25 L 25,265 Z" />
+      <path
+         style="opacity:1;fill:#246cff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:5.5"
+         id="path261"
+         sodipodi:type="arc"
+         sodipodi:cx="25"
+         sodipodi:cy="265"
+         sodipodi:rx="12.5"
+         sodipodi:ry="12.5"
+         sodipodi:start="1.0471976"
+         sodipodi:end="1.5707963"
+         sodipodi:arc-type="slice"
+         d="M 31.249999,275.82532 A 12.5,12.5 0 0 1 25,277.5 V 265 Z" />
+      <path
+         style="opacity:1;fill:#00e513;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:5.5"
+         id="path260"
+         sodipodi:type="arc"
+         sodipodi:cx="25"
+         sodipodi:cy="265"
+         sodipodi:rx="12.5"
+         sodipodi:ry="12.5"
+         sodipodi:start="0.45691093"
+         sodipodi:end="1.11701"
+         sodipodi:arc-type="slice"
+         d="m 36.217745,270.51473 a 12.5,12.5 0 0 1 -5.738098,5.72019 L 25,265 Z" />
+    </g>
+    <g
+       id="g15">
+      <circle
+         style="fill:#b60000;fill-opacity:1;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         id="circle4"
+         cx="35"
+         cy="23"
+         r="11.5" />
+      <circle
+         style="fill:#009c03;fill-opacity:1;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         id="circle5"
+         cx="28"
+         cy="36"
+         r="11.5" />
+      <path
+         id="circle9"
+         style="fill:#b6a200;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         d="M 28,24.5 A 11.5,11.5 0 0 0 23.769531,25.335938 11.5,11.5 0 0 0 35,34.5 11.5,11.5 0 0 0 39.255859,33.654297 11.5,11.5 0 0 0 28,24.5 Z" />
+      <circle
+         style="fill:#0146d4;fill-opacity:1;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         id="circle6"
+         cx="42"
+         cy="36"
+         r="11.5" />
+      <path
+         id="circle10"
+         style="fill:#00b8ad;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         d="M 35.019531,26.896484 A 11.5,11.5 0 0 0 30.5,36 11.5,11.5 0 0 0 35,45.087891 11.5,11.5 0 0 0 39.5,36 11.5,11.5 0 0 0 35.019531,26.896484 Z" />
+      <path
+         id="circle12"
+         style="fill:#ab00b6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         d="M 42,24.5 A 11.5,11.5 0 0 0 30.769531,33.664062 11.5,11.5 0 0 0 35,34.5 11.5,11.5 0 0 0 46.236328,25.310547 11.5,11.5 0 0 0 42,24.5 Z" />
+      <path
+         id="circle13"
+         style="fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         d="m 35.019531,26.896484 a 11.5,11.5 0 0 0 -4.25,6.767578 A 11.5,11.5 0 0 0 35,34.5 11.5,11.5 0 0 0 39.255859,33.654297 11.5,11.5 0 0 0 35.019531,26.896484 Z" />
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         id="circle7"
+         cx="35"
+         cy="23"
+         r="11.5" />
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         id="circle8"
+         cx="28"
+         cy="36"
+         r="11.5" />
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+         id="circle11"
+         cx="42"
+         cy="36"
+         r="11.5" />
+    </g>
+  </g>
+</svg>

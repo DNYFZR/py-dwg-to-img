@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="paint-solid">
+<rect id="color / fill" opacity="0.3" x="1" y="1" width="14" height="14" rx="1.5" fill="black"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M14 2H2V14H14V2ZM2 1C1.44772 1 1 1.44772 1 2V14C1 14.5523 1.44772 15 2 15H14C14.5523 15 15 14.5523 15 14V2C15 1.44772 14.5523 1 14 1H2Z" fill="black"/>
+</g>
+</svg>

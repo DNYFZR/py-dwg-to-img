@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Extract Images</name>
+    <id>org.inkscape.filter.multiple.extract_image</id>
+    <param name="selectedonly" type="bool" gui-text="Extract only selected images">true</param>
+    <param name="directory" type="string" gui-text="Choose directory:" gui-description="Relative paths are interpreted with respect to the current file location. Missing folders are created automatically.">./images/</param>
+    <param name="basename" type="string" gui-text="File name base:" gui-description="Image file name prefix; will be suffixed with a counter. Leave empty to use image id for the file names. The file extension will be appended automatically."></param>
+    <param name="filepath" type="string" gui-hidden="true"></param>
+    <param name="linkextracted" type="bool" gui-text="Link extracted images" gui-description="After saving the image file, the image data is replaced with a link to that file.">true</param>
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Images"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">image_extract.py</command>
+    </script>
+</inkscape-extension>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Export to JPEG</name>
+    <id>org.inkscape.raster.jpg_output</id>
+
+    <param name="tab" type="notebook">
+        <page name="options" gui-text="Options">
+            <param name="quality" type="int" min="0" max="100"
+                gui-text="Quality:"
+                gui-description="Quality between 0 and 100"
+            >90</param>
+            <param name="progressive" type="bool"
+                gui-text="Progressive"
+                gui-description="Store image as a progressive JPEG file."
+            >true</param>
+        </page>
+        <page name="about" gui-text="Low Quality Warning">
+            <label>Your artwork may lose quality and any transparency.</label>
+            <image>raster_output_jpg.svg</image>
+            <label>This is a high compression example for demonstration.</label>
+            <spacer/>
+            <label>Learn more details about JPEG:</label>
+            <label appearance="url" indent="1">https://inkscape.org/learn/jpg/</label>
+        </page>
+    </param>
+
+    <output raster="true">
+        <extension>.jpg</extension>
+        <mimetype>image/jpeg</mimetype>
+        <filetypename>JPEG (*.jpg)</filetypename>
+        <filetypetooltip>Render to JPEG file format</filetypetooltip>
+    </output>
+
+    <script>
+        <command location="inx" interpreter="python">raster_output_jpg.py</command>
+    </script>
+</inkscape-extension>

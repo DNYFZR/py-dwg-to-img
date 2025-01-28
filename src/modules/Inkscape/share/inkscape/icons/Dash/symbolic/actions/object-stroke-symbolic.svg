@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="object-stroke">
+<path id="Subtract" opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M3 2.5C2.72386 2.5 2.5 2.72386 2.5 3V13C2.5 13.2761 2.72386 13.5 3 13.5H13C13.2761 13.5 13.5 13.2761 13.5 13V3C13.5 2.72386 13.2761 2.5 13 2.5H3ZM10.5 5.5H5.5V10.5H10.5V5.5Z" fill="black"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M3 2C2.44772 2 2 2.44772 2 3V13C2 13.5523 2.44772 14 3 14H13C13.5523 14 14 13.5523 14 13V3C14 2.44772 13.5523 2 13 2H3ZM3 3L13 3V13H3V3ZM5.5 5H5V5.5V10.5V11H5.5H10.5H11V10.5V5.5V5H10.5H5.5ZM6 10V6H10V10H6Z" fill="black"/>
+</g>
+</svg>

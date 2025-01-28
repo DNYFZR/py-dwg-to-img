@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkRevealer" id="canvas-notice">
+    <property name="visible">True</property>
+    <property name="halign">center</property>
+    <property name="valign">start</property>
+    <child>
+      <object class="GtkFrame">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="spacing">20</property>
+            <child>
+              <object class="GtkImage" id="notice-icon">
+                <property name="visible">True</property>
+                <property name="margin-start">6</property>
+                <property name="margin-end">6</property>
+                <property name="margin-top">4</property>
+                <property name="margin-bottom">4</property>
+                <property name="icon-name">dialog-information</property>
+                <property name="icon-size">3</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="notice-label">
+                <property name="visible">True</property>
+                <property name="halign">start</property>
+                <property name="hexpand">True</property>
+                <property name="label">Example text for the notification widget!</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="notice-close">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="focus-on-click">False</property>
+                <property name="relief">none</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="icon-name">window-close-symbolic</property>
+                    <property name="icon-size">1</property>
+                  </object>
+                </child>
+                <style>
+                  <class name="image-button"/>
+                </style>
+              </object>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <style>
+          <class name="app-notification"/>
+        </style>
+      </object>
+    </child>
+  </object>
+</interface>

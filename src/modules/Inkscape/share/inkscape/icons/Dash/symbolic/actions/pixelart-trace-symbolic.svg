@@ -1,0 +1,13 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="pixelart-trace">
+<rect id="neutral" opacity="0.3" x="2.00098" y="5" width="3" height="3" fill="black"/>
+<path id="rectangle" opacity="0.5" d="M5.00098 5H7.50098V8H5.00098V5Z" fill="black"/>
+<path id="rectangle_2" opacity="0.6" d="M5.00098 8H7.50098V11H5.00098V8Z" fill="black"/>
+<rect id="rectangle_3" opacity="0.15" x="2.00098" y="2" width="3" height="3" fill="black"/>
+<path id="rectangle_4" opacity="0.4" d="M5.00098 2H7.50098V5H5.00098V2Z" fill="black"/>
+<rect id="rectangle_5" opacity="0.35" x="2.00098" y="8" width="3" height="3" fill="black"/>
+<rect id="rectangle_6" opacity="0.15" x="2.00098" y="11" width="3" height="3" fill="black"/>
+<path id="rectangle_7" opacity="0.4" d="M5.00098 11H7.50098V14H5.00098V11Z" fill="black"/>
+<path id="Intersect" fill-rule="evenodd" clip-rule="evenodd" d="M8.50098 2.56333C8.50098 2.27098 8.75149 2.03914 9.0395 2.0894C11.8582 2.58125 14.001 5.04032 14.001 7.99985C14.001 10.9594 11.8582 13.4184 9.0395 13.9103C8.75149 13.9606 8.50098 13.7287 8.50098 13.4364V2.56333Z" fill="black"/>
+</g>
+</svg>

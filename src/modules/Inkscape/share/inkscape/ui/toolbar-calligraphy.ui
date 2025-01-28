@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkAdjustment" id="_angle_adj">
+    <property name="lower">-90</property>
+    <property name="upper">90</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="_cap_rounding_adj">
+    <property name="upper">5</property>
+    <property name="step-increment">0.01</property>
+    <property name="page-increment">0.10</property>
+  </object>
+  <object class="GtkAdjustment" id="_flatness_adj">
+    <property name="lower">-100</property>
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="_mass_adj">
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="_thinning_adj">
+    <property name="lower">-100</property>
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="_tremor_adj">
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="_width_adj">
+    <property name="lower">0.001</property>
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="_wiggle_adj">
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkPopover" id="popover1">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box1">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover2">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box2">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover3">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box3">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkBox" id="calligraphy-toolbar">
+    <property name="visible">True</property>
+    <property name="halign">start</property>
+    <property name="valign">center</property>
+    <property name="spacing">3</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkComboBoxText" id="_profile_selector_combo">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Choose a preset</property>
+        <property name="margin-start">3</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="profile_edit_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Add or edit calligraphic profile</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="visible">True</property>
+            <property name="icon-name">document-properties</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="width_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">The width of the calligraphic pen (relative to the visible canvas area)</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Width:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_width_item">
+            <property name="name">calligraphy-width</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">7</property>
+            <property name="text">0.000</property>
+            <property name="adjustment">_width_adj</property>
+            <property name="climb-rate">1</property>
+            <property name="digits">3</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="unit_menu_box">
+        <property name="visible">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="usepressure_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Use the pressure of the input device to alter the width of the pen</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image2">
+            <property name="visible">True</property>
+            <property name="icon-name">draw-use-pressure</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="tracebackground_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Trace the lightness of the background by the width of the pen (white - minimum width, black - maximum width)</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image3">
+            <property name="visible">True</property>
+            <property name="icon-name">draw-trace-background</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn1">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover1</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkLabel">
+		<property name="visible">True</property>
+		<property name="label" translatable="yes">Parameters</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="thinning_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">How much velocity thins the stroke (&gt; 0 makes fast strokes thinner, &lt; 0 makes them broader, 0 makes width independent of velocity)</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Thinning:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_thinning_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">3</property>
+            <property name="text">0</property>
+            <property name="adjustment">_thinning_adj</property>
+            <property name="climb-rate">1</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="mass_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Increase to make the pen drag behind, as if slowed by inertia</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Mass:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_mass_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">3</property>
+            <property name="text">0</property>
+            <property name="adjustment">_mass_adj</property>
+            <property name="climb-rate">1</property>
+            <property name="value">0.001</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn2">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover2</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkLabel">
+		<property name="visible">True</property>
+		<property name="label" translatable="yes">Parameters</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="angle_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">The angle of the pen's nib (in degrees; 0 = horizontal; has no effect if fixation = 0)</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="margin-end">3</property>
+            <property name="label" translatable="yes">Angle:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_angle_item">
+            <property name="name">calligraphy-angle</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">3</property>
+            <property name="text" translatable="yes">0</property>
+            <property name="adjustment">_angle_adj</property>
+            <property name="climb-rate">1</property>
+            <property name="value">0.001</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag2"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_usetilt_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Use the tilt of the input device to alter the angle of the pen's nib</property>
+        <property name="margin-end">3</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image4">
+            <property name="visible">True</property>
+            <property name="icon-name">draw-use-tilt</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="flatness_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Angle behavior (0 = nib always perpendicular to stroke direction, 100 = fixed angle, -100 = fixed angle in opposite direction)</property>
+        <property name="margin-end">3</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="margin-end">3</property>
+            <property name="label" translatable="yes">Fixation:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_flatness_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">4</property>
+            <property name="text" translatable="yes">0</property>
+            <property name="adjustment">_flatness_adj</property>
+            <property name="climb-rate">1</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag2"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+        <property name="margin-end">3</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn3">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover3</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkLabel">
+		<property name="visible">True</property>
+		<property name="label" translatable="yes">Parameters</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="cap_rounding_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Increase to make caps at the ends of strokes protrude more (0 = no caps, 1 = round caps</property>
+        <property name="margin-end">3</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="margin-end">3</property>
+            <property name="label" translatable="yes">Caps:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_cap_rounding_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">5</property>
+            <property name="text" translatable="yes">0</property>
+            <property name="adjustment">_cap_rounding_adj</property>
+            <property name="climb-rate">1</property>
+            <property name="digits">2</property>
+            <property name="value">0.001</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag3"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+        <property name="margin-end">3</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="tremor_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Increase to make strokes rugged and trembling</property>
+        <property name="margin-end">3</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="margin-end">3</property>
+            <property name="label" translatable="yes">Tremor:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_tremor_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">3</property>
+            <property name="text" translatable="yes">0</property>
+            <property name="adjustment">_tremor_adj</property>
+            <property name="climb-rate">1</property>
+            <property name="value">0.001</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag3"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="wiggle_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Increase to make the pen waver and wiggle</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Wiggle:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_wiggle_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">3</property>
+            <property name="text" translatable="yes">0</property>
+            <property name="adjustment">_wiggle_adj</property>
+            <property name="climb-rate">1</property>
+            <property name="value">0.001</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag3"/>
+        </style>
+      </object>
+    </child>
+    <style>
+      <class name="toolbar"/>
+    </style>
+  </object>
+</interface>

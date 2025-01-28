@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<keys name="ACD Systems Canvas 11" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- inherit -->
+<xi:include href="inkscape.xml" />
+
+<!-- TOOLS -->
+
+<!--
+
+Canvas has somewhat weird system of tools shortcuts. It has 12 groups of tools, 
+and a tool from one group can have same shortcut another tool from other group 
+has. E.g. both Airbrush, Speaker Notes and Multigon tools have A as shortcut. 
+This is so weird for Inkscape that we cannot even emulate that properly :-)
+
+Following tools exist in Canvas and have a shortcut, but are not used in this 
+scheme due to reasons explained above and absence of such tools in Inkscape:
+
+Linear Dimensioning Tool - somewhat close to Dimensions+Measure Path
+Knife tool - K
+Hand tool - Spacebar works in Inkscape anyway, so not using it
+
+Wand tool - W
+Lasso tool - L
+Remote Move tool - V - actually. Ctrl+Selector do this one-direction-shift-only
+Eraser tool - E
+Marker tool - H
+Airbrush tool - A
+Neon tool - T
+Bucket tool - K
+
+Blur tool - F
+Sharpen tool - Q
+Rubber Stamp tool - S
+Smudge tool - U
+Dodge - O
+Burn - N
+Sponge - D
+Red Eye Reduction - R
+Polygon tool - P
+Reshape - E (you select an object and draw freehand lines to add/subtract from this path)
+Speaker Notes - A
+Scissor tool - C
+-->
+
+  <bind gaction="win.tool-switch('Select')" keys="S, s" />
+
+<!--
+  <bind gaction="win.tool-switch('Node')"   keys="F2, n, N" />
+
+
+  <bind gaction="win.tool-switch('Tweak')"  keys="&lt;shift&gt;F2, w, "W" />
+
+-->
+
+<!--
+  This is actually a trick since in Canvas 11 Ctrl+Spacebar is for zooming in 
+  and Ctrl+Shift+Spacebar is for zooming out
+-->
+  <bind gaction="win.tool-switch('Zoom')"   keys="&lt;ctrl&gt;space, &lt;ctrl&gt;&lt;shift&gt;space" />
+
+  <bind gaction="win.tool-switch('Rect')"   keys="R, r" />
+
+<!-- 3Dbox tool called Cube tool exists in Canvas, but has no shortcut
+  <bind gaction="win.tool-switch('3DBox')"  keys="&lt;shift&gt;F4, x, X" />
+-->
+
+<!-- This is called Oval tool -->
+  <bind gaction="win.tool-switch('Arc')"    keys="O, o" />
+
+  <bind gaction="win.tool-switch('Star')"   keys="A, a" />
+
+<!-- Spiral tools exists in Canvas, but has no shortcut
+  <bind gaction="win.tool-switch('Spiral')" keys="F9, i, I" />
+-->
+
+  <bind gaction="win.tool-switch('Pencil')" keys="P, p, F, f" />
+
+  <bind gaction="win.tool-switch('Pen')"    keys="B, b" />
+
+<!-- It's Paintbrush, but... read the explanation above
+  <bind gaction="win.tool-switch('Caligraphic')" keys="&lt;ctrl&gt;B, b" />
+-->
+
+<!-- K is also used for Knife tool, but we don't have it, so using K for bucket fill -->
+  <bind gaction="win.tool-switch('PaintBucket')"  keys="&lt;shift&gt;K, k" />
+
+  <bind gaction="win.tool-switch('Text')"         keys="T, t" />
+
+  <bind gaction="win.tool-switch('Gradient')"     keys="&lt;ctrl&gt;G, g" />
+
+<!-- Canvas has various smart connection lines. Shortcut seems to be missing
+  <bind gaction="win.tool-switch('Connector')"    keys="&lt;ctrl&gt;F2, o, O" />
+-->
+
+  <bind gaction="win.tool-switch('Dropper')"      keys="I, i" />
+
+<!-- FILE MENU -->
+
+  <bind gaction="win.document-new"      keys="&lt;ctrl&gt;n, &lt;ctrl&gt;N" />
+
+  <bind gaction="win.document-open"         keys="&lt;ctrl&gt;o, &lt;ctrl&gt;O" />
+
+  <bind gaction="win.document-close"        keys="&lt;ctrl&gt;F4" />
+
+  <bind gaction="win.document-save"     keys="&lt;ctrl&gt;s, &lt;ctrl&gt;S" />
+
+  <bind gaction="win.document-save-as"  keys="&lt;ctrl&gt;&lt;shift&gt;s, &lt;ctrl&gt;&lt;shift&gt;S" />
+
+  <bind gaction="win.document-print"    keys="&lt;ctrl&gt;p, &lt;ctrl&gt;P" />
+
+  <bind gaction="app.quit"              keys="&lt;alt&gt;x, &lt;alt&gt;X" />
+
+<!-- EDIT MENU -->
+
+  <bind gaction="doc.undo"    keys="&lt;ctrl&gt;z, &lt;ctrl&gt;Z" />
+
+  <bind gaction="doc.redo"    keys="&lt;ctrl&gt;&lt;shift&gt;z, &lt;ctrl&gt;&lt;shift&gt;Z" />
+
+<!-- Repeat - Alt+Enter - Inkscape doesn't have it yet -->
+
+  <bind gaction="app.cut"     keys="&lt;ctrl&gt;x, &lt;ctrl&gt;X" />
+
+  <bind gaction="app.copy"    keys="&lt;ctrl&gt;c, &lt;ctrl&gt;C" />
+
+  <bind gaction="win.paste"   keys="&lt;ctrl&gt;v, &lt;ctrl&gt;V" />
+
+<!-- Paste Into - Ctrl+Shift+V - needs clarification -->
+
+  <bind gaction="app.delete"  keys="Delete, KP_Delete" />
+
+<!-- is finding 100% analog to Inkscape's? -->
+
+  <bind gaction="win.dialog-open('Find')" keys="&lt;ctrl&gt;&lt;shift&gt;a, &lt;ctrl&gt;&lt;shift&gt;A" />
+
+  <bind gaction="win.select-all"          keys="&lt;ctrl&gt;a, &lt;ctrl&gt;A" />
+
+  <bind gaction="app.duplicate"           keys="&lt;ctrl&gt;d, &lt;ctrl&gt;D" />
+
+<!-- Duplicate With Transform - Ctrl+Shift+D - Inkscape doesn't seem to have straight analog -->
+<!-- Replicate - Ctrl+Alt+D - Inkscape doesn't seem to have straight analog -->
+
+
+<!-- TEXT MENU -->
+
+<!-- we don't seem to have verbs for them: 
+Reduce Font Size - Ctrl+Shift+,
+Increase Font Size - Ctrl+Shift+.
+Plain Style - Ctrl+Shift+P
+Bold Style - Ctrl+Shift+B
+Italic Style - Ctrl+Shift+I
+Underline Style - Ctrl+Shift+U
+Strikethrough - Ctrl+Shift+K
+Outline - Ctrl+Shift+O
+Shadow - Ctrl+Shift+W
+Small Caps - Ctrl+Shift+\
+Superscript - Ctrl+Shift+=
+Subscript - Ctrl+Shift+- -->
+
+  <bind gaction="org.inkscape.text.uppercase"     keys="&lt;ctrl&gt;braceleft" />
+
+  <bind gaction="org.inkscape.text.lowercase"     keys="&lt;ctrl&gt;braceright" />
+
+  <bind gaction="org.inkscape.text.title_case"    keys="&lt;ctrl&gt;colon" />
+
+<!-- we don't seem to have verbs for them: 
+Right Justification - Ctrl+Shift+R
+Left - Ctrl+Shift+L
+Center - Ctrl+Shift+C
+Full - Ctrl+Shift+F
+Leading -> Tighten - Alt+Shift+Up arrow
+Leading -> Loosen - Alt+Shift+Down arrow
+Kerning -> Tighten - Alt+Shift+Left arrow
+Kerning -> Loosen - Alt+Shift+Right arrow
+Kerning -> Tighten Fine Kerning 0,25 - Ctrl+Alt+Shift+Left arrow
+Kerning -> Loosen Fine Kerning 0,25 - Ctrl+Alt+Shift+Right arrow
+-->
+
+  <bind gaction="win.dialog-open('Text')"             keys="&lt;ctrl&gt;T, &lt;ctrl&gt;t" />
+
+<!-- OBJECT MENU -->
+
+<!-- Edit Object... - Ctrl+E (редактирование объекта по контрольным точкам) -->
+
+<!-- "Object Specs...": -->
+
+  <bind gaction="win.dialog-open('ObjectProperties')" keys="&lt;ctrl&gt;I, &lt;ctrl&gt;i" />
+
+  <bind gaction="app.selection-top"                   keys="&lt;ctrl&gt;F, &lt;ctrl&gt;f" />
+
+  <bind gaction="app.selection-bottom"                keys="&lt;ctrl&gt;B, &lt;ctrl&gt;b" />
+
+  <bind gaction="app.selection-raise"                 keys="&lt;ctrl&gt;bracketleft" />
+
+  <bind gaction="app.selection-lower"                 keys="&lt;ctrl&gt;bracketright" />
+
+  <bind gaction="win.dialog-open('AlignDistribute')"  keys="F6" />
+
+<!-- Move... -->
+  <bind gaction="win.dialog-open('Transform')"  keys="&lt;ctrl&gt;m, &lt;ctrl&gt;M, F8" />
+
+  <bind gaction="app.selection-group"       keys="&lt;ctrl&gt;g, &lt;ctrl&gt;G" />
+
+  <bind gaction="app.selection-ungroup"     keys="&lt;ctrl&gt;u, &lt;ctrl&gt;U" />
+
+<!-- we don't have individual verbs for locking and unlocking
+Lock - Ctrl+L
+Unlock - Ctrl+K
+-->
+ 
+<!-- Join? Huh? 
+Path -> Join - Ctrl+Alt+J
+-->
+
+  <bind gaction="app.path-simplify"        keys="&lt;ctrl&gt;&lt;alt&gt;s, &lt;ctrl&gt;&lt;alt&gt;S" />
+
+<!-- Right now simplification of Bezier curves in Inkscape is destructive:
+Path -> Unsmooth - Ctrl+Alt+U
+-->
+
+<!-- Live Curve Editing is conceptually close to wireframe mode, thus using the verb -->
+  <bind gaction="win.canvas-display-mode-cycle"   keys="&lt;ctrl&gt;&lt;alt&gt;l"/>
+
+<!-- LAYOUT MENU -->
+
+<!-- Needs checking
+Display -> Size - Shift+F8
+-->
+
+  <bind gaction="doc.show-grids"          keys="&lt;shift&gt;F9" />
+
+  <bind gaction="win.canvas-rulers"       keys="&lt;shift&gt;F11" />
+
+  <bind gaction="doc.show-all-guides"     keys="&lt;shift&gt;F6" />
+  
+<!-- EEK! Inkscape has no pages! 
+Display -> Page Breaks - F10
+
+But then we don;t need this too :)
+
+Display -> Refresh - F5
+-->
+
+<!-- No named views at this time
+Views -> New... - Ctrl+Alt+N
+-->
+
+  <bind gaction="win.canvas-zoom-in"    keys="&lt;shift&gt;&lt;alt&gt;KP_Add"/>
+
+  <bind gaction="win.canvas-zoom-out"   keys="&lt;shift&gt;&lt;alt&gt;KP_Subtract"/>
+
+<!-- This is "Home View" in Canvas's terminology -->
+  <bind gaction="win.canvas-zoom-1-1"   keys="F3"/>
+
+<!-- Views -> Fit to Window - Shift+F3
+  <bind gaction="win.canvas-zoom-drawing" keys="4, 5, KP_5" />
+-->
+
+<!-- Not implemented
+Views -> Zoom... - Ctrl+/ (переход в статусную строку с клавиатуры для ввода зума ручками)
+-->
+
+<!-- Sending users to Document Properties for defining measure unit used in rulers -->
+  <bind gaction="win.dialog-open('DocumentProperties')" keys="F11, &lt;ctrl&gt;&lt;alt&gt;bracketleft, &lt;ctrl&gt;&lt;shift&gt;F9, &lt;ctrl&gt;&lt;shift&gt;F7" />
+
+
+<!-- EFFECTS MENU -->
+
+<!--Rotate tab in Transformation dialog is the answer -->
+  <bind gaction="win.dialog-open('Transform')"          keys="&lt;ctrl&gt;r, &lt;ctrl&gt;R" />
+
+<!-- 
+  Not sure what to do with this one.
+  Basically it's skew mode of our Selector tool
+  
+  Freeform - Ctrl+Alt+F (skew)
+-->
+
+<!-- This is not interactive Blend tool, but something close. Yay for LPE :) -->
+  <bind gaction="org.ekips.filter.interp.ekips"       keys="&lt;ctrl&gt;&lt;alt&gt;b, &lt;ctrl&gt;&lt;alt&gt;B" />
+
+<!-- 
+  "Combine..." dialog (Ctrl+Alt+C) provides boolean ops.
+  There are no shortcuts for them in Canvas
+-->
+
+<!-- This is not interactive Envelope tool, but something close. Yay for LPE :) -->
+  <bind gaction="org.ekips.filter.perspective.ekips"  keys="&lt;ctrl&gt;&lt;alt&gt;v, &lt;ctrl&gt;&lt;alt&gt;V" />
+
+<!-- This is not interactive Extrusion tool, but something close. Yay for LPE :) -->
+
+  <bind gaction="org.ekips.filter.motion.ekips"       keys="&lt;ctrl&gt;&lt;alt&gt;e, &lt;ctrl&gt;&lt;alt&gt;E" />
+
+<!-- IMAGE MENU -->
+
+<!-- Not implemented in Inkscape:
+Select -> Hide Edges - Ctrl+Shift+E -->
+
+  <bind gaction="win.document-import"                 keys="&lt;ctrl&gt;&lt;alt&gt;i, &lt;ctrl&gt;&lt;alt&gt;I" />
+
+</keys>

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<keys name="Adobe Illustrator" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- inherit -->
+<xi:include href="inkscape.xml" />
+
+<!--  
+This file contains a profile of keyboard shortcuts for Inkscape in the
+style of Adobe Illustrator CC 2020. If the binding is not specified here, it
+is still the Inkscape default. In case of conflict, these bindings override
+those from the Inkscape defaults.
+
+See default.xml for more information.  
+-->
+
+<!-- File -->
+
+  <bind gaction="win.document-dialog-templates"   keys="&lt;primary&gt;&lt;shift&gt;n" />
+
+  <!-- Revert -->
+  <bind gaction="win.document-revert"             keys="&lt;primary&gt;&lt;alt&gt;z" />
+
+  <!-- Place -->
+  <bind gaction="win.document-import"             keys="&lt;primary&gt;&lt;shift&gt;p" />
+  
+<!-- Tools -->
+
+  <!-- Selection (arrow) tool + Free Transform Tool -->
+  <bind gaction="win.tool-switch('Select')"       keys="v, e" />
+
+  <!-- Direct Selection tool -->
+  <bind gaction="win.tool-switch('Node')"         keys="a" />
+  
+  <!-- Warp/Pucker/Bloat/Wrinkle tool -->
+  <bind gaction="win.tool-switch('Tweak')"        keys="&lt;shift&gt;r" />
+
+  <!-- Pen tool -->
+  <bind gaction="win.tool-switch('Pen')"          keys="p" />
+
+  <!-- Type tool -->
+  <bind gaction="win.tool-switch('Text')"         keys="t" />
+
+  <!-- Rectangle tool -->
+  <bind gaction="win.tool-switch('Rect')"         keys="m" />
+
+  <!-- Ellipse tool -->
+  <bind gaction="win.tool-switch('Arc')"          keys="l" />
+
+  <!-- Paintbrush tool -->
+  <bind gaction="win.tool-switch('Calligraphic')" keys="b" />
+
+  <!-- Pencil tool -->
+  <bind gaction="win.tool-switch('Pencil')"       keys="n" />
+
+  <!-- Eye-dropper tool -->
+  <bind gaction="win.tool-switch('Dropper')"      keys="i" />
+
+  <!-- Live Paint Bucket tool -->
+  <bind gaction="win.tool-switch('PaintBucket')"  keys="k" />
+
+  <!-- Symbol Sprayer -->
+  <bind gaction="win.tool-switch('Spray')"        keys="&lt;shift&gt;s" />
+  
+<!-- Zoom -->
+
+  <!-- Zoom in and Out -->
+  <bind gaction="win.canvas-zoom-in"   keys="&lt;primary&gt;plus,  &lt;primary&gt;equal,      &lt;primary&gt;KP_Add"/>
+  <bind gaction="win.canvas-zoom-out"  keys="&lt;primary&gt;minus, &lt;primary&gt;underscore, &lt;primary&gt;KP_Subtract"/>
+
+  <!-- Show Artboard -->
+  <bind gaction="win.canvas-zoom-page" keys="&lt;primary&gt;0,     &lt;primary&gt;KP_0"/>
+  <!-- Actual Size -->
+  <bind gaction="win.canvas-zoom-1-1"  keys="&lt;primary&gt;1,     &lt;primary&gt;KP_1"/>
+  
+<!-- View -->
+
+  <!--Show Grid Ctrl+" -->
+  <bind gaction="doc.show-grids"       keys="&lt;primary&gt;quotedbl" />
+  
+  <!-- Toggle Guides -->
+  <bind gaction="doc.show-all-guides"     keys="&lt;primary&gt;semicolon" />
+  
+  <!-- Toggle Snap -->
+  <bind gaction="win.snap-global-toggle" keys="&lt;primary&gt;&lt;shift&gt;quotedbl, &lt;primary&gt;&lt;alt&gt;apostrophe"/>
+
+  <!-- Toggle View -->
+  <bind gaction="win.canvas-display-mode-cycle" keys="&lt;primary&gt;y"/>
+
+<!-- Edit -->
+
+  <bind gaction="win.paste-in-place"  keys="&lt;primary&gt;&lt;shift&gt;b" />
+  <bind gaction="win.select-none"     keys="&lt;primary&gt;&lt;shift&gt;a" />
+
+  <bind gaction="app.selection-top"     keys="&lt;primary&gt;&lt;shift&gt;bracketright" />
+  <bind gaction="app.selection-bottom"  keys="&lt;primary&gt;&lt;shift&gt;bracketleft" />
+
+  <bind gaction="app.selection-raise"   keys="&lt;primary&gt;bracketright" />
+  <bind gaction="app.selection-lower"   keys="&lt;primary&gt;bracketleft" />
+
+  <!--Object to Guides -->
+  <bind gaction="app.object-to-guides"  keys="&lt;primary&gt;5" />
+  
+  <!-- Make and Release Clipping Masks -->
+  <bind gaction="app.object-set-clip"        keys="&lt;primary&gt;7" />
+  <bind gaction="app.object-release-clip"    keys="&lt;primary&gt;&lt;alt&gt;7" />
+
+  <!-- Add new symbol -->
+  <bind gaction="app.clone"             keys="F8" />
+
+<!-- Dialog -->
+
+  <!-- Preferences -->
+  <bind gaction="app.preferences"                       keys="&lt;primary&gt;k" />
+  
+  <!-- Document Setup -->
+  <bind gaction="win.dialog-open('DocumentProperties')" keys="&lt;primary&gt;&lt;alt&gt;p" />
+  
+  <!-- Panel Shortcuts -->
+  <bind gaction="win.dialog-open('Swatches')"         keys="F6" />
+  <bind gaction="win.dialog-open('Objects')"          keys="F7" />
+  <bind gaction="win.dialog-open('AlignDistribute')"  keys="&lt;shift&gt;F7" />
+  <bind gaction="win.dialog-open('Transform')"        keys="&lt;shift&gt;F8" />
+  <bind gaction="win.dialog-open('FillStroke')"       keys="&lt;primary&gt;F9" />
+  <bind gaction="win.dialog-open('FillStroke')"       keys="&lt;primary&gt;F10" />
+  <bind gaction="win.dialog-open('FillStroke')"       keys="&lt;primary&gt;&lt;shift&gt;F10" />
+  <bind gaction="win.dialog-open('ObjectProperties')" keys="&lt;primary&gt;F11" />
+  <bind gaction="win.dialog-open('Text')"             keys="&lt;primary&gt;t" />
+  <bind gaction="win.dialog-open('Text')"             keys="&lt;primary&gt;&lt;alt&gt;t" />
+
+</keys>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>HPGL2 Input</name>
+  <id>org.inkscape.input.hpgl2_input</id>
+  <dependency type="file" location="inx">hpgl_parser.py</dependency>
+  <dependency type="file" location="inx">hpgl_input_sm.py</dependency>
+  <param name="resolution" type="float" min="1.0" max="10160.0" precision="1" gui-text="Resolution (dpi):" gui-description="The number of steps (plotter units) the plotter moves if it moves by 1 inch (Default: 1016.0)">1016.0</param>
+  <param name="width" type="float" min="0.1" max="1000" precision="2" gui-text="Width (in):" gui-description="Width of the PCL picture frame">8</param>
+  <param name="height" type="float" min="0.1" max="1000" precision="1" gui-text="Height (in):" gui-description="Height of the PCL picture frame">10</param>
+
+  <param name="bake-transforms" type="bool" gui-text="Bake transforms" gui-description="Disabling is helpful for debugging IP/IR/SC commands, but leads to direction-dependent pen size for anisotropic scaling, and pattern lengths may be incorrect">true</param>
+  <param name="break-apart" type="bool" gui-text="Break apart subpaths">true</param>
+
+  <input>
+    <extension>.hpgl</extension>
+    <mimetype>image/hpgl</mimetype>
+    <filetypename>HP Graphics Language file (*.hpgl)</filetypename>
+    <filetypetooltip>Import an HP Graphics Language file</filetypetooltip>
+  </input>
+  <script>
+    <command location="inx" interpreter="python">hpgl2_input.py</command>
+  </script>
+</inkscape-extension>

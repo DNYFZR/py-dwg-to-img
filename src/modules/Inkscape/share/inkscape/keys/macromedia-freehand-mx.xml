@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<keys name="Macromedia Freehand" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- inherit -->
+<xi:include href="inkscape.xml" />
+
+<!--  
+This is an alternative set of keyboard shortcuts for Inkscape, 
+in the style of Macromedia Freehand.  
+This set is intended to help experienced Freehand users get 
+started with Inkscape.  It is not intended for long term use.  
+
+Users are encouraged to learn how to use Inkscape which has more 
+comprehensive keyboard shortcuts for all kind of features.  Also 
+users advised to get directly involved and provide feedback to 
+developers on how best to improve the default settings for all users.  
+
+Use the Preferences dialog to choose these shortcuts or 
+if it doesn't exist yet be sure to check the request tracker and 
+encourage the developers to add the option to the user interface.  
+In the meantime to manually enable these keyboard shortcuts replace the file 
+inkscape/share/keys/default.xml with this file.  
+-->
+
+<!-- 
+Macromedia Freehand MX toplevel menus: 
+File, Edit, View, Modify, Text, Xtras, Window, Help.  
+-->
+
+<!-- Tools -->
+
+  <!-- Selector (Inkscape).  Pointer (Freehand).  -->
+  <bind gaction="win.tool-switch('Select')"     keys="&lt;shift&gt;F10" />
+  <!-- Holding down the Control (Ctrl) key also toggles back to the Pointer --> 
+
+  <!-- Node (Inkscape).  Subselect (Freehand).  No key shortcut.  -->
+  <bind gaction="win.tool-switch('Node')" />
+
+  <bind gaction="win.tool-switch('Rect')"       keys="&lt;shift&gt;F1" />
+
+  <!-- Freehand has separate tools for Ellipse and Arc unlike Inkscape.  -->
+  <bind gaction="win.tool-switch('Arc')"        keys="&lt;shift&gt;F3" />
+
+  <!-- Star (Inkscape).  Polygon (Freehand) includes star options.  -->
+  <bind gaction="win.tool-switch('Star')"       keys="&lt;shift&gt;F8" />
+
+  <!-- Freehand does not use a keybinding for the Spiral tool.  
+  Freehand uses F9 for the Reflect Tool.  Including anyway for now.  -->
+  <bind gaction="win.tool-switch('Spiral')"     keys="F9" />
+
+  <bind gaction="win.tool-switch('Pencil')"     keys="&lt;shift&gt;F5" />
+
+  <bind gaction="win.tool-switch('Pen')"        keys="&lt;shift&gt;F6" />
+  <!-- Freehand does not use a keybinding for the Calligraphic Pen tool.  
+  The Calligraphic Pen is hidden under the Pencil tool -->
+
+  <bind gaction="win.tool-switch('Text')"       keys="&lt;ctrl&gt;&lt;shift&gt;F9" />
+  
+  <!-- Freehand does not include equivalent tool.  Fireworks oddly enough 
+  has a more advanced gradient tool similar to Inkscape.  -->
+  <bind gaction="win.tool-switch('Gradient')"   keys="g, G" />
+
+  <!-- Freehand includes a Connector tool but no keybinding for it.  -->
+  <bind gaction="win.tool-switch('Connector')" />
+
+  <!-- Freehand includes an Eyedropper tool but no keybinding for it.  -->
+  <bind gaction="win.tool-switch('Dropper')" />
+
+<!-- File -->
+
+  <bind gaction="win.document-new" keys="&lt;ctrl&gt;n, &lt;ctrl&gt;N" />
+
+  <bind gaction="win.document-open"             keys="&lt;ctrl&gt;o, &lt;ctrl&gt;O" />
+  <bind gaction="win.document-close"            keys="&lt;ctrl&gt;w, &lt;ctrl&gt;W" />
+  <bind gaction="win.document-save"         keys="&lt;ctrl&gt;s, &lt;ctrl&gt;S" />
+  <bind gaction="win.document-save-as"      keys="&lt;ctrl&gt;&lt;shift&gt;s, &lt;ctrl&gt;&lt;shift&gt;S" />
+  <bind gaction="win.document-print"        keys="&lt;ctrl&gt;p, &lt;ctrl&gt;P" />
+  <bind gaction="win.document-import"       keys="&lt;ctrl&gt;r, &lt;ctrl&gt;R" />
+  <bind gaction="win.dialog-open('Export')" keys="&lt;ctrl&gt;&lt;shift&gt;r, &lt;ctrl&gt;&lt;shift&gt;R" />
+  <bind gaction="app.quit"                  keys="&lt;ctrl&gt;q, &lt;ctrl&gt;Q" />
+  <bind gaction="win.document-revert" />
+  <!-- Alt+F4 included, do not assume the Window Manager provides it.  -->
+  <bind gaction="app.quit"                  keys="&lt;alt&gt;F4" />
+
+<!-- Zoom (Inkscape).  View, Magnification (Freehand).  -->
+
+  <!-- Not included in Freehand but including here anyway for sanity.  
+  Fireworks does use Ctrl+= for Zoom In and Ctrl+- for Zoom Out.  -->
+  <bind gaction="win.canvas-zoom-in" keys="plus, equal, KP_Add, &lt;shift&gt;plus" />
+
+  <bind gaction="win.canvas-zoom-out" keys="minus, underscore, KP_Subtract" />
+
+  <!-- Fit Selection  Ctrl+Alt+0 --> 
+  <bind gaction="win.canvas-zoom-selection" keys="&lt;primary&gt;&lt;alt&gt;0"/>
+  <!-- Fit to Page  Ctrl+Shift+W -->
+  <bind gaction="win.canvas-zoom-page" keys="&lt;primary&gt;&lt;shift&gt;w"/>
+  <!-- Fit All  Ctrl+0 -->
+  <bind gaction="win.canvas-zoom-drawing" keys="&lt;primary&gt;0"/>
+
+  <!-- Magnification 50%  Ctrl+5-->
+  <bind gaction="win.canvas-zoom-1-2" keys="&lt;primary&gt;5"/>
+  <!-- Magnification 100%  Ctrl+1 -->
+  <bind gaction="win.canvas-zoom-1-1" keys="&lt;primary&gt;1"/>
+  <!-- Magnification 200%  Ctrl+2 -->
+  <!-- Magnification 400%  Ctrl+4 -->
+  <!-- Magnification 800%  Ctrl+8 -->
+
+<!-- View -->
+
+  <!-- Freehand has no direct equivalent.  F11 used by Library palette.  -->
+  <bind gaction="win.view-fullscreen" />
+
+  <!-- Freehand has a menu item "Toolbars  Ctrl+Alt+T" to hide all Toolbars -->
+  <bind gaction="win.canvas-toolbox"    keys="&lt;ctrl&gt;&lt;alt&gt;t, &lt;ctrl&gt;&lt;alt&gt;T" />
+
+  <!-- Freehand  "View, Panels  F4"  also Ctrl+Shift+H  
+  Fireworks uses "Window, Hide Panels  F4" to hide both Panels and Toolbox --> 
+  <bind gaction="win.dialog-toggle"     keys="F4, &lt;ctrl&gt;&lt;shift&gt;h, &lt;ctrl&gt;&lt;shift&gt;H" />
+
+  <!-- No menu items in Freehand but these do cycle through Windows as expected -->
+  <bind gaction="win.window-next"       keys="&lt;ctrl&gt;Tab, &lt;ctrl&gt;&lt;shift&gt;ISO_Left_Tab" />
+  <bind gaction="win.window-previous"   keys="&lt;ctrl&gt;&lt;shift&gt;Tab, &lt;ctrl&gt;ISO_Left_Tab" />
+
+  <!-- Rulers off by default.  Looks better and cleaner that way, less busy.  -->
+  <bind gaction="win.canvas-rulers"     keys="&lt;ctrl&gt;&lt;alt&gt;r, &lt;ctrl&gt;&lt;alt&gt;R" />
+
+  <!-- No keybinding or option to toggle Scrollbars.  Ctrl+B used for Bold text.  -->
+  <bind gaction="win.canvas-scroll-bars" />
+
+  <!-- TODO: Freehand "View, Guides, Show  Ctrl+;" -->
+  <!-- <bind gaction="doc.show-all-guides" keys="&lt;ctrl&gt;;" /> -->
+
+  <!-- View, Grid, Show  Ctrl+Alt+G.  -->
+  <bind gaction="doc.show-grids"        keys="&lt;ctrl&gt;&lt;alt&gt;g, &lt;ctrl&gt;&lt;alt&gt;G" />
+  <!-- TODO: View, Grid, Snap to Grid Ctrl+Alt+Shift+G.  -->
+
+  <!-- New View in Inkscape is equivalent to New Window in Freehand.  -->
+  <bind gaction="win.window-new"        keys="&lt;shift&gt;&lt;alt&gt;n, &lt;shift&gt;&lt;alt&gt;N" />
+
+  <bind gaction="win.dialog-open('IconPreview')"/>
+
+  <!-- Freehand also has a Fast Mode  Ctrl+Shift+K  
+  which can be used in combination with Keyline.  --> 
+
+<!-- Edit -->
+
+  <bind gaction="doc.undo"          keys="&lt;ctrl&gt;z, &lt;ctrl&gt;Z" />
+  <bind gaction="doc.redo"          keys="&lt;ctrl&gt;&lt;shift&gt;z, &lt;ctrl&gt;&lt;shift&gt;Z, &lt;ctrl&gt;y, &lt;ctrl&gt;Y" />
+  <bind gaction="app.cut"           keys="&lt;ctrl&gt;x, &lt;ctrl&gt;X" />
+  <bind gaction="app.copy"          keys="&lt;ctrl&gt;c, &lt;ctrl&gt;C" />
+  <bind gaction="win.paste"         keys="&lt;ctrl&gt;v, &lt;ctrl&gt;V" />
+
+  <!-- TODO -->
+  <!-- Special: Paste Attributes  Ctrl+Alt+Shift+V  -->
+  <!-- Cut Contents  Ctrl+shift+X   -->
+  <!-- Paste Contents  Ctrl+shift+V  -->
+
+  <bind gaction="app.delete"            keys="Delete, KP_Delete, BackSpace" />
+  <bind gaction="app.duplicate"         keys="&lt;ctrl&gt;&lt;alt&gt;d, &lt;ctrl&gt;&lt;alt&gt;D" />
+  <bind gaction="app.clone"             keys="&lt;ctrl&gt;&lt;shift&gt;d, &lt;ctrl&gt;&lt;shift&gt;D" />
+  <bind gaction="win.select-all"        keys="&lt;ctrl&gt;a, &lt;ctrl&gt;A" />
+
+  <!-- Freehand  "Edit, Select None  Ctrl+D"  -->
+  <bind gaction="win.select-none"       keys="&lt;ctrl&gt;d, &lt;ctrl&gt;D" />
+
+  <!-- Freehand  "Edit, Select All in Document None  Ctrl+Shift+A"  -->
+  <bind gaction="win.select-all-layers" keys="&lt;ctrl&gt;&lt;shift&gt;a, &lt;ctrl&gt;&lt;shift&gt;A" />
+
+  <bind gaction="win.select-invert" />
+
+<!-- Objects/selection -->
+
+  <bind gaction="app.object-flip-horizontal"        keys="h, H" />
+  <bind gaction="app.object-flip-vertical"          keys="v, V" />
+  <bind gaction="app.selection-top"                 keys="Home, KP_Home" />
+  <bind gaction="app.selection-bottom"              keys="End, KP_End" />
+  <bind gaction="app.selection-raise"               keys="Page_Up, KP_Page_Up" />
+  <bind gaction="app.selection-lower"               keys="Page_Down, KP_Page_Down" />
+  <bind gaction="app.selection-group"           keys="&lt;ctrl&gt;g, &lt;ctrl&gt;G" />
+  <bind gaction="app.selection-ungroup"         keys="&lt;ctrl&gt;&lt;shift&gt;g, &lt;ctrl&gt;&lt;shift&gt;G" />
+  <bind gaction="app.selection-make-bitmap-copy"    keys="&lt;alt&gt;b, &lt;alt&gt;B" />
+  <bind gaction="win.dialog-open('Trace')"          keys="&lt;alt&gt;&lt;shift&gt;b, &lt;alt&gt;&lt;shift&gt;B" />
+  <bind gaction="app.object-to-pattern"             keys="&lt;alt&gt;i, &lt;alt&gt;I" />
+  <bind gaction="app.pattern-to-object"             keys="&lt;alt&gt;&lt;shift&gt;i, &lt;alt&gt;&lt;shift&gt;I" />
+  <bind gaction="app.object-set-clip" />
+  <bind gaction="app.object-release-clip" />
+  <bind gaction="app.object-rotate-90-cw" />
+  <bind gaction="app.object-rotate-90-ccw" />
+
+<!-- Path -->
+
+  <bind gaction="app.object-to-path"                    keys="&lt;ctrl&gt;&lt;shift&gt;c, &lt;ctrl&gt;&lt;shift&gt;C" />
+  <bind gaction="app.object-stroke-to-path"             keys="&lt;ctrl&gt;&lt;alt&gt;c, &lt;ctrl&gt;&lt;alt&gt;C" />
+  <bind gaction="app.path-combine"               keys="&lt;ctrl&gt;k, &lt;ctrl&gt;K" />
+  <bind gaction="app.path-break-apart"           keys="&lt;ctrl&gt;&lt;shift&gt;k, &lt;ctrl&gt;&lt;shift&gt;K" />
+  <bind gaction="app.path-union"                 keys="&lt;ctrl&gt;plus, &lt;ctrl&gt;KP_Add, &lt;ctrl&gt;&lt;shift&gt;plus" />
+  <bind gaction="app.path-intersection"          keys="&lt;ctrl&gt;asterisk, &lt;ctrl&gt;KP_Multiply, &lt;ctrl&gt;&lt;shift&gt;asterisk" />
+  <bind gaction="app.path-difference"            keys="&lt;ctrl&gt;minus, &lt;ctrl&gt;underscore, &lt;ctrl&gt;&lt;shift&gt;underscore, &lt;ctrl&gt;KP_Subtract, &lt;ctrl&gt;&lt;shift&gt;minus" />
+  <bind gaction="app.path-exclusion"             keys="&lt;ctrl&gt;asciicircum, &lt;ctrl&gt;&lt;shift&gt;asciicircum" /> <!-- ^ -->
+  <bind gaction="app.path-cut"                   keys="&lt;ctrl&gt;&lt;alt&gt;slash, &lt;ctrl&gt;&lt;alt&gt;&lt;shift&gt;slash" />
+  <bind gaction="app.path-division"              keys="&lt;ctrl&gt;slash, &lt;ctrl&gt;&lt;shift&gt;slash" />
+  <bind gaction="win.path-offset"                keys="&lt;ctrl&gt;parenright, &lt;ctrl&gt;&lt;shift&gt;parenright, &lt;ctrl&gt;&lt;shift&gt;0" />
+  <bind gaction="win.path-inset"                 keys="&lt;ctrl&gt;parenleft, &lt;ctrl&gt;&lt;shift&gt;parenleft, &lt;ctrl&gt;&lt;shift&gt;9" />
+  <bind gaction="win.path-offset-dynamic"        keys="&lt;ctrl&gt;j, &lt;ctrl&gt;J" />
+  <bind gaction="win.path-offset-linked"         keys="&lt;ctrl&gt;&lt;alt&gt;j, &lt;ctrl&gt;&lt;alt&gt;J" />
+  <bind gaction="app.path-simplify"              keys="&lt;ctrl&gt;l, &lt;ctrl&gt;L" />
+  <bind gaction="win.path-reverse" />
+
+<!-- Text -->
+
+  <!-- Text, Font, Size, Smaller  key="comma" modifiers="Ctrl,Shift" -->
+  <!-- Text, Font, Size, Larger  key="period" modifiers="Ctrl,Shift" -->
+
+  <bind gaction="app.text-flow-into-frame"              keys="&lt;alt&gt;w, &lt;alt&gt;W" />
+  <bind gaction="app.text-unflow"                       keys="&lt;alt&gt;&lt;shift&gt;w, &lt;alt&gt;&lt;shift&gt;W" />
+  <bind gaction="app.text-put-on-path" />
+  <bind gaction="app.text-remove-from-path" />
+  <bind gaction="app.text-convert-to-regular" />
+  <bind gaction="app.text-unkern" />
+
+<!-- Layers -->
+
+  <!-- Freehand provides only a limited a Layers palette, 
+  no menus, no keybindings.  -->  
+  <bind gaction="win.layer-new" />
+  <bind gaction="win.layer-rename" />
+  <bind gaction="win.layer-previous" />
+  <bind gaction="win.layer-next" />
+  <bind gaction="win.layer-delete" />
+  <bind gaction="win.layer-raise" />
+  <bind gaction="win.layer-lower" />
+  <bind gaction="win.layer-top" />
+  <bind gaction="win.layer-bottom" />
+  <bind gaction="win.selection-move-to-layer-above" />
+  <bind gaction="win.selection-move-to-layer-below" />
+
+<!-- Dialogs.  Freehand has a Window menu listing the various palettes/panels.  -->
+
+  <!-- Nothing even remotely equivalent -->
+  <bind gaction="win.dialog-open('XMLEditor')" />
+  <!-- Equivalent exists but no key binding -->
+  <bind gaction="win.dialog-open('DocumentProperties')" />
+
+  <bind gaction="win.dialog-open('AlignDistribute')"    keys="&lt;ctrl&gt;&lt;alt&gt;a, &lt;ctrl&gt;&lt;alt&gt;A" />
+
+  <!-- No equivalent.  Various dialogs.  
+  Inkscape will probably move this to Tool options bar anyway.  -->
+  <bind gaction="win.dialog-open('Text')" />
+
+  <bind gaction="app.preferences"                       keys="&lt;ctrl&gt;u, &lt;ctrl&gt;U" />
+
+  <!-- Object Panel is the closest equivalent in Freehand -->
+  <bind gaction="win.dialog-open('FillStroke')"         keys="&lt;ctrl&gt;F3" />
+  <bind gaction="win.dialog-open('ObjectProperties')" />
+
+  <!-- Freehand has a separate find and replace for Text and Graphics -->
+  <!-- Edit, Find And Replace, Graphics    Ctrl+F  -->
+  <bind gaction="win.dialog-open('Find')"                keys="&lt;ctrl&gt;f, &lt;ctrl&gt;F" />
+  <!-- Edit, Find And Replace, Text  Ctrl+Shift+F  -->
+  <bind gaction="win.dialog-open('Find')"                keys="&lt;ctrl&gt;&lt;shift&gt;f, &lt;ctrl&gt;&lt;shift&gt;F" />
+
+  <bind gaction="win.dialog-open('Transform')"          keys="&lt;ctrl&gt;m, &lt;ctrl&gt;M" />
+
+  <!-- Swatches in Freehand is a sub-tab of the Assets Panel.  -->
+  <bind gaction="win.dialog-open('Swatches')"           keys="&lt;ctrl&gt;F9" />
+
+  <!-- DialogsToggle (Hide Panels), see above in the View menu section -->
+
+<!-- Help -->
+
+  <!-- This is a useful help section section to link to but it might be 
+  better to later link to an introductory beginners guide.  -->
+  <bind gaction="win.help-url-keys"                     keys="F1" />
+
+<!-- Effects (Inkscape).  Xtras (Freehand) -->
+
+  <!-- Freehand repeats the last Effect without any prompting.  -->
+  <bind gaction="app.last-effect"                       keys="&lt;ctrl&gt;&lt;shift&gt;equal" />
+  <bind gaction="app.last-effect-pref" />
+
+</keys>

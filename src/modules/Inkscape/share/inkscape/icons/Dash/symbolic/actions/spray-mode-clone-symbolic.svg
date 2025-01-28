@@ -1,0 +1,15 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="spray-mode-clone" clip-path="url(#clip0_241_9584)">
+<g id="edit-clone">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M11 2H2L2 11H4V5C4 4.44772 4.44772 4 5 4H11V2ZM12 4H14C14.5523 4 15 4.44772 15 5V14C15 14.5523 14.5523 15 14 15H5C4.44772 15 4 14.5523 4 14V12H2C1.44771 12 1 11.5523 1 11V2C1 1.44771 1.44772 1 2 1H11C11.5523 1 12 1.44772 12 2V4ZM5 5H14V14H5L5 5Z" fill="black"/>
+<g id=".accessory / lock">
+<path id="Union_2" fill-rule="evenodd" clip-rule="evenodd" d="M8.5 8C8.5 7.44772 8.94772 7 9.5 7C10.0523 7 10.5 7.44772 10.5 8V9.5H8.5V8ZM7.5 9.5V8C7.5 6.89543 8.39543 6 9.5 6C10.6046 6 11.5 6.89543 11.5 8V9.5C11.7761 9.5 12 9.72386 12 10V12.5C12 12.7761 11.7761 13 11.5 13H7.5C7.22386 13 7 12.7761 7 12.5V10C7 9.72386 7.22386 9.5 7.5 9.5Z" fill="black"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_241_9584">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

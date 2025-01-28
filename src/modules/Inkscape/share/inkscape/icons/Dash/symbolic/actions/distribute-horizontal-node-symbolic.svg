@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="distribute-horizontal-node">
+<rect id="neutral" x="7.5" y="3" width="1" height="10" rx="0.5" fill="black"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M3 5L2.29289 5.70711L0.707107 7.29289L0 8L0.707107 8.70711L2.29289 10.2929L3 11L3.70711 10.2929L5.29289 8.70711L6 8L5.29289 7.29289L3.70711 5.70711L3 5ZM3 9.58579L1.41421 8L3 6.41421L4.58579 8L3 9.58579ZM13 5L12.2929 5.70711L10.7071 7.29289L10 8L10.7071 8.70711L12.2929 10.2929L13 11L13.7071 10.2929L15.2929 8.70711L16 8L15.2929 7.29289L13.7071 5.70711L13 5ZM13 9.58579L11.4142 8L13 6.41421L14.5858 8L13 9.58579Z" fill="black"/>
+</g>
+</svg>

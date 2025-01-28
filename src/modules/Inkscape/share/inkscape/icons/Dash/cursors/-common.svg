@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" fill="gray" stroke="black" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Drop shadow filter used by mouse cursors -->
+    <filter id="def-drop-shadow" x="-.5" y="-.5" width="2" height="2">
+      <feOffset dx="1" dy="1" in="SourceAlpha" result="offOut"/>
+      <feComponentTransfer>
+        <feFuncR type="identity"/>
+        <feFuncG type="identity"/>
+        <feFuncB type="identity"/>
+        <!-- Shadow's transparency -->
+        <feFuncA slope="0.40" type="linear"/>
+      </feComponentTransfer>
+      <feGaussianBlur result="blurOut" stdDeviation="1"/>
+      <feBlend in="SourceGraphic" in2="blurOut"/>
+    </filter>
+  </defs>
+
+  <!-- Cross (centered on hotspot @ 4,4) -->
+  <g id="def-cross" fill="none" stroke-linecap="square">
+    <path d="M 1.5,4.5 7.5,4.5 M 4.5,1.5 4.5,7.5" stroke="#fff" stroke-opacity=".7" stroke-width="3px"/>
+    <path d="M 1.5,4.5 7.5,4.5 M 4.5,1.5 4.5,7.5" stroke="#000" stroke-opacity="1"  stroke-width="1px"/>
+  </g>
+
+  <!-- This object is not used. It's just an illustration of drop shadow effect. -->
+  <g id="example-ignore" filter="url(#def-drop-shadow)" stroke-miterlimit="10">
+    <path d="m5 5 12 8-5 5z" stroke-width="1px"/>
+    <text x="2.55" y="23.47" fill="#000000" font-family="sans-serif" font-size="6px" letter-spacing="0px" stroke="none" word-spacing="0px" style="line-height:1" xml:space="preserve"><tspan x="2.55" y="23.47">drop</tspan><tspan x="2.55" y="29.45">shadow</tspan></text>
+  </g>
+</svg>

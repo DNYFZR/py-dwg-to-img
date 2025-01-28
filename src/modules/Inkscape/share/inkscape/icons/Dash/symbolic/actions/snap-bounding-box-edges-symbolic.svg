@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="snap-bounding-box-edges" clip-path="url(#clip0_241_9243)">
+<path class="error" fill-rule="evenodd" clip-rule="evenodd" d="M3.1 -0.100098V0.499902V3.9999V4.5999H1.9V3.9999V0.499902V-0.100098H3.1ZM4.5 7.9999C4.5 9.10447 3.60457 9.9999 2.5 9.9999C1.39543 9.9999 0.5 9.10447 0.5 7.9999C0.5 6.89533 1.39543 5.9999 2.5 5.9999C3.60457 5.9999 4.5 6.89533 4.5 7.9999ZM3.1 11.9999V11.3999H1.9V11.9999V15.4999V16.0999H3.1V15.4999V11.9999Z" fill="black"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M6 2H6.5H8H9.5V2.5V3L8 3L6.5 3L6 3V2ZM14 3V4.5H13.5H13L13 3L11.5 3V2.5V2H13C13.5523 2 14 2.44772 14 3ZM13.5 6.5H14V9.5H13.5H13V6.5H13.5ZM13.5 11.5H14V13C14 13.5523 13.5523 14 13 14H11.5V13.5V13H13V11.5H13.5ZM9.5 13.5V14H8L6.5 14L6 14V13L6.5 13L8 13H9.5V13.5Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_241_9243">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

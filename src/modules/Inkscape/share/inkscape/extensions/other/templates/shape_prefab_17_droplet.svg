@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" version="1.1" xml:space="preserve">
+<sodipodi:namedview pagecolor="#a9a9a9" bordercolor="#292929" borderopacity="1" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#232323" />
+<style type="text/css">
+g.prefab path {
+  vector-effect:non-scaling-stroke;
+  -inkscape-stroke:hairline;
+  fill: none;
+  fill-opacity: 1;
+  stroke-opacity: 1;
+  stroke: #00349c;
+}
+</style>
+<g inkscape:label="Droplet" style="fill: white; stroke-width: 2; stroke: black;" class="prefab">
+  <path d="M 853.57143,50.000001 H 53.571427 V 138.88889 H 853.57143 Z m 0,177.777779 H 53.571427 v 88.88889 H 853.57143 Z m 0,177.77778 H 53.571427 v 88.88889 H 853.57143 Z m 0,177.77777 H 53.571427 v 88.88889 H 853.57143 Z m 0,177.77778 H 53.571427 V 850 H 853.57143 Z M 53.571427,50 V 850 H 142.46032 V 50 Z M 231.34921,50 V 850 H 320.2381 V 50 Z m 177.77778,0 v 800 h 88.88888 V 50 Z m 177.77777,0 v 800 h 88.88889 V 50 Z m 177.77778,0 v 800 h 88.88889 V 50 Z"/>
+  <path d="M 450,50 A 400,400 0 0 0 50,450 400,400 0 0 0 450,850 400,400 0 0 0 850,450 400,400 0 0 0 450,50 Z m 0,88.88867 A 311.11111,311.11111 0 0 1 761.11133,450 311.11111,311.11111 0 0 1 450,761.11133 311.11111,311.11111 0 0 1 138.88867,450 311.11111,311.11111 0 0 1 450,138.88867 Z m 0,88.88867 A 222.22223,222.22223 0 0 0 227.77734,450 222.22223,222.22223 0 0 0 450,672.22266 222.22223,222.22223 0 0 0 672.22266,450 222.22223,222.22223 0 0 0 450,227.77734 Z m 0,88.88868 A 133.33333,133.33333 0 0 1 583.33398,450 133.33333,133.33333 0 0 1 450,583.33398 133.33333,133.33333 0 0 1 316.66602,450 133.33333,133.33333 0 0 1 450,316.66602 Z m 0,88.88867 A 44.444447,44.444447 0 0 0 405.55469,450 44.444447,44.444447 0 0 0 450,494.44531 44.444447,44.444447 0 0 0 494.44531,450 44.444447,44.444447 0 0 0 450,405.55469 Z"/>
+</g>
+</svg>

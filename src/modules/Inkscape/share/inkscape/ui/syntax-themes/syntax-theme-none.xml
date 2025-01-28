@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This file is part of Inkscape.
+
+ Copyright (C) 2022 the Authors.
+
+ Released under GNU GPL v2+, read the file 'COPYING' for more information.
+-->
+
+<style-scheme id="-none-" _name="&#x25cf; No coloring" version="1.0">
+
+  <author>MK</author>
+  <_description>Empty color scheme to disable syntax highlighting</_description>
+
+  <style name="text" />
+
+</style-scheme>

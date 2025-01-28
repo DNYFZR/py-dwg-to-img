@@ -1,0 +1,100 @@
+/* Minwaita-Inkscape SPECIFIC STYLE */
+
+
+/*
+ * Keep as small as possible
+ */
+
+toolbar toolbutton > button:disabled, toolbar toolbutton > button:backdrop:disabled, .toolbar toolbutton > button:disabled, .toolbar toolbutton > button:backdrop:disabled {
+    -gtk-icon-effect: dim;
+}
+
+scrollbar {
+  margin: -1px;
+}
+
+button.titlebutton {
+  color:inherit;
+  border-style: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: -gtk-scaled(url("assets/window-buttons/titlebutton.png"), url("assets/window-buttons/titlebutton@2.png"));
+  text-shadow: none;
+  -gtk-icon-shadow:none;
+}
+
+window.nautilus-desktop-window box.searchbar-container.vertical > searchbar, window.nautilus-desktop-window box.searchbar-container.vertical > searchbar:backdrop {
+  background-color: transparent;
+}
+
+viewport.frame > list.tweak-categories label:backdrop {
+  color: #313739;
+}
+
+.primary-toolbar button.raised {
+  margin: 0px;
+}
+
+scrolledwindow undershoot.top,scrolledwindow undershoot.bottom,scrolledwindow undershoot.left,scrolledwindow undershoot.right {
+  background-image: none;
+}
+
+#AuxToolbox {
+  min-height:38px;
+}
+
+notebook notebook header label {
+  font-weight:normal;
+}
+
+notebook notebook header image {
+    -gtk-icon-transform:scale(0.75);
+  margin:-1px 0 -1px -3px;
+}
+
+menuitem image {
+  padding: 0;
+}
+
+/* checked buttons: light theme version */
+button.radio:checked,
+button.toggle:checked {
+  background-color: transparent;
+  background-image: image(linear-gradient(rgba(0,0,0,0.16), rgba(0,0,0,0.04)));
+}
+
+/* checked buttons: dark theme version */
+.dark button.radio:checked,
+.dark button.toggle:checked {
+  background-color: transparent;
+  background-image: image(@theme_selected_bg_color);
+}
+
+/* scale part without border doesn't match with a spinbutton; add border */
+#InkSpinScale trough {
+  border: 1px solid alpha(@theme_fg_color, 0.15);
+}
+
+.dark #InkSpinScale trough {
+  border-color: alpha(black, 0.25);
+}
+
+#LPEEffectItem expander title label {
+  min-height:21px;
+}
+
+/*************
+ * Expanders *
+ *************/
+
+expander combobox arrow {
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+
+expander combobox arrow:dir(rtl) {
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+
+expander combobox arrow:checked {
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}

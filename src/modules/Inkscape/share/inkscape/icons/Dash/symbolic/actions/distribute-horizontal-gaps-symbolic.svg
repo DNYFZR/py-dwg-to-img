@@ -1,0 +1,7 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="distribute-horizontal-gaps">
+<rect id="rectangle" opacity="0.3" x="10" y="3" width="5" height="10" rx="0.5" fill="black"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M2 12V4H5V12H2ZM1 3.5C1 3.22386 1.22386 3 1.5 3H5.5C5.77614 3 6 3.22386 6 3.5V12.5C6 12.7761 5.77614 13 5.5 13H1.5C1.22386 13 1 12.7761 1 12.5V3.5ZM11 12V4H14V12H11ZM10 3.5C10 3.22386 10.2239 3 10.5 3H14.5C14.7761 3 15 3.22386 15 3.5V12.5C15 12.7761 14.7761 13 14.5 13H10.5C10.2239 13 10 12.7761 10 12.5V3.5Z" fill="black"/>
+<rect id="neutral" x="7.5" width="1" height="16" rx="0.5" fill="black"/>
+</g>
+</svg>

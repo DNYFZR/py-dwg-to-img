@@ -1,0 +1,13 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="object-translucent-blend-mode">
+<rect id="rectangle" opacity="0.15" x="3" y="3" width="10" height="10" rx="1" fill="black"/>
+<g id="Union" opacity="0.3">
+<mask id="path-2-inside-1_241_9277" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 4H4V12H12V4ZM4 3C3.44772 3 3 3.44772 3 4V12C3 12.5523 3.44772 13 4 13H12C12.5523 13 13 12.5523 13 12V4C13 3.44772 12.5523 3 12 3H4Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 4H4V12H12V4ZM4 3C3.44772 3 3 3.44772 3 4V12C3 12.5523 3.44772 13 4 13H12C12.5523 13 13 12.5523 13 12V4C13 3.44772 12.5523 3 12 3H4Z" fill="black"/>
+<path d="M4 4V3H3V4H4ZM12 4H13V3H12V4ZM4 12H3V13H4V12ZM12 12V13H13V12H12ZM4 5H12V3H4V5ZM5 12V4H3V12H5ZM12 11H4V13H12V11ZM11 4V12H13V4H11ZM4 4V4V2C2.89543 2 2 2.89543 2 4H4ZM4 12V4H2V12H4ZM4 12H4H2C2 13.1046 2.89543 14 4 14V12ZM12 12H4V14H12V12ZM12 12V14C13.1046 14 14 13.1046 14 12H12ZM12 4V12H14V4H12ZM12 4H14C14 2.89543 13.1046 2 12 2V4ZM4 4H12V2H4V4Z" fill="black" mask="url(#path-2-inside-1_241_9277)"/>
+</g>
+<path id="Intersect" fill-rule="evenodd" clip-rule="evenodd" d="M4.00008 13.0001H12.0001C12.5524 13.0001 13.0001 12.5524 13.0001 12.0001V4.00008C13.0001 3.72393 12.8881 3.47393 12.7072 3.29297L3.29297 12.7072C3.47393 12.8881 3.72393 13.0001 4.00008 13.0001Z" fill="black"/>
+</g>
+</svg>

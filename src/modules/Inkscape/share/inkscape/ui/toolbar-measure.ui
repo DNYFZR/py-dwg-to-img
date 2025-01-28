@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkAdjustment" id="_font_size_adj">
+    <property name="lower">1</property>
+    <property name="upper">36</property>
+    <property name="value">10</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">4</property>
+  </object>
+  <object class="GtkAdjustment" id="_offset_adj">
+    <property name="upper">90000</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">4</property>
+  </object>
+  <object class="GtkAdjustment" id="_precision_adj">
+    <property name="upper">10</property>
+    <property name="step-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="_ry_adj">
+    <property name="upper">1000000</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">5</property>
+  </object>
+  <object class="GtkAdjustment" id="_scale_adj">
+    <property name="upper">90000</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">4</property>
+  </object>
+  <object class="GtkPopover" id="popover1">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box1">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover2">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box2">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkBox" id="measure-toolbar">
+    <property name="visible">True</property>
+    <property name="halign">start</property>
+    <property name="valign">center</property>
+    <property name="spacing">3</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkBox" id="font_size_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">The font size to be used in the measurement labels</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Font Size:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_font_size_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">5</property>
+            <property name="text">0.000</property>
+            <property name="adjustment">_font_size_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">2</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="precision_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Decimal precision of measure</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Precision:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_precision_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">2</property>
+            <property name="text">0</property>
+            <property name="adjustment">_precision_adj</property>
+            <property name="climb-rate">1</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="scale_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Scale the results</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Scale %:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_scale_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">8</property>
+            <property name="adjustment">_scale_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">3</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="unit_menu_box">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Units:</property>
+            <property name="use-markup">True</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn1">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover1</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkLabel">
+		<property name="visible">True</property>
+		<property name="label" translatable="yes">Options</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_only_selected_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Measure only selected</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="visible">True</property>
+            <property name="icon-name">snap-bounding-box-center</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_ignore_1st_and_last_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Ignore first and last</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image2">
+            <property name="visible">True</property>
+            <property name="icon-name">draw-geometry-line-segment</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_inbetween_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Show measures between items</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image3">
+            <property name="visible">True</property>
+            <property name="icon-name">distribute-randomize</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">8</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_show_hidden_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Show hidden intersections</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image4">
+            <property name="visible">True</property>
+            <property name="icon-name">object-hidden</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">9</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_all_layers_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Measure all layers</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image5">
+            <property name="visible">True</property>
+            <property name="icon-name">dialog-layers</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">10</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">11</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn2">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover2</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkLabel">
+		<property name="visible">True</property>
+		<property name="label" translatable="yes">Options</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">12</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="reverse_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Reverse measure</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image6">
+            <property name="visible">True</property>
+            <property name="icon-name">draw-geometry-mirror</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">13</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="to_phantom_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Phantom measure</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image7">
+            <property name="visible">True</property>
+            <property name="icon-name">selection-make-bitmap-copy</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">14</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="to_guides_btn">
+        <property name="name">_to_guides_item</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">To guides</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image8">
+            <property name="visible">True</property>
+            <property name="icon-name">guides</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">15</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="to_item_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Convert to item</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image9">
+            <property name="visible">True</property>
+            <property name="icon-name">path-reverse</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">16</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="mark_dimension_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Mark Dimension</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image10">
+            <property name="visible">True</property>
+            <property name="icon-name">tool-pointer</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">17</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="offset_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Mark dimension offset</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Offset:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_offset_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">8</property>
+            <property name="text" translatable="yes">0</property>
+            <property name="adjustment">_offset_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">2</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">18</property>
+      </packing>
+    </child>
+    <style>
+      <class name="toolbar"/>
+    </style>
+  </object>
+</interface>

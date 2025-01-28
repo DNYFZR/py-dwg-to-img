@@ -1,0 +1,1 @@
+.. include:: ../../other/extension-xaml/docs/svg2xaml.rst

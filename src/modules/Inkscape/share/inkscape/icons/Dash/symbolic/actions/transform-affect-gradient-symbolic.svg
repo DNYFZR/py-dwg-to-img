@@ -1,0 +1,13 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="transform-affect-gradient" clip-path="url(#clip0_241_9440)">
+<path id="rectangle" opacity="0.05" d="M0 8H8V16H4.75L0 8Z" fill="black"/>
+<path id="rectangle_2" opacity="0.15" d="M2 8H8V16H7L2 8Z" fill="black"/>
+<path id="rectangle_3" opacity="0.2" d="M4 8H8V14L4 8Z" fill="black"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M10.3 1.00005C10.3 0.613449 10.6134 0.300049 11 0.300049H15H15.7V1.00005V5.00005C15.7 5.38665 15.3866 5.70005 15 5.70005C14.6134 5.70005 14.3 5.38665 14.3 5.00005V2.76071L11.5303 5.53038C11.2374 5.82327 10.7626 5.82327 10.4697 5.53038C10.1768 5.23749 10.1768 4.76261 10.4697 4.46972L13.2393 1.70005H11C10.6134 1.70005 10.3 1.38665 10.3 1.00005ZM0 7.25005H8.75V16H10.25V6.50005L9.5 5.75005H0V7.25005Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_241_9440">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

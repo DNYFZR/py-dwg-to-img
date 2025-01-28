@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70"
+   height="60"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="org.greygreen.inkscape.effects.nup.svg"
+   inkscape:version="1.4-dev (de72ba3c18, 2023-06-27, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.8736104"
+     inkscape:cx="50.807165"
+     inkscape:cy="18.791691"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#3f84a6"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6"
+       id="linearGradient7"
+       x1="17.817398"
+       y1="5.4999986"
+       x2="46.455063"
+       y2="54.500004"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient6"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0"
+         id="stop6" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.07727273;"
+         offset="1"
+         id="stop7" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="org.greygreen.inkscape.effects.nup"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5"
+       style="stroke:#a0a0a0">
+      <path
+         id="rect1"
+         style="fill:url(#linearGradient7);fill-rule:evenodd;stroke:#a0a0a0;stroke-width:0.999997;stroke-miterlimit:5.5"
+         d="m 15.499998,5.4999986 h 39 V 49.5 H 49.5 v 5.000002 H 15.499998 Z"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#a0a0a0;stroke-miterlimit:5.5"
+         d="m 49.643232,54.643232 5,-5"
+         id="path1" />
+    </g>
+    <rect
+       style="fill:none;fill-opacity:0;fill-rule:evenodd;stroke:#5a9cfe;stroke-width:1;stroke-miterlimit:5.5;stroke-opacity:1"
+       id="rect2"
+       width="27"
+       height="17"
+       x="21.5"
+       y="11.5" />
+    <rect
+       style="fill:none;fill-opacity:0;fill-rule:evenodd;stroke:#5a9cfe;stroke-width:0.999999;stroke-miterlimit:5.5;stroke-opacity:1"
+       id="rect3"
+       width="27"
+       height="16"
+       x="21.5"
+       y="32.5" />
+  </g>
+</svg>

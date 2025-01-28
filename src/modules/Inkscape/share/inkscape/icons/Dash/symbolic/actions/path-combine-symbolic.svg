@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="path-combine" clip-path="url(#clip0_241_9531)">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447716 0 1V10C0 10.5523 0.447716 11 1 11H4.08296C4.55904 13.8377 7.027 16 10 16C13.3137 16 16 13.3137 16 10C16 7.027 13.8377 4.55904 11 4.08296V1C11 0.447715 10.5523 0 10 0H1ZM10 4V1L1 1V10H4C4 6.68629 6.68629 4 10 4ZM5 10C5 7.23858 7.23858 5 10 5V10H5ZM5.10002 11H10C10.5523 11 11 10.5523 11 10V5.10002C13.2822 5.56329 15 7.58104 15 10C15 12.7614 12.7614 15 10 15C7.58104 15 5.56329 13.2822 5.10002 11Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_241_9531">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

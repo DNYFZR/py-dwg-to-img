@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkAdjustment" id="_nodes_x_adj">
+    <property name="lower">-1000000</property>
+    <property name="upper">1000000</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">5</property>
+  </object>
+  <object class="GtkAdjustment" id="_nodes_y_adj">
+    <property name="lower">-1000000</property>
+    <property name="upper">1000000</property>
+    <property name="step-increment">0.10</property>
+    <property name="page-increment">5</property>
+  </object>
+  <menu id="insert_node_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Insert node at min X</attribute>
+        <attribute name="action">node-toolbar.insert-min-x</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Insert node at max X</attribute>
+        <attribute name="action">node-toolbar.insert-max-x</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Insert node at min Y</attribute>
+        <attribute name="action">node-toolbar.insert-min-y</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Insert node at max Y</attribute>
+        <attribute name="action">node-toolbar.insert-max-y</attribute>
+      </item>
+    </section>
+  </menu>
+  <object class="GtkPopover" id="popover1">
+    <child>
+      <object class="GtkBox" id="popover_box1">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover2">
+    <child>
+      <object class="GtkBox" id="popover_box2">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkBox" id="node-toolbar">
+    <property name="visible">True</property>
+    <property name="halign">start</property>
+    <property name="valign">center</property>
+    <property name="spacing">3</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkButton" id="insert_node_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="can-default">True</property>
+        <property name="tooltip-text" translatable="yes">Insert new nodes into selected segments</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image24">
+            <property name="visible">True</property>
+            <property name="icon-name">node-add</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="insert_node_btn_menu">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="relief">none</property>
+        <property name="menu-model">insert_node_menu</property>
+        <child>
+          <object class="GtkImage" id="image18">
+            <property name="visible">True</property>
+            <property name="icon-name">go-down</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="delete_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="can-default">True</property>
+        <property name="tooltip-text" translatable="yes">Delete selected nodes</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="visible">True</property>
+            <property name="icon-name">node-delete</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="join_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Join selected nodes</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image2">
+            <property name="visible">True</property>
+            <property name="icon-name">node-join</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="break_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Break path at selected nodes</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image3">
+            <property name="visible">True</property>
+            <property name="icon-name">node-break</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="join_segment_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Join selected endnodes with a new segment</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image4">
+            <property name="visible">True</property>
+            <property name="icon-name">node-join-segment</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="delete_segment_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Delete segment between two non-endpoint nodes</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image5">
+            <property name="visible">True</property>
+            <property name="icon-name">node-delete-segment</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">8</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">9</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn1">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover1</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">node-type-cusp</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">10</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="cusp_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Make selected nodes corner</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image6">
+            <property name="visible">True</property>
+            <property name="icon-name">node-type-cusp</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">11</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="smooth_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Make selected nodes smooth</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image7">
+            <property name="visible">True</property>
+            <property name="icon-name">node-type-smooth</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">12</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="symmetric_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Make selected nodes symmetric</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image8">
+            <property name="visible">True</property>
+            <property name="icon-name">node-type-symmetric</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">13</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="auto_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Make selected nodes auto-smooth</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image9">
+            <property name="visible">True</property>
+            <property name="icon-name">node-type-auto-smooth</property>
+          </object>
+        </child>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">14</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">15</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="line_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Straighten lines</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image10">
+            <property name="visible">True</property>
+            <property name="icon-name">node-segment-line</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">16</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="curve_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Add curve handles</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image11">
+            <property name="visible">True</property>
+            <property name="icon-name">node-segment-curve</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">17</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">18</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Add corners live path effect</property>
+        <property name="action-name">app.object-add-corners-lpe</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image12">
+            <property name="visible">True</property>
+            <property name="icon-name">corners</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">19</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">20</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Convert selected object to path</property>
+        <property name="action-name">app.object-to-path</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image20">
+            <property name="visible">True</property>
+            <property name="icon-name">object-to-path</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">21</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Convert selected object's stroke to paths</property>
+        <property name="action-name">app.object-stroke-to-path</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image21">
+            <property name="visible">True</property>
+            <property name="icon-name">stroke-to-path</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">22</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">23</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="_nodes_x_box">
+        <property name="visible">True</property>
+        <property name="margin-start">4</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">X:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_nodes_x_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">X coordinate of selected node(s)</property>
+            <property name="width-chars">10</property>
+            <property name="adjustment">_nodes_x_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">3</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <style>
+          <class name="context_item"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">24</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="_nodes_y_box">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Y:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_nodes_y_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Y coordinate of selected node(s)</property>
+            <property name="width-chars">10</property>
+            <property name="text">0.000</property>
+            <property name="adjustment">_nodes_y_adj</property>
+            <property name="climb-rate">0.10</property>
+            <property name="digits">3</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <style>
+          <class name="context_item"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">25</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="unit_menu_box">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">26</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">27</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="_nodes_lpeedit_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Show next editable path effect parameter</property>
+        <property name="action-name">win.path-effect-parameter-next</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image22">
+            <property name="visible">True</property>
+            <property name="icon-name">path-effect-parameter-next</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">28</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">29</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn2">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+         <property name="popover">popover2</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkLabel">
+		<property name="visible">True</property>
+		<property name="label" translatable="yes">Options</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">30</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_show_helper_path_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Show path outline (without path effects)</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image19">
+            <property name="visible">True</property>
+            <property name="icon-name">show-path-outline</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">31</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_show_handles_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Show Bezier handles of selected nodes</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image16">
+            <property name="visible">True</property>
+            <property name="icon-name">show-node-handles</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">32</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_show_transform_handles_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Show transformation handles for selected nodes</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image15">
+            <property name="visible">True</property>
+            <property name="icon-name">node-transform</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">33</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_object_edit_mask_path_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Show mask(s) of selected object(s)</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image14">
+            <property name="visible">True</property>
+            <property name="icon-name">path-mask-edit</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">34</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="_object_edit_clip_path_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="tooltip-text" translatable="yes">Show clipping path(s) of selected object(s)</property>
+        <property name="relief">none</property>
+        <style>
+          <class name="tag2"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="image13">
+            <property name="visible">True</property>
+            <property name="icon-name">path-clip-edit</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">35</property>
+      </packing>
+    </child>
+    <style>
+      <class name="toolbar"/>
+    </style>
+  </object>
+</interface>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language id="inline-css" _name="Inline CSS" version="2.0" _section="Markup">
+  <definitions>
+    <context id="inline-css">
+      <include>
+        <context ref="css:style-block-content"/>
+      </include>
+    </context>
+  </definitions>
+</language>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+    <name>Shape Builder Prefab</name>
+    <id>org.inkscape.template.prefab</id>
+
+    <description>Starting templates for using the shape builder tool.</description>
+    <category context="TemplateCategory">Shape Builder</category>
+
+    <param name="svg" gui-text="Template:" type="string"></param>
+
+    <template priority='-15' visibility="icon">
+      <preset name="Trellis" icon="trellis" svg="shape_prefab_01_trellis.svg"/>
+      <preset name="Diamond" icon="diamond" svg="shape_prefab_02_diamond.svg"/>
+      <preset name="Cross" icon="cross" svg="shape_prefab_03_cross.svg"/>
+      <preset name="Very Cross" icon="vcross" svg="shape_prefab_04_very_cross.svg"/>
+      <preset name="Target" icon="target" svg="shape_prefab_05_target.svg"/>
+      <preset name="Hive" icon="hive" svg="shape_prefab_06_hive.svg"/>
+      <preset name="Double Vision" icon="dvision" svg="shape_prefab_07_double_vision.svg"/>
+      <preset name="Celtic Flower" icon="celticf" svg="shape_prefab_08_celtic_flower.svg"/>
+      <preset name="Celtic Knot" icon="celtick" svg="shape_prefab_16_celtic_knot.svg"/>
+      <preset name="Kitchen Tile" icon="ktile" svg="shape_prefab_09_kitchen_tile.svg"/>
+      <preset name="Rose" icon="rose" svg="shape_prefab_10_rose.svg"/>
+      <preset name="Lily" icon="lily" svg="shape_prefab_13_lily.svg"/>
+      <preset name="Crown" icon="crown" svg="shape_prefab_15_crown.svg"/>
+      <preset name="Diamond Target" icon="dtarget" svg="shape_prefab_11_diamond_target.svg"/>
+      <preset name="TV Test Pattern" icon="tv" svg="shape_prefab_12_tv_test_pattern.svg"/>
+      <preset name="Explosion" icon="explosion" svg="shape_prefab_14_explosion.svg"/>
+      <preset name="Droplet" icon="droplet" svg="shape_prefab_17_droplet.svg"/>
+    </template>
+
+    <script>
+      <command location="inx" interpreter="python">template_shape_prefab.py</command>
+    </script>
+</inkscape-extension>

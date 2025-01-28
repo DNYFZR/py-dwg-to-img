@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="path-tweak-push" clip-path="url(#clip0_241_9278)">
+<path id="Vector" d="M1.78777 6H0.000976562V11H1.78777C2.56457 11 3.30956 10.6914 3.85884 10.1421C6.14648 7.8545 9.85547 7.8545 12.1431 10.1421C12.6924 10.6914 13.4374 11 14.2142 11H16.001V6H14.2142C13.4374 6 12.6924 5.69142 12.1431 5.14214C9.85547 2.8545 6.14648 2.8545 3.85884 5.14214C3.30956 5.69142 2.56457 6 1.78777 6Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_241_9278">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

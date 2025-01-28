@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<keys name="Corel DRAW" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- inherit -->
+<xi:include href="inkscape.xml" />
+
+<!--  
+This file contains a profile of keyboard shortcuts for Inkscape 
+in the style of Corel DRAW.   
+
+See default.xml for more information.  
+-->
+
+<!-- Tools -->
+
+<!-- Shaper -->
+
+  <bind gaction="win.tool-switch('Node')"   keys="F10" />
+
+<!-- Pen -->
+
+  <bind gaction="win.tool-switch('Pen')"    keys="F12" />
+
+<!-- Type tool -->
+
+  <bind gaction="win.tool-switch('Text')"   keys="F8" />
+
+<!-- Rectangle -->
+
+  <bind gaction="win.tool-switch('Rect')"   keys="F6" />
+
+<!-- Ellipse -->
+
+  <bind gaction="win.tool-switch('Arc')"    keys="F7" />
+
+<!-- Freehand -->
+
+  <bind gaction="win.tool-switch('Pencil')" keys="F5" />
+
+<!-- Warp/Pucker/Bloat/Wrinkle tool - not in corel
+
+  <bind gaction="win.tool-switch('Tweak')"  keys="&lt;shift&gt;R, &lt;shift&gt;r" />  -->
+
+<!-- Fountain Fill - Corel's gradient tool -->
+
+  <bind gaction="win.tool-switch('Gradient')"   keys="F11" />
+  
+<!-- Eyedropper - no default shortcut yet
+
+  <bind gaction="win.tool-switch('Dropper')"    keys="I, i" /> -->
+
+<!-- Paintbucket - no default shortcut yet
+
+  <bind gaction="win.tool-switch('PaintBucket')" keys="M, m" />  -->
+
+<!-- Zoom -->
+
+  <bind gaction="win.tool-switch('Zoom')"   keys="Z, z" />
+
+<!-- Spiral -->
+
+  <bind gaction="win.tool-switch('Spiral')" keys="A, a" />
+
+<!-- File actions -->
+
+  <bind gaction="win.document-new"                      keys="&lt;ctrl&gt;n, &lt;ctrl&gt;N" />
+  <bind gaction="win.document-open"                         keys="&lt;ctrl&gt;o, &lt;ctrl&gt;O" />
+  <bind gaction="win.document-save"                     keys="&lt;ctrl&gt;s, &lt;ctrl&gt;S" />
+  <bind gaction="win.document-save-as"                  keys="&lt;ctrl&gt;&lt;shift&gt;s, &lt;ctrl&gt;&lt;shift&gt;S" />
+  <bind gaction="win.document-import"                   keys="&lt;ctrl&gt;i, &lt;ctrl&gt;I" />
+  <bind gaction="win.dialog-open('Export')"             keys="&lt;ctrl&gt;e, &lt;ctrl&gt;E" />
+  <bind gaction="win.document-print"                    keys="&lt;ctrl&gt;p, &lt;ctrl&gt;P" />
+
+<!-- Options dialog - make sure it's correct one -->
+
+  <bind gaction="app.preferences"                       keys="&lt;ctrl&gt;j, &lt;ctrl&gt;J" />
+
+<!-- Options dialog - make sure it's correct one -->
+
+  <bind gaction="win.dialog-open('DocumentProperties')" keys="&lt;alt&gt;Return" />
+
+<!-- Edit actions -->
+
+  <bind gaction="doc.undo"                              keys="&lt;ctrl&gt;z, &lt;ctrl&gt;Z, &lt;alt&gt;BackSpace" />
+  <bind gaction="doc.redo"                              keys="&lt;ctrl&gt;&lt;shift&gt;z, &lt;ctrl&gt;&lt;shift&gt;Z" />
+  <bind gaction="app.cut"                               keys="&lt;ctrl&gt;x, &lt;ctrl&gt;X, &lt;shift&gt;Delete" />
+  <bind gaction="app.copy"                              keys="&lt;ctrl&gt;c, &lt;ctrl&gt;C, &lt;ctrl&gt;Insert" />
+  <bind gaction="win.paste"                             keys="&lt;ctrl&gt;v, &lt;ctrl&gt;V, &lt;shift&gt;Insert" />
+  <bind gaction="app.delete"                            keys="Delete" />
+  <bind gaction="app.duplicate"                         keys="&lt;ctrl&gt;d, &lt;ctrl&gt;D" />
+  <bind gaction="win.select-all-layers"                 keys="&lt;ctrl&gt;a, &lt;ctrl&gt;A" />
+
+
+<!-- View actions -->
+
+<!--  
+  <bind gaction="win.canvas-zoom-in" keys="F2" />
+-->
+
+  <bind gaction="win.canvas-zoom-out"          keys="F3" />
+  <bind gaction="win.canvas-zoom-drawing"      keys="F4"/>
+  <bind gaction="win.canvas-zoom-page"         keys="&lt;shift&gt;F4"/>
+  <bind gaction="win.canvas-zoom-selection"    keys="&lt;shift&gt;F2"/>
+
+<!-- Not implemented in Corel? !!!!!!!!!!!!
+
+  <bind gaction="win.canvas-rulers"             keys="&lt;ctrl&gt;r, &lt;ctrl&gt;R" />
+  <bind gaction="win.canvas-scroll-bars"        keys="&lt;ctrl&gt;b, &lt;ctrl&gt;B" />
+  <bind gaction="doc.show-all-guides"           keys="&lt;shift&gt;bar, bar" />
+  <bind gaction="doc.show-grids"                keys="&lt;shift&gt;numbersign, numbersign" /> -->
+
+<!-- Toggle View -->
+
+  <bind gaction="win.canvas-display-mode-cycle" keys="&lt;shift&gt;F9"/>
+
+<!-- Path actions -->
+
+  <bind gaction="app.object-to-path" keys="&lt;ctrl&gt;q" />
+  <bind gaction="app.object-to-path" keys="&lt;ctrl&gt;Q" />
+
+  <bind gaction="app.path-combine" keys="&lt;ctrl&gt;l" />
+  <bind gaction="app.path-combine" keys="&lt;ctrl&gt;L" />
+
+  <bind gaction="app.path-break-apart" keys="&lt;ctrl&gt;k" />
+  <bind gaction="app.path-break-apart" keys="&lt;ctrl&gt;K" />
+
+<!-- Not available in Corel? !!!!!!!!!!!!
+
+  <bind gaction="app.path-union"             keys="&lt;ctrl&gt;plus, &lt;ctrl&gt;KP_Add, &lt;ctrl&gt;&lt;shift&gt;plus" />
+  <bind gaction="app.path-intersection"      keys="&lt;ctrl&gt;asterisk, &lt;ctrl&gt;KP_Multiply, &lt;ctrl&gt;&lt;shift&gt;asterisk" />
+  <bind gaction="app.path-difference"        keys="&lt;ctrl&gt;minus, &lt;ctrl&gt;underscore, &lt;ctrl&gt;&lt;shift&gt;underscore, &lt;ctrl&gt;KP_Subtract, &lt;ctrl&gt;&lt;shift&gt;minus" />
+  <bind gaction="app.path-exclusion"         keys="&lt;ctrl&gt;asciicircum, &lt;ctrl&gt;&lt;shift&gt;asciicircum" />
+  <bind gaction="app.path-cut"               keys="&lt;ctrl&gt;&lt;alt&gt;slash, &lt;ctrl&gt;&lt;alt&gt;&lt;shift&gt;slash" />
+  <bind gaction="app.path-division"          keys="&lt;ctrl&gt;slash, &lt;ctrl&gt;&lt;shift&gt;slash" />
+
+-->
+
+<!-- Object actions -->
+
+<!-- Check if it's correct !!!!!!!!!!!!
+
+  <bind gaction="win.dialog-open('FillStroke')"     keys="&lt;ctrl&gt;&lt;shift&gt;f, &lt;ctrl&gt;&lt;shift&gt;F" />
+  <bind gaction="win.dialog-open('Swatches')"       keys="&lt;ctrl&gt;&lt;shift&gt;w, &lt;ctrl&gt;&lt;shift&gt;W" />
+
+Shift+F11	Color
+
+-->
+
+  <bind gaction="app.selection-group"           keys="&lt;ctrl&gt;g, &lt;ctrl&gt;G" />
+  <bind gaction="app.selection-ungroup"         keys="&lt;ctrl&gt;u, &lt;ctrl&gt;U" />
+
+<!--
+
+Following functionality is available in Inkscapee, but is not accessible via verbs:
+
+Down	Nudge Down
+Left	Nudge Left
+Right	Nudge Right
+Up	Nudge Up
+
+Shft+Down	Super Nudge Down
+Shft+Left	Super Nudge Left
+Shft+Right	Super Nudge Right
+Shft+Up	Super Nudge Up
+
+Ctrl+Down	Micro Nudge Down
+Ctrl+Left	Micro Nudge Left
+Ctrl+Right	Micro Nudge Right
+Ctrl+Up	Micro Nudge Up
+-->
+
+<!-- Needs checking !!!!!!!!!!!!!!
+
+Shft+PageDown	To Back of Layer
+Ctrl+End	To Back of Page
+Shft+PageUp	To Front of Layer
+Ctrl+Home	To Front of Page
+
+SelectionToFront: Raise selection to top
+SelectionToBack: Lower selection to bottom
+SelectionRaise: Raise selection one step
+SelectionLower: Lower selection one step
+
+  <bind gaction="app.selection-top"         keys="Home, KP_Home" />
+  <bind gaction="app.selection-bottom"      keys="End, KP_End" />
+  <bind gaction="app.selection-raise"       keys="Pag, KP_Page_Up" />
+  <bind gaction="app.selection-lower"       keys="Page_Down, KP_Page_Down" />
+
+-->
+
+<!-- Text actions -->
+
+  <bind gaction="win.dialog-open('Text')"   keys="&lt;ctrl&gt;&lt;shift&gt;t, &lt;ctrl&gt;&lt;shift&gt;T" />
+
+</keys>

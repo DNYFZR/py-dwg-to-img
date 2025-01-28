@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="32" height="32"
+     inkscape:hotspot_x="4"
+     inkscape:hotspot_y="4"
+     style="fill:gray;stroke:black">
+
+<style>@import './cursors.css';</style>
+
+<!-- Pointer. Paste svg code here -->
+<g id="cross" style="">
+  <path d="M4.5 9V0" stroke="white" stroke-width="3"/>
+  <path d="M9 4.5H0" stroke="white" stroke-width="3"/>
+  <path d="M0 4.5H9" stroke="black"/>
+  <path d="M4.5 0V9" stroke="black"/>
+</g>
+
+<g id="cursor" class="drop-shadow" style="">
+    <path d="M20.5411 8.14645C20.3458 7.95118 20.0292 7.95118 19.8339 8.14645L8.14645 19.8339C7.95118 20.0292 7.95118 20.3458 8.14645 20.5411L13.4589 25.8536C13.6542 26.0488 13.9708 26.0488 14.1661 25.8536L25.8536 14.1661C26.0488 13.9708 26.0488 13.6542 25.8536 13.4589L20.5411 8.14645Z" fill="white" stroke="white" stroke-linejoin="round"/>
+    <path opacity="0.3" d="M14 25L11.5 22.5L22.5 11.5L25 14L14 25Z" fill="black" stroke="none"/>
+    <path d="M18.9553 11.1637V11.2344L19.9826 12.2616L19.2741 12.9701L18.2469 11.9428H18.1762L16.6178 13.5012L16.6178 13.5719L17.6451 14.5991L16.9366 15.3076L15.9094 14.2803L15.8387 14.2803L14.2803 15.8387V15.9094L15.3076 16.9366L14.5991 17.6451L13.5719 16.6178L13.5012 16.6178L11.9428 18.1762V18.2469L12.9701 19.2741L12.2616 19.9826L11.2344 18.9553H11.1637L9.96717 20.1518V20.2225L13.7771 24.0324H13.8478L24.0327 13.8475V13.7768L20.2228 9.96692H20.1521L18.9553 11.1637ZM19.8471 8.91068C20.0351 8.72274 20.3398 8.72274 20.5277 8.91068L25.0889 13.4719C25.2769 13.6598 25.2769 13.9645 25.0889 14.1525L14.1527 25.0887C13.9648 25.2766 13.6601 25.2766 13.4721 25.0887L8.91093 20.5275C8.72299 20.3395 8.72299 20.0348 8.91093 19.8469L19.8471 8.91068Z" fill="black" stroke="black" stroke-width="0.1" stroke-linejoin="bevel"/>
+</g>
+
+</svg>

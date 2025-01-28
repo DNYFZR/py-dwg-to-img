@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70"
+   height="60"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="org.inkscape.generate.grid-polar.svg"
+   inkscape:version="1.4-dev (de72ba3c18, 2023-06-27, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="12.766667"
+     inkscape:cx="43.942558"
+     inkscape:cy="27.180156"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#3f84a6"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="org.inkscape.generate.grid-polar"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       inkscape:label="GridPolar:R5:A24"
+       transform="matrix(0.1025,0,0,0.10249978,34.999877,29.999943)"
+       id="g186"
+       style="stroke-width:7.31708;stroke-dasharray:none">
+      <circle
+         cx="0"
+         cy="0"
+         r="50"
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         inkscape:label="MajorDivCircle1:R50.0"
+         id="circle155" />
+      <circle
+         cx="0"
+         cy="0"
+         r="100"
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         inkscape:label="MajorDivCircle2:R100.0"
+         id="circle156" />
+      <circle
+         cx="0"
+         cy="0"
+         r="150"
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         inkscape:label="MajorDivCircle3:R150.0"
+         id="circle157" />
+      <circle
+         cx="0"
+         cy="0"
+         r="200"
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         inkscape:label="MajorDivCircle4:R200.0"
+         id="circle158" />
+      <circle
+         cx="0"
+         cy="0"
+         r="250"
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         inkscape:label="MajorDivCircle5:R250.0"
+         id="circle159" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 0,0 V 50"
+         inkscape:label="RadialGridline0"
+         id="path159" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 0,0 H 50"
+         inkscape:label="RadialGridline1"
+         id="path160" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 0,0 V -50"
+         inkscape:label="RadialGridline2"
+         id="path161" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 0,0 H -50"
+         inkscape:label="RadialGridline3"
+         id="path162" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 50,0 H 250"
+         inkscape:label="RadialGridline0"
+         id="path163" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 48.2963,-12.941 241.481,-64.7048"
+         inkscape:label="RadialGridline1"
+         id="path164" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 43.3013,-25 216.506,-125"
+         inkscape:label="RadialGridline2"
+         id="path165" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 35.3553,-35.3553 176.777,-176.777"
+         inkscape:label="RadialGridline3"
+         id="path166" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 25,-43.3013 125,-216.506"
+         inkscape:label="RadialGridline4"
+         id="path167" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 12.941,-48.2963 64.7048,-241.481"
+         inkscape:label="RadialGridline5"
+         id="path168" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 0,-50 V -250"
+         inkscape:label="RadialGridline6"
+         id="path169" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -12.941,-48.2963 -64.7048,-241.481"
+         inkscape:label="RadialGridline7"
+         id="path170" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -25,-43.3013 -125,-216.506"
+         inkscape:label="RadialGridline8"
+         id="path171" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -35.3553,-35.3553 -176.777,-176.777"
+         inkscape:label="RadialGridline9"
+         id="path172" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -43.3013,-25 -216.506,-125"
+         inkscape:label="RadialGridline10"
+         id="path173" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -48.2963,-12.941 -241.481,-64.7048"
+         inkscape:label="RadialGridline11"
+         id="path174" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -50,0 H -250"
+         inkscape:label="RadialGridline12"
+         id="path175" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -48.2963,12.941 -241.481,64.7048"
+         inkscape:label="RadialGridline13"
+         id="path176" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -43.3013,25 -216.506,125"
+         inkscape:label="RadialGridline14"
+         id="path177" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -35.3553,35.3553 -176.777,176.777"
+         inkscape:label="RadialGridline15"
+         id="path178" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -25,43.3013 -125,216.506"
+         inkscape:label="RadialGridline16"
+         id="path179" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M -12.941,48.2963 -64.7048,241.481"
+         inkscape:label="RadialGridline17"
+         id="path180" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 0,50 V 250"
+         inkscape:label="RadialGridline18"
+         id="path181" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 12.941,48.2963 64.7048,241.481"
+         inkscape:label="RadialGridline19"
+         id="path182" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 25,43.3013 125,216.506"
+         inkscape:label="RadialGridline20"
+         id="path183" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 35.3553,35.3553 176.777,176.777"
+         inkscape:label="RadialGridline21"
+         id="path184" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 43.3013,25 216.506,125"
+         inkscape:label="RadialGridline22"
+         id="path185" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         d="M 48.2963,12.941 241.481,64.7048"
+         inkscape:label="RadialGridline23"
+         id="path186" />
+      <circle
+         cx="0"
+         cy="0"
+         r="2.5"
+         style="fill:#000000;stroke:#000000;stroke-width:7.31708;stroke-dasharray:none"
+         inkscape:label="CentreDot"
+         id="circle186" />
+    </g>
+  </g>
+</svg>

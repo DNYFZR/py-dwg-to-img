@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="color-gradient" clip-path="url(#clip0_241_9704)">
+<path id="neutral" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M3 4.5V13L13 3H4.5L3 4.5Z" fill="black"/>
+<path id="neutral_2" opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M13 11.5V3L3 13H11.5L13 11.5Z" fill="black"/>
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M5.00004 2.00004L3 0L0 3L2 5V12.5C2 13.3285 2.67157 14 3.5 14H11L13 16L16 13L14 11V3.50004C14 2.67161 13.3284 2.00004 12.5 2.00004H5.00004ZM3 6V12.5C3 12.7762 3.22386 13 3.5 13H10L10 13L11.1464 11.8536L4.14643 4.85357L3 6ZM13 10L11.8535 11.1465L4.85353 4.14647L5.99996 3.00004H12.5C12.7761 3.00004 13 3.2239 13 3.50004V10ZM3 1.5L4.5 3L3 4.5L1.5 3L3 1.5ZM14.5 13L13 11.5L11.5 13L13 14.5L14.5 13Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_241_9704">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

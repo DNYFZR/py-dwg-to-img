@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) and export_objects.py -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   sodipodi:docname="pages-order-backwards-symbolic.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8">
+    <inkscape:path-effect
+       attempt_force_join="true"
+       miter_limit="100"
+       linejoin_type="round"
+       line_width="2"
+       linecap_type="round"
+       is_visible="true"
+       id="path-effect1916"
+       effect="join_type"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="join_type"
+       id="path-effect848-3"
+       is_visible="true"
+       lpeversion="1"
+       linecap_type="butt"
+       line_width="2"
+       linejoin_type="round"
+       miter_limit="100"
+       attempt_force_join="true" />
+  </defs>
+  <sodipodi:namedview
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     id="namedview"
+     showgrid="true"
+     inkscape:zoom="38.653995"
+     inkscape:cx="6.286543"
+     inkscape:cy="6.5969895"
+     inkscape:window-width="1920"
+     inkscape:window-height="1163"
+     inkscape:window-x="1200"
+     inkscape:window-y="533"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="snap-page-7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:snap-grids="true"
+     inkscape:snap-to-guides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid"
+       spacingx="0.5"
+       spacingy="0.5"
+       empspacing="2" />
+  </sodipodi:namedview>
+  <g
+     transform="translate(-979,-527.3622)"
+     inkscape:label="00334"
+     id="snap-page">
+    <g
+       id="snap-page-7"
+       inkscape:label="00334">
+      <path
+         class="base"
+         inkscape:label="star out"
+         inkscape:connector-curvature="0"
+         d="m 983,539.3652 0.006,2 a 1,1 0 0 0 1,0.997 H 994 a 1,1 0 0 0 1,-1 v -9 a 1,1 0 1 0 -2,0 v 9 l 1,-1 h -9.994 l 1,0.997 -0.006,-2 a 1,1 0 1 0 -2,0.006 z m 11.68667,-7.73395 -3.1775,-3.00132 a 1,1 0 0 0 -0.68667,-0.27303 h -6.81634 a 1,1 0 0 0 -1,0.99693 l -0.006,2.0053 a 1,1 0 1 0 2,0.006 l 0.006,-2.0053 -1,0.99693 h 6.81634 l -0.68667,-0.27303 3.1775,3.00132 a 1,1 0 1 0 1.37334,-1.45394 z"
+         id="polygon1138"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:original-d="m 994,532.35822 -3.1775,-3.00132 h -6.81634 L 984,531.3622 m 0,8 0.006,2 H 994 v -9"
+         inkscape:path-effect="#path-effect1916" />
+      <path
+         d="m 990,529.3622 v 3 a 1,1 0 0 0 1,1 h 3 v -2 h -3 l 1,1 v -3 z"
+         id="path845"
+         inkscape:path-effect="#path-effect848-3"
+         inkscape:original-d="m 991,529.3622 v 3 h 3"
+         sodipodi:nodetypes="ccc" />
+      <path
+         id="path1080"
+         style=""
+         inkscape:transform-center-x="0.37500328"
+         inkscape:transform-center-y="6.9652184e-06"
+         d="m 982,538.3622 v -2 h 4 v -2 h -4 v -2 l -3,3 z"
+         class="success"
+         sodipodi:nodetypes="cccccccc" />
+    </g>
+  </g>
+  <style
+     id="s2"> 
+     @import '../../highlights.css'; 
+  </style>
+  <style
+     id="s0-6">
+   .success { fill: #009909; }
+   .warning { fill: #FF1990; }
+   .error   { fill: #00AAFF; }
+  </style>
+</svg>

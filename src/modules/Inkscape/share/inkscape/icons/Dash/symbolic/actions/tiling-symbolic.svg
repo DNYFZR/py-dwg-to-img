@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="tiling">
+<path class="warning" fill-rule="evenodd" clip-rule="evenodd" d="M7 3H10V6H7V3ZM6 7H3V10H6V7ZM6 11H3V14H6V11ZM10 7H7V10H10V7ZM7 11H10V14H7V11ZM14 3H11V6H14V3ZM11 7H14V10H11V7ZM14 11H11V14H14V11Z" fill="#9E9E9E"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M3 3V5H5V3H3ZM2.5 2C2.22386 2 2 2.22386 2 2.5V5.5C2 5.77614 2.22386 6 2.5 6H5.5C5.77614 6 6 5.77614 6 5.5V2.5C6 2.22386 5.77614 2 5.5 2H2.5Z" fill="black"/>
+</g>
+</svg>

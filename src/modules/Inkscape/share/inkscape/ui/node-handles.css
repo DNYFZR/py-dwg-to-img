@@ -1,0 +1,238 @@
+/*
+CANVAS CONTROLS CUSTOMIZATION
+-----------------------------
+
+All available properties:
+    shape: "shape-name";
+    fill: color;
+    stroke: color;
+    outline: color;
+    stroke-width: X px;
+    outline-width: X px;
+    opacity: value or percentage;
+    fill-opacity: value or percentage;
+    stroke-opacity: value or percentage;
+    outline-opacity: value or percentage;
+    scale: factor; -> scaling factor applied to requested "handle size" preference setting
+    size-extra: 1px; -> extra space to fine-tune handle size with relation to other handles
+    stroke-scale: 0.10; -> factor for scaling stroke with handle size or 0 to disable scaling
+
+Where 'shape' is one of: 
+    'square'
+    'diamond'
+    'circle'
+    'triangle'
+    'triangle-angled'
+    'cross'
+    'plus'
+    'plus'
+    'pivot'
+    'arrow'
+    'skew-arrow'
+    'curved-arrow'
+    'side-align'
+    'corner-align'
+    'middle-align'
+
+All available selectors:
+    * (all handles)
+    .inkscape-adj-handle
+    .inkscape-adj-skew
+    .inkscape-adj-rotate
+    .inkscape-adj-center
+    .inkscape-adj-salign
+    .inkscape-adj-calign
+    .inkscape-adj-malign
+    .inkscape-anchor
+    .inkscape-point
+    .inkscape-rotate
+    .inkscape-margin
+    .inkscape-center
+    .inkscape-sizer
+    .inkscape-shaper
+    .inkscape-marker
+    .inkscape-lpe
+    .inkscape-node-auto
+    .inkscape-node-cusp
+    .inkscape-node-smooth
+    .inkscape-node-symmetrical
+    .inkscape-mesh
+    .inkscape-invisible
+    .inkscape-guide-handle
+    .inkscape-move
+
+All available pseudo-classes (states):
+    :hover
+    :selected
+    :click (same for click/drag)
+    :selected:hover
+    :selected:click
+
+Notes:
+    Less specific selectors will apply to more specific handles
+    unless overwritten by more specific selectors. (like usual css)
+
+    User's node-handles.css overwrites default for any handle
+    specified in the former
+
+    Color can be #RRGGBB or name
+*/
+
+* {
+    fill: white;
+    stroke: black;
+    outline: white;
+    stroke-width: 1.0px;
+    outline-width: 1.0px;
+    outline-opacity: 60%;
+    scale: 2.0;
+    size-extra: 1px; /* extra space to fine-tune handle size */
+    stroke-scale: 0.10; /* factor for scaling stroke with handle size or 0 to disable scaling */
+}
+
+*:selected {
+    fill: #2a7fff;
+}
+
+*:hover,
+*:click {
+    fill: #0066ff;
+}
+
+
+.inkscape-node-cusp,
+.inkscape-shaper, /* box 3d, connector tool, gradient stops */
+.inkscape-lpe { /* several path effects */
+    shape: "diamond";
+    scale: 2.828427; /* 2 * sqrt(2) */
+    size-extra: 2px;
+}
+
+.inkscape-node-smooth,
+.inkscape-node-symmetrical,
+.inkscape-anchor, /* various drawing tools */
+.inkscape-sizer {
+    shape: "square";
+    size-extra: 2px;
+}
+
+.inkscape-node-auto,
+.inkscape-margin, /* page tool */
+.inkscape-move { /* LPE chamfer fillet */
+    shape: "circle";
+    scale: 2.256758; /* 4 / sqrt(PI) */
+    size-extra: 2px;
+}
+
+/* snap indicators, measure tool handles */
+.inkscape-point {
+    shape: "circle";
+    stroke-width: 0px;
+    outline-width: 1px;
+    fill: red;
+    scale: 1;
+    size-extra: 3px;
+}
+
+.inkscape-mesh,
+.inkscape-rotate {
+    shape: "circle";
+    scale: 2.256758; /* 4 / sqrt(PI) */
+    size-extra: 2px;
+}
+
+.inkscape-mesh:selected {
+    shape: "triangle";
+}
+
+.inkscape-adj-handle, .inkscape-adj-skew, .inkscape-adj-rotate,
+.inkscape-adj-salign, .inkscape-adj-calign, .inkscape-adj-malign,
+.inkscape-adj-center {
+    fill: black;
+    size-extra: 7px;
+    stroke-scale: 0;
+}
+
+.inkscape-adj-handle:selected, .inkscape-adj-skew:selected, .inkscape-adj-rotate:selected,
+.inkscape-adj-salign:selected, .inkscape-adj-calign:selected, .inkscape-adj-malign:selected,
+.inkscape-adj-center:selected {
+    fill: #4992fe;
+}
+
+.inkscape-adj-handle:hover, .inkscape-adj-skew:hover, .inkscape-adj-rotate:hover,
+.inkscape-adj-salign:hover, .inkscape-adj-calign:hover, .inkscape-adj-malign:hover,
+.inkscape-adj-center:hover {
+    fill: #6da7ff;
+}
+
+.inkscape-adj-handle {
+    shape: "arrow";
+}
+
+.inkscape-adj-skew {
+    shape: "skew-arrow";
+}
+
+.inkscape-adj-rotate {
+    shape: "curved-arrow";
+}
+
+.inkscape-adj-center {
+    shape: "pivot";
+}
+
+.inkscape-adj-salign, .inkscape-adj-calign, .inkscape-adj-malign {
+    size-extra: 11px;
+}
+
+.inkscape-adj-salign {
+    shape: "side-align";
+}
+
+.inkscape-adj-calign {
+    shape: "corner-align";
+}
+
+.inkscape-adj-malign {
+    shape: "middle-align";
+}
+
+.inkscape-center {
+    shape: "plus";
+    stroke-width: 1px;
+    size-extra: 1px;
+    stroke-scale: 0.08; /* make stroke heavier more slowly */
+}
+
+.inkscape-marker {
+    shape: "cross";
+    stroke-width: 1px;
+    size-extra: -1px;
+    stroke-scale: 0.08;
+}
+
+.inkscape-invisible {
+    opacity: 0% !important;
+    /* despite being invisible size of this handle is important, as it is a hit target for path manipulation */
+    scale: 2;
+    size-extra: 1px;
+    stroke-width: 0px;
+    stroke-scale: 0;
+    outline-width: 0px;
+}
+
+.inkscape-guide-handle {
+    /* guide lines handles are tiny and unobtrusive */
+    scale: 0.5;
+    size-extra: 3px;
+    stroke-width: 1.0px;
+    stroke-scale: 0;
+    outline-width: 0px;
+}
+
+/* corners LPE adjustment handles */
+.inkscape-pointer {
+    shape: "triangle-angled";
+    scale: 5.0; /* angled triangle occupies half of the image, so it needs larger scale */
+    size-extra: 10px;
+}

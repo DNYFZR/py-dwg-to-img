@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<keys name="Corel DRAW X8" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- inherit -->
+<xi:include href="inkscape.xml" />
+
+<!--  
+This file contains a profile of keyboard shortcuts for Inkscape 
+in the style of Corel DRAW X8. See default.xml for more information.  
+-->
+
+<!-- File -->
+<bind gaction="win.document-import"                     keys="&lt;ctrl&gt;i, &lt;ctrl&gt;I" />
+<bind gaction="win.document-new"                        keys="&lt;ctrl&gt;n, &lt;ctrl&gt;N" />
+<bind gaction="win.document-open"                       keys="&lt;ctrl&gt;o, &lt;ctrl&gt;O" />
+<bind gaction="win.document-print"                      keys="&lt;ctrl&gt;p, &lt;ctrl&gt;P" />
+<bind gaction="win.document-save"                       keys="&lt;ctrl&gt;s, &lt;ctrl&gt;S" />
+<bind gaction="win.document-save-as"                    keys="&lt;ctrl&gt;&lt;shift&gt;s, &lt;ctrl&gt;&lt;shift&gt;S" />
+
+<!-- Edit -->
+<bind gaction="app.copy"                                keys="&lt;ctrl&gt;c, &lt;ctrl&gt;C" />
+<bind gaction="app.cut"                                 keys="&lt;ctrl&gt;x, &lt;ctrl&gt;X" />
+<bind gaction="app.delete"                              keys="Delete" />
+<bind gaction="app.duplicate"                           keys="&lt;ctrl&gt;d, &lt;ctrl&gt;D" />
+<bind gaction="win.paste-in-place"                      keys="&lt;ctrl&gt;v, &lt;ctrl&gt;V" />
+<bind gaction="doc.redo"                                keys="&lt;ctrl&gt;&lt;shift&gt;z, &lt;ctrl&gt;&lt;shift&gt;Z" />
+<bind gaction="win.select-all-layers"                   keys="&lt;ctrl&gt;a, &lt;ctrl&gt;A" />
+<bind gaction="doc.undo"                                keys="&lt;ctrl&gt;z, &lt;ctrl&gt;Z" />
+
+<!-- Selection -->
+<bind gaction="app.path-break-apart"                    keys="&lt;ctrl&gt;k, &lt;ctrl&gt;K" />
+<bind gaction="app.path-combine"                        keys="&lt;ctrl&gt;l, &lt;ctrl&gt;L" />
+<bind gaction="app.selection-group"                     keys="&lt;ctrl&gt;g, &lt;ctrl&gt;G" />
+<bind gaction="app.selection-lower"                     keys="&lt;ctrl&gt;Page_Down" />
+<bind gaction="app.selection-raise"                     keys="&lt;ctrl&gt;Page_Up" />
+<bind gaction="app.selection-bottom"                    keys="&lt;ctrl&gt;End" />
+<bind gaction="app.selection-top"                       keys="&lt;ctrl&gt;Home" />
+<bind gaction="app.selection-ungroup"                   keys="&lt;ctrl&gt;u, &lt;ctrl&gt;U" />
+<bind gaction="app.object-stroke-to-path"               keys="&lt;ctrl&gt;&lt;shift&gt;q, &lt;ctrl&gt;&lt;shift&gt;Q" />
+
+<!-- Layer -->
+
+
+
+<!-- Object -->
+
+<bind gaction="app.object-to-path"                      keys="&lt;ctrl&gt;q, &lt;ctrl&gt;Q" />
+
+<!-- Context -->
+
+<bind gaction="app.object-align('hcenter pref')"       keys="c, C" />
+<bind gaction="app.object-align('vcenter pref')"       keys="e, E" />
+<bind gaction="app.object-align('bottom pref')"        keys="b, B" />
+<bind gaction="app.object-align('left pref')"          keys="l, L" />
+<bind gaction="app.object-align('right pref')"         keys="r, R" />
+<bind gaction="app.object-align('top pref')"           keys="t, T" />
+
+<bind gaction="win.tool-switch('Arc')"                  keys="F7" />
+<bind gaction="win.tool-switch('Eraser')"               keys="x, X" />
+<bind gaction="win.tool-switch('Mesh')"                 keys="m, M" />
+<bind gaction="win.tool-switch('Node')"                 keys="F10" />
+<bind gaction="win.tool-switch('Pen')"                  keys="F12" />
+<bind gaction="win.tool-switch('Pencil')"               keys="F5" />
+<bind gaction="win.tool-switch('Rect')"                 keys="F6" />
+<bind gaction="win.tool-switch('Spiral')"               keys="A, a" />
+<bind gaction="win.tool-switch('Text')"                 keys="F8" />
+<bind gaction="win.tool-switch('Zoom')"                 keys="z, Z" />
+
+<!-- View -->
+
+<bind gaction="win.view-full-screen-focus"              keys="F9"/>
+<bind gaction="win.canvas-display-mode-cycle"           keys="&lt;shift&gt;F9"/>
+<bind gaction="win.canvas-zoom-drawing"                 keys="F4"/>
+<bind gaction="win.canvas-zoom-in"                      keys="F2" />
+<bind gaction="win.canvas-zoom-out"                     keys="F3" />
+<bind gaction="win.canvas-zoom-page"                    keys="&lt;shift&gt;F4"/>
+<bind gaction="win.canvas-zoom-selection"               keys="&lt;shift&gt;F2"/>
+
+<!-- Dialog -->
+
+<bind gaction="win.dialog-open('DocumentProperties')"   keys="&lt;alt&gt;Return" />
+<bind gaction="win.dialog-open('Export')"               keys="&lt;ctrl&gt;e, &lt;ctrl&gt;E" />
+<bind gaction="win.dialog-open('FillStroke')"           keys="F11" />
+<bind gaction="win.dialog-open('Find')"                 keys="&lt;ctrl&gt;f, &lt;ctrl&gt;F" />
+<bind gaction="app.preferences"                         keys="&lt;ctrl&gt;j, &lt;ctrl&gt;J" />
+<bind gaction="win.dialog-open('Text')"                 keys="&lt;ctrl&gt;&lt;shift&gt;t, &lt;ctrl&gt;&lt;shift&gt;T" />
+<bind gaction="win.dialog-open('Transform')"            keys="&lt;alt&gt;F8" />
+
+<bind gaction="win.help-url-manual"                     keys="F1"/>
+
+</keys>

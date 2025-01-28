@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70"
+   height="60"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="org.ekips.filter.perspective.svg"
+   inkscape:version="1.4-dev (f25ce46d5c, 2023-06-29)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="55.507882"
+     inkscape:cy="53.033009"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="org.ekips.filter.perspective"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#e0e0e0;fill-rule:evenodd;stroke:#606060;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.7"
+       d="M 68.475856,36.838222 40.909503,17.243092 2.1746551,18.931825 24.188599,41.251662"
+       id="path992" />
+    <path
+       d="M 24.188659,41.251719 36.57127,40.017656 33.96731,34.666522 49.334936,33.347651 58.273199,37.854967 68.475836,36.838214 27.906574,17.810048 16.825459,18.293155 Z m 7.620305,-10.995859 -3.695965,-7.611897 13.634235,6.871049 z"
+       id="text993"
+       style="font-weight:bold;font-size:246.938px;line-height:1.8;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10"
+       aria-label="A" />
+  </g>
+</svg>

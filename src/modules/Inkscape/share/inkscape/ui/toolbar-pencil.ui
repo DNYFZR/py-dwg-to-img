@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkAdjustment" id="_maxpressure_adj">
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="_minpressure_adj">
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="_shapescale_adj">
+    <property name="upper">1000</property>
+    <property name="step-increment">0.5</property>
+    <property name="page-increment">1</property>
+  </object>
+  <object class="GtkAdjustment" id="_tolerance_adj">
+    <property name="upper">100</property>
+    <property name="step-increment">0.5</property>
+    <property name="page-increment">1</property>
+  </object>
+  <object class="GtkRadioButton" id="mode_buttons_group">
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="always-show-image">True</property>
+    <property name="active">True</property>
+    <property name="draw-indicator">False</property>
+  </object>
+  <object class="GtkPopover" id="popover1">
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox" id="popover_box1">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="spacing">3</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkBox" id="pencil-toolbar">
+    <property name="visible">True</property>
+    <property name="halign">start</property>
+    <property name="valign">center</property>
+    <property name="spacing">3</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkMenuButton" id="menu_btn1">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="popover">popover1</property>
+        <child>
+	  <object class="GtkBox">
+	    <property name="visible">True</property>
+	    <child>
+              <object class="GtkLabel">
+		<property name="visible">True</property>
+		<property name="label" translatable="yes">Mode</property>
+              </object>
+	    </child>
+	    <child>
+              <object class="GtkImage">
+		<property name="visible">True</property>
+		<property name="icon-name">pan-down</property>
+              </object>
+	    </child>
+	  </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Mode of new lines drawn by this tool</property>
+        <property name="margin-start">3</property>
+        <property name="label" translatable="yes">Mode</property>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="mode_buttons_box">
+        <property name="visible">True</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Create regular Bezier path</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">mode_buttons_group</property>
+            <child>
+              <object class="GtkImage" id="image1">
+                <property name="visible">True</property>
+                <property name="icon-name">path-mode-bezier</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Create Spiro path</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">mode_buttons_group</property>
+            <child>
+              <object class="GtkImage" id="image2">
+                <property name="visible">True</property>
+                <property name="icon-name">path-mode-spiro</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Create BSpline path</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">mode_buttons_group</property>
+            <child>
+              <object class="GtkImage" id="image3">
+                <property name="visible">True</property>
+                <property name="icon-name">path-mode-bspline</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="zigzag_btn">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Create a sequence of straight line segments</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">mode_buttons_group</property>
+            <child>
+              <object class="GtkImage" id="image4">
+                <property name="visible">True</property>
+                <property name="icon-name">path-mode-polyline</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="paraxial_btn">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">Create a sequence of paraxial line segments</property>
+            <property name="relief">none</property>
+            <property name="draw-indicator">False</property>
+            <property name="group">mode_buttons_group</property>
+            <child>
+              <object class="GtkImage" id="image5">
+                <property name="visible">True</property>
+                <property name="icon-name">path-mode-polyline-paraxial</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <style>
+          <class name="tag1"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="_flatten_spiro_bspline_btn">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="focus-on-click">False</property>
+        <property name="receives-default">True</property>
+        <property name="tooltip-text" translatable="yes">Flatten Spiro or BSpline LPE</property>
+        <property name="relief">none</property>
+        <child>
+          <object class="GtkImage" id="image6">
+            <property name="visible">True</property>
+            <property name="icon-name">flatten</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="pencil_only_box">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkToggleButton" id="_usepressure_btn">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Use pressure input</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage" id="image7">
+                <property name="visible">True</property>
+                <property name="icon-name">draw-use-pressure</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="_minpressure_box">
+            <property name="visible">True</property>
+            <property name="tooltip-text" translatable="yes">Min percent of pressure</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Min:</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="_minpressure_item">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="width-chars">4</property>
+                <property name="text" translatable="yes">0</property>
+                <property name="adjustment">_minpressure_adj</property>
+                <property name="climb-rate">1</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="_maxpressure_box">
+            <property name="visible">True</property>
+            <property name="tooltip-text" translatable="yes">Max percent of pressure</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Max:</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="_maxpressure_item">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="width-chars">4</property>
+                <property name="text" translatable="yes">0</property>
+                <property name="adjustment">_maxpressure_adj</property>
+                <property name="climb-rate">1</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="powerstroke_cap_box">
+            <property name="visible">True</property>
+            <property name="tooltip-text" translatable="yes">Line endings when drawing with pressure-sensitive PowerPencil</property>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="tolerance_box">
+            <property name="visible">True</property>
+            <property name="tooltip-text" translatable="yes">How much smoothing (simplifying) is applied to the line</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Smoothing:</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="_tolerance_item">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="width-chars">5</property>
+                <property name="text" translatable="yes">0</property>
+                <property name="adjustment">_tolerance_adj</property>
+                <property name="climb-rate">1</property>
+                <property name="digits">2</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="_simplify_btn">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">LPE based interactive simplify</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage" id="image8">
+                <property name="visible">True</property>
+                <property name="icon-name">interactive_simplify</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">6</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="_flatten_simplify_btn">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="tooltip-text" translatable="yes">LPE simplify flatten</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage" id="image9">
+                <property name="visible">True</property>
+                <property name="icon-name">flatten</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">7</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="position">9</property>
+          </packing>
+        </child>
+        <style>
+          <class name="pencil-only"/>
+        </style>
+      </object>
+      <packing>
+        <property name="position">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="shape_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Shape of new paths drawn by this tool</property>
+      </object>
+      <packing>
+        <property name="position">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="_shapescale_box">
+        <property name="visible">True</property>
+        <property name="tooltip-text" translatable="yes">Scale of the width of the power stroke shape.</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Scale:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="_shapescale_item">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="width-chars">6</property>
+            <property name="text" translatable="yes">0</property>
+            <property name="adjustment">_shapescale_adj</property>
+            <property name="climb-rate">1</property>
+            <property name="digits">2</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">8</property>
+      </packing>
+    </child>
+    <style>
+      <class name="toolbar"/>
+    </style>
+  </object>
+</interface>

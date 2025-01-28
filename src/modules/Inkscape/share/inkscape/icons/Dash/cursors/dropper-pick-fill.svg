@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="32" height="32"
+     inkscape:hotspot_x="4"
+     inkscape:hotspot_y="4"
+     style="fill:gray;stroke:black">
+
+  <!-- Dropper. Paste svg code here -->
+
+
+<style>@import './cursors.css';</style>
+
+  <!-- Dropper. Paste svg code here -->
+  <g id="cursor" class="drop-shadow" style="">
+    <path d="M10.7545 13.4769L4.82368 7.55022C4.06963 6.79669 3.50153 5.87784 3.16442 4.86653C3.06169 4.55833 3.1419 4.21855 3.37162 3.98883L3.98202 3.37843C4.212 3.14845 4.55218 3.06814 4.86074 3.17099C5.8717 3.50798 6.7904 4.07555 7.54419 4.82882L13.4753 10.7559L10.7545 13.4769Z" fill="white" stroke="black"/>
+    <path d="M12.8768 16.2514L12.5233 15.8978L12.1697 16.2514L11.572 16.8491C10.9691 17.452 9.99133 17.4515 9.38899 16.8479L9.041 17.1952L9.38899 16.8479C8.78754 16.2452 8.78804 15.2692 9.39012 14.6671L14.664 9.3933C15.2669 8.79034 16.2447 8.79084 16.847 9.39443C17.4485 9.99713 17.448 10.9731 16.8459 11.5752L16.2512 12.1699L15.8976 12.5235L16.2512 12.877L18.8041 15.4299C19.7359 16.3617 19.7359 17.8725 18.8041 18.8043C17.8723 19.7361 16.3615 19.7361 15.4297 18.8043L12.8768 16.2514Z" fill="white" stroke="black"/>
+    <path d="M12.8768 16.2514L12.5233 15.8978L12.1697 16.2514L11.572 16.8491C10.9691 17.452 9.99133 17.4515 9.38899 16.8479L9.03508 17.2011L9.38899 16.8479C8.78754 16.2452 8.78804 15.2692 9.39012 14.6671L14.664 9.3933C15.2669 8.79034 16.2447 8.79084 16.847 9.39443C17.4485 9.99713 17.448 10.9731 16.8459 11.5752L16.2512 12.1699L15.8976 12.5235L16.2512 12.877L18.8041 15.4299C19.7359 16.3617 19.7359 17.8725 18.8041 18.8043C17.8723 19.7361 16.3615 19.7361 15.4297 18.8043L12.8768 16.2514Z" fill="black" fill-opacity="0.5" stroke="black"/>
+  </g>
+
+  <!-- Fill (fill picks up stroke color) -->
+  <rect x="20.5" y="20.5" width="11" height="11"  style="stroke:white;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;" ry="0.5" />
+  <rect x="21.5" y="21.5" width="9" height="9"  style="stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;"/>
+
+</svg>

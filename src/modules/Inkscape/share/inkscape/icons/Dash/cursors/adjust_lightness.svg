@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="32" height="32"
+     inkscape:hotspot_x="4"
+     inkscape:hotspot_y="4"
+     style="fill:gray;stroke:black">
+
+<style>@import './cursors.css';</style>
+
+<g id="cursor" class="drop-shadow" style="">
+     <rect x="8.5" y="8.5" width="15" height="15" rx="0.833333" fill="white" stroke="black"/>
+     <path d="M13.1738 20V20.5H13.6738H18.6465H19.1465V20V18.7852V18.2852H18.6465H15.623V12V11.5H15.123H13.6738H13.1738V12V20Z" fill="black" stroke="white"/>
+</g>
+
+</svg>

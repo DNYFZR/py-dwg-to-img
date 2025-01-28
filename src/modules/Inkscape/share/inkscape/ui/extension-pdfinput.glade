@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkListStore" id="clip_list">
+    <columns>
+      <!-- column-name id -->
+      <column type="gchararray"/>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">-1</col>
+        <col id="1" translatable="yes">None</col>
+      </row>
+      <row>
+        <col id="0">0</col>
+        <col id="1" translatable="yes">Media Box</col>
+      </row>
+      <row>
+        <col id="0">1</col>
+        <col id="1" translatable="yes">Crop Box</col>
+      </row>
+      <row>
+        <col id="0">2</col>
+        <col id="1" translatable="yes">Trim Box</col>
+      </row>
+      <row>
+        <col id="0">3</col>
+        <col id="1" translatable="yes">Bleed Box</col>
+      </row>
+      <row>
+        <col id="0">4</col>
+        <col id="1" translatable="yes">Art Box</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="font-list">
+    <columns>
+      <!-- column-name id -->
+      <column type="gint"/>
+      <!-- column-name family -->
+      <column type="gchararray"/>
+      <!-- column-name style -->
+      <column type="gchararray"/>
+      <!-- column-name weight -->
+      <column type="gchararray"/>
+      <!-- column-name stretch -->
+      <column type="gchararray"/>
+      <!-- column-name strat_label -->
+      <column type="gchararray"/>
+      <!-- column-name strat_id -->
+      <column type="gint"/>
+      <!-- column-name icon -->
+      <column type="gchararray"/>
+      <!-- column-name em -->
+      <column type="gboolean"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">0</col>
+        <col id="1">Example</col>
+        <col id="2">Italic</col>
+        <col id="3">Bold</col>
+        <col id="4">Condensed</col>
+        <col id="5">N/A</col>
+        <col id="6">0</col>
+        <col id="7">ok</col>
+        <col id="8">False</col>
+      </row>
+      <row>
+        <col id="0">0</col>
+        <col id="1">Example</col>
+        <col id="2">Normal</col>
+        <col id="3">Normal</col>
+        <col id="4">Normal</col>
+        <col id="5">Thing</col>
+        <col id="6">1</col>
+        <col id="7">cancel</col>
+        <col id="8">True</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="font-options">
+    <columns>
+      <!-- column-name id -->
+      <column type="gchararray"/>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">0</col>
+        <col id="1" translatable="yes">Draw missing fonts</col>
+      </row>
+      <row>
+        <col id="0">2</col>
+        <col id="1" translatable="yes">Substitute missing fonts</col>
+      </row>
+      <row>
+        <col id="0">3</col>
+        <col id="1" translatable="yes">Keep missing fonts' names</col>
+      </row>
+      <row>
+        <col id="0">4</col>
+        <col id="1" translatable="yes">Delete missing font text</col>
+      </row>
+      <row>
+        <col id="0">1</col>
+        <col id="1" translatable="yes">Draw all text</col>
+      </row>
+      <row>
+        <col id="0">5</col>
+        <col id="1" translatable="yes">Delete all text</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkAdjustment" id="mesh-precision">
+    <property name="lower">1</property>
+    <property name="upper">246</property>
+    <property name="value">1</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkListStore" id="stratedgies">
+    <columns>
+      <!-- column-name id -->
+      <column type="gint"/>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">1</col>
+        <col id="1" translatable="yes">Draw to Shapes</col>
+      </row>
+      <row>
+        <col id="0">3</col>
+        <col id="1" translatable="yes">Use Substitute Font</col>
+      </row>
+      <row>
+        <col id="0">2</col>
+        <col id="1" translatable="yes">Keep Original Font Name</col>
+      </row>
+      <row>
+        <col id="0">0</col>
+        <col id="1" translatable="yes">Delete Text</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkBox" id="content">
+    <property name="visible">True</property>
+    <child>
+      <object class="GtkNotebook" id="import-type">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <!-- n-columns=2 n-rows=8 -->
+        <child>
+          <object class="GtkGrid">
+            <property name="visible">True</property>
+            <property name="margin-start">8</property>
+            <property name="margin-end">8</property>
+            <property name="margin-bottom">8</property>
+            <property name="row-spacing">7</property>
+            <property name="column-spacing">2</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">start</property>
+                <property name="margin-top">10</property>
+                <property name="margin-bottom">10</property>
+                <property name="label" translatable="yes">&lt;i&gt;Import via internal library. Editable text is reconstructed. Pages, layers and margins are preserved, object fills and strokes are recombined and gradient meshes are converted to tiles.&lt;/i&gt;</property>
+                <property name="use-markup">True</property>
+                <property name="wrap">True</property>
+                <property name="max-width-chars">50</property>
+                <property name="xalign">0</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkExpander">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="margin-start">8</property>
+                <property name="resize-toplevel">True</property>
+                <child>
+                  <object class="GtkScrolledWindow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="margin-top">2</property>
+                    <property name="vexpand">True</property>
+                    <property name="shadow-type">in</property>
+                    <child>
+                      <object class="GtkTreeView">
+                        <property name="name">font_list</property>
+                        <property name="height-request">200</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-start">2</property>
+                        <property name="margin-end">2</property>
+                        <property name="margin-bottom">2</property>
+                        <property name="model">font-list</property>
+                        <property name="search-column">0</property>
+                        <property name="show-expanders">False</property>
+                        <child internal-child="selection">
+                          <object class="GtkTreeSelection"/>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="font-name">
+                            <property name="title" translatable="yes">Family Name</property>
+                            <child>
+                              <object class="GtkCellRendererPixbuf" id="cell_icon"/>
+                              <attributes>
+                                <attribute name="icon-name">7</attribute>
+                              </attributes>
+                            </child>
+                            <child>
+                              <object class="GtkCellRendererText" id="cell_name"/>
+                              <attributes>
+                                <attribute name="style">8</attribute>
+                                <attribute name="text">1</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="font-style">
+                            <property name="title" translatable="yes">Style</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="cell_style"/>
+                              <attributes>
+                                <attribute name="style">8</attribute>
+                                <attribute name="text">2</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="font-weight">
+                            <property name="title" translatable="yes">Weight</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="cell_weight"/>
+                              <attributes>
+                                <attribute name="style">8</attribute>
+                                <attribute name="text">3</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="font-stretch">
+                            <property name="title" translatable="yes">Stretch</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="cell_stretch"/>
+                              <attributes>
+                                <attribute name="style">8</attribute>
+                                <attribute name="text">4</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="font-strat">
+                            <property name="title" translatable="yes">Strategy</property>
+                            <child>
+                              <object class="GtkCellRendererCombo" id="cell-strat">
+                                <property name="editable">True</property>
+                                <property name="has-entry">False</property>
+                                <property name="model">stratedgies</property>
+                                <property name="text-column">1</property>
+                              </object>
+                              <attributes>
+                                <attribute name="style">8</attribute>
+                                <attribute name="text">5</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child type="label">
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">List of all PDF Fonts</property>
+                    <property name="use-markup">True</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">4</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="embed-images">
+                <property name="label" translatable="yes">Embed Images</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="margin-start">8</property>
+                <property name="active">True</property>
+                <property name="draw-indicator">True</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">7</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="import-pages">
+                <property name="label" translatable="yes">Import Pages</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="margin-start">8</property>
+                <property name="active">True</property>
+                <property name="draw-indicator">True</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">8</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">start</property>
+                <property name="margin-start">8</property>
+                <property name="label" translatable="yes">Precision of approximating gradient meshes:</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">5</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScale" id="mesh-slider">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="margin-start">8</property>
+                <property name="margin-bottom">8</property>
+                <property name="hexpand">True</property>
+                <property name="adjustment">mesh-precision</property>
+                <property name="fill-level">300</property>
+                <property name="round-digits">1</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">6</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="mesh-label">
+                <property name="visible">True</property>
+                <property name="halign">center</property>
+                <property name="valign">end</property>
+                <property name="label" translatable="yes">rough</property>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBox" id="font-rendering">
+                <property name="visible">True</property>
+                <property name="hexpand">True</property>
+                <property name="model">font-options</property>
+                <property name="active">0</property>
+                <property name="id-column">0</property>
+                <property name="active-id">0</property>
+                <child>
+                  <object class="GtkCellRendererText"/>
+                  <attributes>
+                    <attribute name="text">1</attribute>
+                  </attributes>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">end</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">4</property>
+                <property name="label" translatable="yes">Fonts:</property>
+                <property name="justify">right</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">end</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">4</property>
+                <property name="label" translatable="yes">Pages:</property>
+                <property name="justify">right</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="page-numbers">
+                <property name="name">page_nums</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">Type in the page range you want to import using the format 1-4 or 1,2,3,4 or the keyword 'all' to specifiy all pages.</property>
+                <property name="hexpand">True</property>
+                <property name="text" translatable="no">all</property>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="halign">end</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">4</property>
+                <property name="label" translatable="yes">Clip to:</property>
+                <property name="justify">right</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBox" id="clip-to">
+                <property name="visible">True</property>
+                <property name="hexpand">True</property>
+                <property name="model">clip_list</property>
+                <property name="active">0</property>
+                <property name="id-column">0</property>
+                <property name="active-id">0</property>
+                <child>
+                  <object class="GtkCellRendererText"/>
+                  <attributes>
+                    <attribute name="text">1</attribute>
+                  </attributes>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">&lt;b&gt;Internal import&lt;/b&gt;</property>
+            <property name="use-markup">True</property>
+            <property name="xalign">0</property>
+          </object>
+          <packing>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="margin-start">8</property>
+            <property name="margin-end">8</property>
+            <property name="margin-top">10</property>
+            <property name="margin-bottom">10</property>
+            <property name="label" translatable="yes">&lt;i&gt;Import via external library. Text consists of groups containing cloned glyphs where each glyph is a path. Images are stored internally. Meshes cause entire document to be rendered as a raster image.&lt;/i&gt;</property>
+            <property name="use-markup">True</property>
+            <property name="wrap">True</property>
+            <property name="max-width-chars">50</property>
+            <property name="xalign">0</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">&lt;b&gt;Cairo import&lt;/b&gt;</property>
+            <property name="use-markup">True</property>
+            <property name="xalign">0</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="margin-start">10</property>
+        <property name="margin-end">10</property>
+        <property name="margin-top">10</property>
+        <property name="margin-bottom">10</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkDrawingArea" id="preview-area">
+            <property name="width-request">200</property>
+            <property name="visible">True</property>
+            <property name="halign">center</property>
+            <property name="margin-top">5</property>
+            <property name="margin-bottom">5</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="halign">center</property>
+            <property name="valign">start</property>
+            <child>
+              <object class="GtkButton" id="prev-page">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">end</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="icon-name">go-previous</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="current-page">
+                <property name="visible">True</property>
+                <property name="margin-start">10</property>
+                <property name="margin-end">10</property>
+                <property name="label" translatable="no">1 / 10</property>
+                <property name="use-markup">True</property>
+                <property name="justify">center</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="next-page">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">end</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="icon-name">go-next</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+  </object>
+</interface>
